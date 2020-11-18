@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html> 
 <head>
+	<script type="text/javascript" src="statPoint.js"></script>
+
 <style>
 .div { 
 	background-color: red; 
@@ -22,12 +24,20 @@
 
 </head>
 <body>
+	<?php include "./graphStyling.css" ?>
+
+
+
 	<h1>hola baby</h1>
 	<p id="demo"> Para G </p>
 	<button type="button" onclick="myFunc()"> ~Try~ </button>
 	<br><br><br><br><br>
 	<div class="div" "div-headline">
 		<p id="p-internal">[Headline: Welcome to this Poll "New Poll"]</p>
+		<script> 
+			let examplePoint = new statPointValues(33, 25);
+		</script>
+	new stuff. 
 	</div>
 </body> 
 </html>

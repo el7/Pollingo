@@ -1,9 +1,14 @@
 
 
 .div {
-	background-color: green;
+	background-color: black;
+	color: orange;
+}
 
 #pointCenter {
-	background-color: red;
+	background-color: blue;
 }
+
+
+
 

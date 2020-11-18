@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html> 
+<html lang"en">
 <head>
-	<script type="text/javascript" src="statPoint.js"></script>
-	<link rel="stylesheet" href="./graphStyling.css">
+<meta charset="UTF-8">
+
+<script type="text/javascript" src="./statPoint.js"></script>
+<script type="text/javascript" src="./example1.js"></script>
+<link rel="stylesheet" href="./graphStyling.css">
 
 </head>
 <body>
@@ -12,12 +15,19 @@
 	<button type="button" onclick="funstuff()"> funstuff </button>
 
 	<div class="div">
-		<p id="p-internal">[Headline: Welcome to this Poll "New Poll"]</p>
+		<p id="demo" "p-internal">[Headline: Welcome to this Poll "New Poll"]</p>
 		<script> 
-			let examplePoint = new statPointValues(33, 25);
+			console.log("okyyup");
+			let ep1 = new statPoint(23);
+			ep1.setHeight(10);
+			console.log("setting");
+			console.log(ep1.getHeight());
 		</script>
 		Closing tiem.
 	</div>
 
 </body> 
 </html>
+
+
+

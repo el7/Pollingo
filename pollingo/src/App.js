@@ -1,16 +1,16 @@
 import React from "react";
 import './App.css';
 import Header from './Header';
+import PollBox from './PollBox';
 
 function App() {
   // BEM class naming convention
   return (
     <div className="App">
-      <h1> Let's take some Polls in MERN</h1>
 
-    {/* header */}
     <Header />
 
+    <PollBox />
 
     {/* cards */}
 

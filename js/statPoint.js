@@ -2,21 +2,22 @@
 //alert("ok")
 
 
+
+
 class statPoint {
 	constructor(intHeightValue) {
-		var intHeight = intHeight;
+		this.intHeight = intHeightValue;
 	}
-
 	getHeight() {
+		console.log("yeep");
 		return this.intHeight;
 	}
-
 	setHeight(intHeight) {
 		this.intHeigh = intHeight;
 	}
-
-
 }
+
+
 
 
 class statRelationship {

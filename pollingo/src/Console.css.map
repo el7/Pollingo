@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,OAAkB;CAYvC;;AAdD,AASI,QATI,CASJ,aAAa,CAAC;EACV,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "Console.scss"
+    ],
+    "names": [],
+    "file": "Console.css"
+}

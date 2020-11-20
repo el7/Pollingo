@@ -1,15 +1,18 @@
 
 .pollbox-1 {
 
+    border: 1px solid black;
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 8fr 4fr;
     grid-template-areas: 
-      "header header header"
+      "header main aside"
       "nav main aside"
-      "footer footer footer";
-    grid-gap: .75em;
-   
+      "footer main aside";
+    grid-gap: .20em;
+    width: 500px;
+    margin: 25px;
+    padding: 5px;
 }
 
 
@@ -34,7 +37,6 @@ footer{
     background-color: lightgreen;
 }
 
-// For tablet viewers 
  @media(max-width: 768px){
     grid-template-rows: 1fr 1fr 5fr 1fr;
     grid-template-columns: 2fr 5fr 3fr;

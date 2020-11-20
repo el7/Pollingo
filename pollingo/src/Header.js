@@ -4,7 +4,8 @@ import "./Header.css";
 function Header() {
     return (
         <div className="header">
-            <h2> header stuff. </h2>       
+            <h2> Page Header.</h2>
+            <h5>tell me something</h5>      
         </div>
     )
 }

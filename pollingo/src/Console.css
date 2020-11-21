@@ -3,6 +3,10 @@
   background-color: #fac1c1;
 }
 
+.console .console-name {
+  color: purple;
+}
+
 .console .console-desc {
   color: green;
 }

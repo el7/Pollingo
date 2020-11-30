@@ -34,7 +34,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  background-color: teal;
+  background-color: #603c68;
 }
 
 @media (max-width: 400px) {
@@ -58,7 +58,7 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
-  background-color: tomato;
+  background-color: #507fd6;
 }
 
 .pollbox-1 main {
@@ -66,7 +66,7 @@
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: main;
-  background-color: lightblue;
+  background-color: #87cfe7;
 }
 
 .pollbox-1 aside {
@@ -74,19 +74,13 @@
   -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   grid-area: aside;
-  background-color: orange;
+  background-color: #8cabf0;
 }
 
 .pollbox-1 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
-  background-color: lightgreen;
+  background-color: #876ff0;
 }
-
-/* 
-@media(max-width: 480px){
-    display: block;
-}
-*/
 /*# sourceMappingURL=PollBox.css.map */

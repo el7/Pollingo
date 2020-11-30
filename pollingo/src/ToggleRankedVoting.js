@@ -4,7 +4,7 @@ import "./ToggleRankedVoting.css";
 function ToggleRankedVoting() {
     return (
         <div className="">
-            <button onclick="toggltRankedVotingFunc()">Toggle RV</button>
+            <button onclick="toggletRankedVotingFunc()">Toggle RV</button>
         </div>
     )
 }

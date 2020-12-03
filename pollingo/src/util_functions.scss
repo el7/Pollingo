@@ -1,0 +1,10 @@
+
+
+@function getColor($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+@function getSize($size-name) {
+    @return map-get($sizes, $size-name)
+}
+

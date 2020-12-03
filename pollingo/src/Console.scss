@@ -1,14 +1,15 @@
+@import "variables";
 
 .console {
-    color: blue;
-    background-color: rgb(250, 193, 193);
+
+    background-color: getColor(background-2);
 
     .console-name {
         color: purple;
     }
 
     .console-desc {
-        color: green;       
+        color: rgb(218, 68, 231);       
     }
 
 }

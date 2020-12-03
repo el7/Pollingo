@@ -1,51 +1,6 @@
-
-$colors:(
-    primary-1: rgb(83, 82, 5),
-    primary-2: rgb(83, 82, 5),
-    secondary-1: rgb(177, 177, 37),
-    secondary-2: rgb(177, 177, 37),    
-    accent-1: rgb(131, 28, 156),
-    accent-2: rgb(131, 28, 156),
-    background-1: rgb(211, 207, 149),
-    background-2: white,
-    pb-header-bg-1: rgb(225, 154, 240),
-    pb-main-bg-1: rgb(135, 207, 231),
-    pb-aside-bg-1: rgb(140, 171, 240),
-    pb-nav-bg-1:  rgb(80, 127, 214),
-    pb-footer-bg-1: rgb(135, 111, 240)
-);
-
-@function getColor($color-name) {
-    @return map-get($colors, $color-name)
-}
-
-@mixin screenSizeBp($point) {
-    @if $point == min-extraextralarge {
-        @media screen and (min-width: 1680px) {
-            @content;
-        }
-    }
-    @else if $point == min-extralarge {
-        @media screen and (min-width: 1443px) {
-            @content;
-        }
-    }
-    @else if $point == min-large {
-        @media screen and (min-width: 1023px) {
-            @content;
-        }
-    }
-    @else if $point == min-medium {
-        @media screen and (min-width: 767px) {
-            @content;
-        }
-    }
-    @else if $point == min-small {
-        @media screen and (min-width: 639px) {
-            @content;
-        }
-    }
-}
+@import "variables";
+@import "functions";
+@import "mixins";
 
 .pollbox-1 {
 
@@ -53,10 +8,10 @@ $colors:(
         width: 50%;
     }
 
-    // med view
     @include screenSizeBp(min-medium) {
         width: 60%;
     }
+
 
     @include screenSizeBp(min-large) {
         width: 70%;
@@ -71,39 +26,54 @@ $colors:(
         width: 80%;
     }
 
-    // small view
+    // small / global  view
+
     border: 1px solid black;
+    margin: 25px 5px 25px 5px;
+    padding: 5px;
+    width: 85%;
+
     display: grid;
+    grid-gap: .20em;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 8fr 4fr;
     grid-template-areas: 
       "header main aside"
       "nav main aside"
       "footer main aside";
-    grid-gap: .20em;
-    margin: 25px 5px 25px 5px;
-    padding: 5px;
-    width: 85%;
 
     header{
         grid-area: header;
         background-color: getColor(pb-header-bg-1);
-
+        border: getSize(pb-border-1);
+        margin: auto;
     }
+
     nav{
         grid-area: nav;
         background-color: getColor(pb-nav-bg-1);
+        border: getSize(pb-border-2);
+        margin: auto;
     }
+
     main{
         grid-area: main;
         background-color: getColor(pb-main-bg-1);
+        border: getSize(pb-border-2);
+//        margin: auto;        
     }
+
     aside{
         grid-area: aside;
         background-color: getColor(pb-aside-bg-1);
+        border: getSize(pb-border-2);
+        margin: auto;        
     }
+
     footer{
         grid-area: footer;
         background-color: getColor(pb-footer-bg-1);
+        border: getSize(pb-border-2);
+        margin: auto;        
     }
 }

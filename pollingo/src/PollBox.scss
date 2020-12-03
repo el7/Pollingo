@@ -4,33 +4,42 @@
 
 .pollbox-1 {
 
+    // view size small 2/6    
     @include screenSizeBp(min-small) {
+        background-color: getColor(pb-header-bg-1);        
         width: 50%;
     }
 
+    // view size med 3/6    
     @include screenSizeBp(min-medium) {
+        background-color: getColor(pb-header-bg-1);
         width: 60%;
     }
 
+    // view size large 4/6    
     @include screenSizeBp(min-large) {
+        background-color: getColor(pb-footer-bg-1);        
         width: 70%;
     }
 
-    // large view
+    // view size xl 5/6    
     @include screenSizeBp(min-extralarge) {
+        background-color: getColor(pb-main-bg-1);
         width: 500px;
     }
 
+    // view size xxl 6/6   
     @include screenSizeBp(min-extraextralarge) {
+        background-color: getColor(pb-header-bg-1);        
         width: 80%;
     }
 
-    // small / global  view
+    // view size small 1/6
 
     border: 1px solid black;
     margin: 25px 5px 25px 5px;
     padding: 5px;
-    width: 100%;
+    width: 95%;
 
     display: grid;
     grid-gap: .20em;
@@ -59,7 +68,6 @@
         grid-area: main;
         background-color: getColor(pb-main-bg-1);
         border: getSize(pb-border-2);
-//        margin: auto;        
     }
 
     aside{

@@ -2,7 +2,7 @@
   border: 1px solid black;
   margin: 25px 5px 25px 5px;
   padding: 5px;
-  width: 100%;
+  width: 95%;
   display: -ms-grid;
   display: grid;
   grid-gap: .20em;
@@ -15,30 +15,35 @@
 
 @media screen and (min-width: 639px) {
   .pollbox-1 {
+    background-color: #7b4d85;
     width: 50%;
   }
 }
 
 @media screen and (min-width: 767px) {
   .pollbox-1 {
+    background-color: #7b4d85;
     width: 60%;
   }
 }
 
 @media screen and (min-width: 1023px) {
   .pollbox-1 {
+    background-color: #876ff0;
     width: 70%;
   }
 }
 
 @media screen and (min-width: 1443px) {
   .pollbox-1 {
+    background-color: #87cfe7;
     width: 500px;
   }
 }
 
 @media screen and (min-width: 1680px) {
   .pollbox-1 {
+    background-color: #7b4d85;
     width: 80%;
   }
 }

@@ -19,7 +19,7 @@ $colors:(
     @return map-get($colors, $color-name)
 }
 
-@mixin breakpoint($point) {
+@mixin screenSizeBp($point) {
     @if $point == min-extraextralarge {
         @media screen and (min-width: 1680px) {
             @content;
@@ -49,14 +49,26 @@ $colors:(
 
 .pollbox-1 {
 
+    @include screenSizeBp(min-small) {
+        width: 50%;
+    }
+
     // med view
-    @include breakpoint(min-medium) {
-        width: 80%;
+    @include screenSizeBp(min-medium) {
+        width: 60%;
+    }
+
+    @include screenSizeBp(min-large) {
+        width: 70%;
     }
 
     // large view
-    @include breakpoint(min-extralarge) {
+    @include screenSizeBp(min-extralarge) {
         width: 500px;
+    }
+
+    @include screenSizeBp(min-extraextralarge) {
+        width: 80%;
     }
 
     // small view
@@ -73,41 +85,10 @@ $colors:(
     padding: 5px;
     width: 85%;
 
-    
-
-    @media(max-width: 400px){
-        border: 10px solid rgb(223, 14, 14);
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 8fr 4fr;
-        grid-template-areas: 
-          "header main aside"
-          "nav main aside"
-          "footer main aside";
-        grid-gap: .20em;
-        width: 500px;
-        margin: 25px;
-        padding: 5px;
-     }
-
     header{
         grid-area: header;
         background-color: getColor(pb-header-bg-1);
 
-        @media(max-width: 400px){
-            border: 10px solid rgb(180, 56, 7);
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 8fr 4fr;
-            grid-template-areas: 
-              "header main aside"
-              "nav main aside"
-              "footer main aside";
-            grid-gap: .20em;
-            width: 500px;
-            margin: 25px;
-            padding: 5px;
-        }
     }
     nav{
         grid-area: nav;

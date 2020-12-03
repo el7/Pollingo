@@ -2,7 +2,7 @@
   border: 1px solid black;
   margin: 25px 5px 25px 5px;
   padding: 5px;
-  width: 85%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   grid-gap: .20em;
@@ -47,7 +47,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  background-color: #e19af0;
+  background-color: #7b4d85;
   border: 1px solid black;
   margin: auto;
 }

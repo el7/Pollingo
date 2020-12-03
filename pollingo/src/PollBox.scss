@@ -1,6 +1,6 @@
-@import "variables";
-@import "functions";
-@import "mixins";
+@import "util_variables";
+@import "util_functions";
+@import "util_mixins";
 
 .pollbox-1 {
 
@@ -11,7 +11,6 @@
     @include screenSizeBp(min-medium) {
         width: 60%;
     }
-
 
     @include screenSizeBp(min-large) {
         width: 70%;
@@ -31,7 +30,7 @@
     border: 1px solid black;
     margin: 25px 5px 25px 5px;
     padding: 5px;
-    width: 85%;
+    width: 100%;
 
     display: grid;
     grid-gap: .20em;

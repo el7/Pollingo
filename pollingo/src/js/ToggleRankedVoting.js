@@ -1,5 +1,5 @@
 import React from 'react';
-import "./ToggleRankedVoting.css";
+import "../css/ToggleRankedVoting.css";
 
 function ToggleRankedVoting() {
     return (

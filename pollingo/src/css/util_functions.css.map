@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "util_mixins.scss"
+        "../scss/util_functions.scss"
     ],
     "names": [],
-    "file": "util_mixins.css"
+    "file": "util_functions.css"
 }

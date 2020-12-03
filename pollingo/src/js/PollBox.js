@@ -1,5 +1,5 @@
 import React from 'react';
-import "./PollBox.css";
+import "../css/PollBox.css";
 
 function PollBox() {
     return (

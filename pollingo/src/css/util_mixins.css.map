@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "ToggleRankedVoting.scss"
+        "../scss/util_mixins.scss"
     ],
     "names": [],
-    "file": "ToggleRankedVoting.css"
+    "file": "util_mixins.css"
 }

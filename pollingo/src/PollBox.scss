@@ -1,3 +1,4 @@
+
 $colors:(
     primary-1: rgb(83, 82, 5),
     primary-2: rgb(83, 82, 5),
@@ -18,7 +19,47 @@ $colors:(
     @return map-get($colors, $color-name)
 }
 
+@mixin breakpoint($point) {
+    @if $point == min-extraextralarge {
+        @media screen and (min-width: 1680px) {
+            @content;
+        }
+    }
+    @else if $point == min-extralarge {
+        @media screen and (min-width: 1443px) {
+            @content;
+        }
+    }
+    @else if $point == min-large {
+        @media screen and (min-width: 1023px) {
+            @content;
+        }
+    }
+    @else if $point == min-medium {
+        @media screen and (min-width: 767px) {
+            @content;
+        }
+    }
+    @else if $point == min-small {
+        @media screen and (min-width: 639px) {
+            @content;
+        }
+    }
+}
+
 .pollbox-1 {
+
+    // med view
+    @include breakpoint(min-medium) {
+        width: 80%;
+    }
+
+    // large view
+    @include breakpoint(min-extralarge) {
+        width: 500px;
+    }
+
+    // small view
     border: 1px solid black;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -28,9 +69,11 @@ $colors:(
       "nav main aside"
       "footer main aside";
     grid-gap: .20em;
-    width: 500px;
-    margin: 25px;
+    margin: 25px 5px 25px 5px;
     padding: 5px;
+    width: 85%;
+
+    
 
     @media(max-width: 400px){
         border: 10px solid rgb(223, 14, 14);

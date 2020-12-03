@@ -1,5 +1,5 @@
 .pollbox-1 {
-  border: 1px solid black;
+  border: 1px solid #b95f5f;
   margin: 25px 5px 25px 5px;
   padding: 5px;
   width: 95%;
@@ -62,7 +62,7 @@
   -ms-grid-column: 1;
   grid-area: nav;
   background-color: #507fd6;
-  border: 2px dashed #294fb6;
+  border: 2px dashed #da44d2;
   margin: auto;
 }
 
@@ -72,7 +72,7 @@
   -ms-grid-column: 2;
   grid-area: main;
   background-color: #87cfe7;
-  border: 2px dashed #294fb6;
+  border: 2px dashed #da44d2;
 }
 
 .pollbox-1 aside {
@@ -81,7 +81,7 @@
   -ms-grid-column: 3;
   grid-area: aside;
   background-color: #8cabf0;
-  border: 2px dashed #294fb6;
+  border: 2px dashed #da44d2;
   margin: auto;
 }
 
@@ -90,7 +90,7 @@
   -ms-grid-column: 1;
   grid-area: footer;
   background-color: #876ff0;
-  border: 2px dashed #294fb6;
+  border: 2px dashed #da44d2;
   margin: auto;
 }
 /*# sourceMappingURL=PollBox.css.map */

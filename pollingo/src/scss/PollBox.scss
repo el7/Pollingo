@@ -77,8 +77,44 @@
 
     footer{
         grid-area: footer;
-        background-color: getColor(pb-header-bg-1);
+//        background-color: getColor(pb-header-bg-1);
         border: getSize(pb-border-1);
-//        margin: 100%;        
     }
+
+    .tabContainer {
+        width: 100%;
+        height: 350px;
+
+        .buttonContainer {
+            height: 15%;
+            
+            button {
+                width: 25%;
+                height: 100%;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 10px;
+                font-family: sans-serif;
+                font-size: 18px;
+                background-color: grey;
+            }
+
+            button:hover {
+                background-color: white;
+            }
+        }
+        .tabPanel {
+            height: 85%;
+            background-color: grey;
+            color:white;
+            text-align: center;
+            padding-top: 105px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 22px;
+            display: none;
+        }
+    }  
 }

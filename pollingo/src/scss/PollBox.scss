@@ -35,18 +35,18 @@
     }
 
     // VIEW small 1/6
-    margin: 25px 5px 25px 5px;
+    margin: 55px 5px 25px 5px;
     padding: 5px;
     width: 95%;
 
     display: grid;
     grid-gap: .20em;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 8fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 18fr 1fr 1fr;
     grid-template-areas: 
-      "header main aside"
-      "nav main aside"
-      "footer main aside";
+      "main main aside"
+      "main main aside"
+      "footer footer footer";
 
     header{
         grid-area: header;
@@ -79,6 +79,6 @@
         grid-area: footer;
         background-color: getColor(pb-header-bg-1);
         border: getSize(pb-border-1);
-        margin: auto;        
+//        margin: 100%;        
     }
 }

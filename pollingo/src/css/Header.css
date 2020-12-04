@@ -1,6 +1,5 @@
 .header {
   background-color: #d8c2fd;
-  margin: 0px 0px 5px 0px;
   padding: 5px;
   display: -ms-grid;
   display: grid;
@@ -18,7 +17,7 @@
   grid-area: header;
   background-color: #d000ff;
   border: 1px solid black;
-  margin: 10px 10px 10px 10px;
+  margin: 0px auto 0px 0px;
 }
 
 .header aside {
@@ -27,6 +26,6 @@
   grid-area: aside;
   background-color: #d000ff;
   border: 1px solid black;
-  margin: auto;
+  margin: auto auto auto 0px;
 }
 /*# sourceMappingURL=Header.css.map */

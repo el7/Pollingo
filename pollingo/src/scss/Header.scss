@@ -5,7 +5,6 @@
 .header {
 
     background-color: rgb(216, 194, 253);
-    margin: 0px 0px 5px 0px;
     padding: 5px;
 
     display: grid;
@@ -19,15 +18,14 @@
         grid-area: header;
         background-color: getColor(pb-header-bg-1);
         border: getSize(pb-border-1);
-        margin: 10px 10px 10px 10px;
-
+        margin: 0px auto 0px 0px;
     }
 
     aside{
         grid-area: aside;
         background-color: getColor(pb-header-bg-1);
         border: getSize(pb-border-1);
-        margin: auto;        
+        margin: auto auto auto 0px;
     }
 
 }

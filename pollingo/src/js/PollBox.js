@@ -4,18 +4,15 @@ import "../css/PollBox.css";
 function PollBox() {
     return (
         <div className="pollbox-1">
-            <header>HEADER</header>
-            <nav>NAV</nav>
             <main>
                 MAIN. Going to show the polling items and their results. 
             </main>
             <aside>
-                ASIDE
-                These are the selections. 
-                Circle selector for single.
-                Square selector for multiple.
+                ASIDE. Polling types go here. 
             </aside>
-            <footer>FOOTER. Not sure what can go here.</footer>
+            <footer>
+                FOOTER. Selections go here.
+            </footer>
         </div>
     )
 }

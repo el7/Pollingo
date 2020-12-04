@@ -5,13 +5,13 @@
 .header {
 
     background-color: rgb(216, 194, 253);
-    margin: 5px 0px 5px 0px;
+    margin: 0px 0px 5px 0px;
     padding: 5px;
 
     display: grid;
     grid-gap: .20em;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: 
         "header main aside";
 
@@ -19,13 +19,8 @@
         grid-area: header;
         background-color: getColor(pb-header-bg-1);
         border: getSize(pb-border-1);
-        margin: auto;
-    }
+        margin: 10px 10px 10px 10px;
 
-    main{
-        grid-area: main;
-        background-color: getColor(pb-header-bg-1);
-        border: getSize(pb-border-1);
     }
 
     aside{

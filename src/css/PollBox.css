@@ -1,0 +1,95 @@
+.pollbox-1 {
+  margin: 25px 5px 25px 5px;
+  padding: 5px;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .20em;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 8fr 4fr;
+      grid-template-columns: 1fr 8fr 4fr;
+      grid-template-areas: "header main aside" "nav main aside" "footer main aside";
+}
+
+@media screen and (min-width: 39.9375em) {
+  .pollbox-1 {
+    background-color: #d000ff;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 47.9375em) {
+  .pollbox-1 {
+    background-color: #d000ff;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 63.9375em) {
+  .pollbox-1 {
+    background-color: #d000ff;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 90.1875em) {
+  .pollbox-1 {
+    background-color: #d000ff;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 105em) {
+  .pollbox-1 {
+    background-color: #d000ff;
+    width: 80%;
+  }
+}
+
+.pollbox-1 header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: #d000ff;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.pollbox-1 nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  background-color: #d000ff;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.pollbox-1 main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: main;
+  background-color: #d000ff;
+  border: 1px solid black;
+}
+
+.pollbox-1 aside {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: aside;
+  background-color: #d000ff;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.pollbox-1 footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: #d000ff;
+  border: 1px solid black;
+  margin: auto;
+}
+/*# sourceMappingURL=PollBox.css.map */

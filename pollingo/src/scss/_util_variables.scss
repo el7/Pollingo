@@ -1,22 +1,22 @@
 
 $colors:(
-    primary-1: rgb(83, 82, 5),
-    primary-2: rgb(83, 82, 5),
-    secondary-1: rgb(177, 177, 37),
-    secondary-2: rgb(177, 177, 37),    
-    accent-1: rgb(131, 28, 156),
-    accent-2: rgb(131, 28, 156),
-    background-1: rgb(211, 207, 149),
-    background-2: rgb(255, 244, 244),
-    pb-header-bg-1: rgb(123, 77, 133),
-    pb-main-bg-1: rgb(135, 207, 231),
-    pb-aside-bg-1: rgb(140, 171, 240),
-    pb-nav-bg-1:  rgb(80, 127, 214),
-    pb-footer-bg-1: rgb(135, 111, 240)
+    primary-1: rgb(253, 249, 7),
+    primary-2: rgb(0, 0, 0),
+    secondary-1: rgb(106, 250, 10),
+    secondary-2: rgb(0, 0, 0),    
+    accent-1: rgb(4, 255, 234),
+    accent-2: rgb(0, 0, 0),
+    background-1: rgb(5, 42, 255),
+    background-2: rgb(0, 0, 0),
+    pb-header-bg-1: rgb(208, 0, 255),
+    pb-main-bg-1: rgb(255, 0, 76),
+    pb-aside-bg-1: rgb(251, 253, 255),
+    pb-nav-bg-1:  rgb(255, 255, 255),
+    pb-footer-bg-1: rgb(255, 255, 255)
 );
 
 $sizes: (
-    pb-border-1: 1px solid rgb(129, 64, 64),
-    pb-border-2: 2px dashed rgb(255, 232, 27),
-    pb-border-3: 3px solid pink
+    pb-border-1: 1px solid rgb(0, 0, 0),
+    pb-border-2: 2px dashed rgb(255, 255, 255),
+    pb-border-3: 3px solid rgb(255, 255, 255)
 );

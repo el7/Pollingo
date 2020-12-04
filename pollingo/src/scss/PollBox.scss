@@ -18,13 +18,13 @@
 
     // view size large 4/6    
     @include screenSizeBp(min-large) {
-        background-color: getColor(pb-footer-bg-1);        
+        background-color: getColor(pb-header-bg-1);        
         width: 70%;
     }
 
     // view size xl 5/6    
     @include screenSizeBp(min-extralarge) {
-        background-color: getColor(pb-main-bg-1);
+        background-color: getColor(pb-header-bg-1);
         width: 500px;
     }
 
@@ -34,8 +34,7 @@
         width: 80%;
     }
 
-    // view size small 1/6
-    border: 1px solid rgb(185, 95, 95);
+    // VIEW small 1/6
     margin: 25px 5px 25px 5px;
     padding: 5px;
     width: 95%;
@@ -58,28 +57,28 @@
 
     nav{
         grid-area: nav;
-        background-color: getColor(pb-nav-bg-1);
-        border: getSize(pb-border-2);
+        background-color: getColor(pb-header-bg-1);
+        border: getSize(pb-border-1);
         margin: auto;
     }
 
     main{
         grid-area: main;
-        background-color: getColor(pb-main-bg-1);
-        border: getSize(pb-border-2);
+        background-color: getColor(pb-header-bg-1);
+        border: getSize(pb-border-1);
     }
 
     aside{
         grid-area: aside;
-        background-color: getColor(pb-aside-bg-1);
-        border: getSize(pb-border-2);
+        background-color: getColor(pb-header-bg-1);
+        border: getSize(pb-border-1);
         margin: auto;        
     }
 
     footer{
         grid-area: footer;
-        background-color: getColor(pb-footer-bg-1);
-        border: getSize(pb-border-2);
+        background-color: getColor(pb-header-bg-1);
+        border: getSize(pb-border-1);
         margin: auto;        
     }
 }

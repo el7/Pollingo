@@ -27,7 +27,5 @@ function PollBox() {
         </div>
     )
 }
-
-<script src="./PollBox_tabs.js"></script>
-
+<script src="PollBox_tabs.js"></script>
 export default PollBox

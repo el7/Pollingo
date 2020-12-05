@@ -1,5 +1,5 @@
-var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button")
-var tabPanels = document.querySelectorAll(".tabContainer .tabPanel")
+var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 
 function showPanel(panelIndex, colorCode) {
     tabButtons.forEach(function(node){
@@ -7,8 +7,10 @@ function showPanel(panelIndex, colorCode) {
         node.style.color = "";
     });
 
+    alert("pressed");
+
     tabButtons[panelIndex].style.backgroundColor=colorCode;
-    tabButtons[panelIndex].style.color="white";
+    tabButtons[panelIndex].style.color="blue";
 
     tabPanels.forEach(function(node){
         node.style.display = "none";

@@ -8,10 +8,7 @@ function Header() {
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      
             </header>
-            <main>
-                -main-
-            </main>
-            <aside>                
+            <aside>
                 User
             </aside>
         </div>

@@ -28,13 +28,4 @@
   border: 1px solid black;
   margin: auto auto auto 0px;
 }
-
-.header main {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-  background-color: #d000ff;
-  border: 1px solid black;
-  margin: 0px auto 0px 0px;
-}
 /*# sourceMappingURL=Header.css.map */

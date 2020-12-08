@@ -15,11 +15,13 @@ $colors:(
     pb-footer-bg-1: rgb(255, 255, 255)
 );
 
+
 $sizes: (
     pb-border-1: 1px solid rgb(0, 0, 0),
     pb-border-2: 2px dashed rgb(255, 255, 255),
     pb-border-3: 3px solid rgb(255, 255, 255)
 );
+
 
 @function getColor($color-name) {
     @return map-get($colors, $color-name)

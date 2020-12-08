@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/ToggleRankedVoting.scss"
+        "../sass/ToggleRankedVoting.scss"
     ],
     "names": [],
     "file": "ToggleRankedVoting.css"

@@ -1,38 +1,35 @@
 
-
 // HELPERS
-@import '_util_functions.scss'
-@import '_util_mixins.scss'
-@import '_util_variables.scss'
+@import '_util_functions.scss';
+@import '_util_mixins.scss';
+@import '_util_variables.scss';
 
 
 // TOOLS
-
+@import '_normalize.scss';
 
 
 // BASICS
-
+@import '_base.scss';
+@import '_buttons.scss';
+@import '_links.scss';
+@import '_reset.scss';
+@import '_selections-colors.scss';
+@import '_typography.scss';
 
 
 // LAYOUT
-
-
-
+@import 'Header.scss';
+@import '_floatingShapes.scss';
+@import '_footer.scss';
+@import '_navigation.scss';
+@import '_siteHeader.scss';
+@import '_siteMainContent.scss';
 
 // MODULES
-
-
+@import 'Console.scss';
+@import 'PollBox.scss' ;
+@import 'ToggleRankedVoting.scss';
 
 // PAGES
-
-
-
-
-
-// OTHER
-
-@import 'Console.scss'
-@import 'Header.scss'
-@import 'PollBox.scss' 
-@import 'ToggleRankedVoting.scss'
 

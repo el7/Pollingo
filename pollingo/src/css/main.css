@@ -1,9 +1,5 @@
-html {
-  color: red;
-}
-
 .header {
-  background-color: #d8c2fd;
+  background-color: #6c20ee;
   padding: 5px;
   display: -ms-grid;
   display: grid;
@@ -15,6 +11,36 @@ html {
       grid-template-areas: "header main aside";
 }
 
+@media screen and (min-width: 39.9375em) {
+  .header {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 47.9375em) {
+  .header {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 63.9375em) {
+  .header {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 90.1875em) {
+  .header {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 105em) {
+  .header {
+    width: 80%;
+  }
+}
+
 .header header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -22,6 +48,14 @@ html {
   background-color: #d000ff;
   border: 1px solid black;
   margin: 0px auto 0px 0px;
+}
+
+.header main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
 }
 
 .header aside {
@@ -190,11 +224,11 @@ html {
   padding: 10px;
   font-family: sans-serif;
   font-size: 18px;
-  background-color: #ff9191;
+  background-color: #e47878;
 }
 
 .pollbox-1 .tabContainer .buttonContainer button:hover {
-  background-color: #572424;
+  background-color: #ff3a3a;
 }
 
 .pollbox-1 .tabContainer .tabPanel {

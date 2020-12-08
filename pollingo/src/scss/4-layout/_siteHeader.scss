@@ -1,0 +1,65 @@
+@import "../1-helpers/util_variables";
+@import "../1-helpers/_util_functions";
+@import "../1-helpers/_util_mixins";
+
+.header {
+
+    // view size small 2/6    
+    @include screenSizeBp(min-small) {
+    //        background-color: getColor(pb-header-bg-1);        
+        width: 50%;
+    }
+
+    // view size med 3/6    
+    @include screenSizeBp(min-medium) {
+//        background-color: getColor(pb-header-bg-1);
+        width: 60%;
+    }
+
+    // view size large 4/6    
+    @include screenSizeBp(min-large) {
+//        background-color: getColor(pb-footer-bg-1);        
+        width: 70%;
+    }
+
+    // view size xl 5/6    
+    @include screenSizeBp(min-extralarge) {
+//        background-color: getColor(pb-main-bg-1);
+        width: 500px;
+    }
+
+    // view size xxl 6/6   
+    @include screenSizeBp(min-extraextralarge) {
+//        background-color: getColor(pb-header-bg-1);        
+        width: 80%;
+    }
+
+    background-color: rgb(108, 32, 238);
+    padding: 5px;
+
+    display: grid;
+    grid-gap: .20em;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "header main aside";
+
+    header{
+        grid-area: header;
+        background-color: getColor(pb-header-bg-1);
+        border: getSize(pb-border-1);
+        margin: 0px auto 0px 0px;
+    }
+
+    main {
+        grid-area: main;        
+    }
+
+
+    aside{
+        grid-area: aside;
+        background-color: getColor(pb-header-bg-1);
+        border: getSize(pb-border-1);
+        margin: auto auto auto 0px;
+    }
+
+}

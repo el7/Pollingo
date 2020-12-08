@@ -1,34 +1,34 @@
 
-@mixin screenSizeBp($point) {
+@mixin screenSizeBp($point) 
 
-    @if $point == min-extraextralarge {
-        @media screen and (min-width: calcEm(1680px)) {
-            @content;
-        }
-    }
-
-    @else if $point == min-extralarge {
-        @media screen and (min-width: calcEm(1443px)) {
-            @content;
-        }
-    }
-
-    @else if $point == min-large {
-        @media screen and (min-width: calcEm(1023px)) {
-            @content;
-        }
-    }
-
-    @else if $point == min-medium {
-        @media screen and (min-width: calcEm(767px)) {
-            @content;
-        }
-    }
+    @if $point == min-extraextralarge 
+        @media screen and (min-width: calcEm(1680px)) 
+            @content
+        
     
-    @else if $point == min-small {
-        @media screen and (min-width: calcEm(639px)) {
-            @content;
-        }
-    }
-}
+
+    @else if $point == min-extralarge 
+        @media screen and (min-width: calcEm(1443px)) 
+            @content
+        
+    
+
+    @else if $point == min-large 
+        @media screen and (min-width: calcEm(1023px)) 
+            @content
+        
+    
+
+    @else if $point == min-medium 
+        @media screen and (min-width: calcEm(767px)) 
+            @content
+        
+    
+    
+    @else if $point == min-small 
+        @media screen and (min-width: calcEm(639px)) 
+            @content
+        
+    
+
 

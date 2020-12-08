@@ -1,11 +1,10 @@
 
+@function getSize($size-name) 
+    @return map-get($sizes, $size-name)
 
-@function getSize($size-name) {
-    @return map-get($sizes, $size-name);
-}
 
-@function calcEm($size) {
-    $remSize: $size / 16px;
-    @return #{$remSize}em;
-}
+@function calcEm($size) 
+    $remSize: $size / 16px
+    @return #$remSizeem
+
 

@@ -6,7 +6,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-
+// ---
 const jsPath = 'src/js/**/*.js';
 
 
@@ -41,17 +41,18 @@ function style() {
 function watch() {
 	browserSync.init({
 		server: {
-			baseDir: './'
+			baseDir: './',
+			index: 'index.js',
+			directory: true
 		}
 	});
 	
-	gulp.watch('./scss/**/*.scss', style);
-	gulp.watch('./html/**/*.html').on('change', browserSync.reload);
-	gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+	gulp.watch('./src/scss/**/*.scss', style);
+	gulp.watch('./src/js/**/*.js').on('change', browserSync.reload);
 }
 
 
-exports.jsTask = jsTask;
+exports.jsTask = jsTask; // https://www.youtube.com/watch?v=ssG5mziTF3E
 //exports.default = paralell() // will make default 'gulp' command
 exports.style = style;
 exports.watch = watch;

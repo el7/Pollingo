@@ -1,11 +1,11 @@
 const gulp = require('gulp');
-const { src, series, parallel, dest, watch } = require('gulp')
+const { src, series, parallel, dest} = require('gulp')
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
-//const sass = require('gulp-sass');
-//const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
 
 const jsPath = 'src/js/**/*.js';
 
@@ -33,9 +33,21 @@ function style() {
 		// pass that file thru sass compiler
 		.pipe(sass().on('error', sass.logError))
 		// where to save the compile css
-		.pipe(gulp.dest('./css'))
+		.pipe(gulp.dest('./build/assets/css'))
 		// stream changes to all browser
 		.pipe(browserSync.stream());
+}
+
+function watch() {
+	browserSync.init({
+		server: {
+			baseDir: './'
+		}
+	});
+	
+	gulp.watch('./scss/**/*.scss', style);
+	gulp.watch('./html/**/*.html').on('change', browserSync.reload);
+	gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
 
 

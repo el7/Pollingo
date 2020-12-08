@@ -19,13 +19,7 @@ $sizes: (
     pb-border-1: 1px solid rgb(0, 0, 0),
     pb-border-2: 2px dashed rgb(255, 255, 255),
     pb-border-3: 3px solid rgb(255, 255, 255)
-<<<<<<< HEAD:pollingo/src/scss/_util_variables.sass
 )
 
 @function getColor($color-name) 
     @return map-get($colors, $color-name)
-
-
-=======
-);
->>>>>>> parent of 7d8eae2... converting scss to sass:pollingo/src/scss/_util_variables.scss

@@ -3,7 +3,11 @@
     "mappings": "",
     "sources": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "../sass/ToggleRankedVoting.sass"
+=======
+        "../scss/ToggleRankedVoting.scss"
+>>>>>>> parent of 7d8eae2... converting scss to sass
 =======
         "../scss/ToggleRankedVoting.scss"
 >>>>>>> parent of 7d8eae2... converting scss to sass

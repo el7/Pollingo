@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/util_mixins.scss"
-    ],
-    "names": [],
-    "file": "util_mixins.css"
-}

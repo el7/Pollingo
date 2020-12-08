@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/util_functions.scss"
-    ],
-    "names": [],
-    "file": "util_functions.css"
-}

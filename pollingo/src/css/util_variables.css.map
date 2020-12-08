@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/util_variables.scss"
-    ],
-    "names": [],
-    "file": "util_variables.css"
-}

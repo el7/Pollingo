@@ -1,1 +1,44 @@
-/* No CSS *//*# sourceMappingURL=Console.css.map */
+.console {
+  background-color: #d8c2fd;
+  margin: 25px 0px 25px 0px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 39.9375em) {
+  .console {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 47.9375em) {
+  .console {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 63.9375em) {
+  .console {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 90.1875em) {
+  .console {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 105em) {
+  .console {
+    width: 80%;
+  }
+}
+
+.console .console-name {
+  color: purple;
+}
+
+.console .console-desc {
+  color: #da44e7;
+}
+/*# sourceMappingURL=Console.css.map */

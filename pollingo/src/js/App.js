@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/App.css';
+import '../css/main.css';
 import Header from './Header';
 import PollBox from './PollBox';
 import Console from './Console';

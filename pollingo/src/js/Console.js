@@ -1,6 +1,6 @@
 import React from 'react';
 import ToggleRankedVoting from './ToggleRankedVoting';
-import "../css/Console.css";
+import "../css/main.css";
 
 function Console() {
     return (

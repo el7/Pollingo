@@ -24,3 +24,4 @@ $sizes: (
 @function getColor($color-name) {
     @return map-get($colors, $color-name)
 }
+

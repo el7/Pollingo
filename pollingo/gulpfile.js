@@ -9,7 +9,6 @@ const browserSync = require('browser-sync').create();
 // ---
 const jsPath = 'src/js/**/*.js';
 
-
 // function copyHtml() {}
 
 function imgTask() {
@@ -25,8 +24,8 @@ function jsTask() {
 		.pipe(dest('build/assets/js'));
 }
 
-// compile scss into css
-function style() {
+// compile scss into css 
+function style() { 
 
 	// where is my css file
 	return gulp.src('./scss/**/*.scss')

@@ -1,3 +1,11 @@
+import React from "react";
+import '../css/main.css';
+import Header from './Header';
+import PollBox from './PollBox';
+import Console from './Console';
+//import mongoose from 'mongoose';
+
+
 //const express = require("express");
 //const app = express();
 const morgan = require("morgan");
@@ -9,12 +17,6 @@ mongoose.connect(
 {
   useMongoClient: true
 });
-
-import React from "react";
-import '../css/main.css';
-import Header from './Header';
-import PollBox from './PollBox';
-import Console from './Console';
 
 function App() {
   return (

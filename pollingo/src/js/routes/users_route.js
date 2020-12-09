@@ -1,8 +1,8 @@
 const express = require('express');
-const { Mongoose } = require('mongoose');
 const router = express.Router();
+const Mongoose = require('mongoose');
 
-const Item = require('../models/product');
+const User = require('../models/users');
 
 // Handle incoming GET requests to /orders
 /*
@@ -14,14 +14,7 @@ router.get('/', (req, res, next) => {
 */
 router.post('/', (req, res, next) => {
 
-    /*
-    const item = {
-        itemId: req.body.productId,
-        quantity: req.body.quantity
-    };
-    */
-
-    const item = new Item({
+    const user = new User({
         _id: new Mongoose.Types.ObjectId(),
         name: req.body.name,
         age: req.body.age,
@@ -29,14 +22,18 @@ router.post('/', (req, res, next) => {
         sex: req.body.sex
     });
 
-    item.save().then(result => {
-        console.log(result);
-    }).catch(err => console.log(err));
+    user
+        .save()
+        .then(result => {
+            console.log(result);
+        })
+        .catch(err => console.log(err));
 
-    res.status(201).json({
-        message: 'handling POST reqs to /products',
-        createdItem: item
-    });
+    res
+        .status(201).json({
+            message: 'handling POST reqs to /users',
+            createdUser: user
+        });
 
 });
 /*

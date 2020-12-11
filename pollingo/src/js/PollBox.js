@@ -30,7 +30,7 @@ function PollBox() {
         console.warn("pressed");
     
         tabButtons.forEach(function(node){
-            node.style.backgroundColor = "black";
+            node.style.backgroundColor = "red";
             node.style.color = "white";
         });
     

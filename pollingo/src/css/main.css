@@ -58,16 +58,21 @@
 
 @media screen and (min-width: 90.1875em) {
   .console {
+    background-color: #ff004c;
     width: 500px;
   }
 }
 
+.console h2, .console p {
+  margin: 0px;
+}
+
 .console .console-name {
-  color: purple;
+  color: #ce0078;
 }
 
 .console .console-desc {
-  color: #da44e7;
+  color: #a14815;
 }
 
 .pollbox-1 {

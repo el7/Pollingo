@@ -1,34 +1,47 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "../css/main.css";
 
 function PollBox() {
     console.warn("help");
 
-//    function showPanel() {    
+
+    const [tabSelected, setTabSelected] = useState(1);
+
+    const selectTab = () => {
+        return tabSelected ? {} : { marginLeft: 19999 }
+    }
+
+    const tabClicked = () => {
+        setTabSelected(!tabSelected)
+    }
+
+    useEffect(() => {
+
+    })
+
+
+    //    function showPanel() {    
     function showPanel(panelIndex, colorCode) {
 
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
-//        var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+        var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 
         console.warn(tabButtons.length);    
         console.warn("pressed");
-
-//        tabButtons[0].style.backgroundColor="black";
-//        tabButtons[0].style.color=colorCode;        
-      
-/*        
+    
         tabButtons.forEach(function(node){
-            node.style.backgroundColor = "";
-            node.style.color = "";
+            node.style.backgroundColor = "black";
+            node.style.color = "white";
         });
     
+/*        
         tabButtons[panelIndex].style.backgroundColor=colorCode;
         tabButtons[panelIndex].style.color="blue";
-    
+ 
         tabPanels.forEach(function(node){
             node.style.display = "none";
         });
-    
+   
         tabButtons[panelIndex].style.display = "block";
         tabButtons[panelIndex].style.backgroundColor = colorCode;
 */

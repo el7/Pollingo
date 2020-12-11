@@ -2,9 +2,14 @@ import React from 'react';
 import "../css/main.css";
 
 function ToggleRankedVoting() {
+
+    function toggleRankedVotingFunc() {
+        console.warn("pressed2");        
+    }
+
     return (
         <div className="">
-            <button onclick="toggletRankedVotingFunc()">Toggle RV</button>
+            <button onClick={toggleRankedVotingFunc()}>Toggle RV</button>
         </div>
     )
 }

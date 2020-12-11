@@ -1,6 +1,5 @@
 import React from 'react';
 import "../css/main.css";
-import "../js/PollBox_tabs";
 
 function PollBox() {
     console.warn("help");
@@ -9,19 +8,14 @@ function PollBox() {
     function showPanel(panelIndex, colorCode) {
 
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
-        var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+//        var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 
-        console.warn(tabButtons.length);
-
-        
+        console.warn(tabButtons.length);    
         console.warn("pressed");
-        tabButtons[0].style.backgroundColor="black";
-        tabButtons[0].style.color=colorCode;        
-        tabButtons[1].style.backgroundColor=colorCode;
-        tabButtons[1].style.color="white";        
-        
-        
 
+//        tabButtons[0].style.backgroundColor="black";
+//        tabButtons[0].style.color=colorCode;        
+      
 /*        
         tabButtons.forEach(function(node){
             node.style.backgroundColor = "";
@@ -37,10 +31,9 @@ function PollBox() {
     
         tabButtons[panelIndex].style.display = "block";
         tabButtons[panelIndex].style.backgroundColor = colorCode;
-        */
+*/
 
     }
-
 
     return (
         <div className="pollbox-1">
@@ -51,20 +44,19 @@ function PollBox() {
                 ASIDE. Polling types go here. 
             </aside>
             <footer>
-                <div class="tabContainer"> 
-                    <div class="buttonContainer"> 
-                        <button onClick={showPanel(1,'#745346')}>IRV</button>
-                        <button onClick={showPanel(1,'#745346')}>Approval</button>
-                        <button onClick={showPanel(2,'#d34565')}>RC</button>
-                        <button onClick={showPanel(3,'#f45546')}>STAR</button>                                                
+                <div className="tabContainer"> 
+                    <div className="buttonContainer"> 
+                        <button onClick={showPanel}>IRV</button>
+                        <button onClick={showPanel}>Approval</button>
+                        <button onClick={showPanel}>RC</button>
+                        <button onClick={showPanel}>STAR</button>                                                
                     </div>
-                    <div class="tabPanel">Content</div>
-                    <div class="tabPanel">Content</div>
-                    <div class="tabPanel">Content</div>
-                    <div class="tabPanel">Content</div>
+                    <div className="tabPanel">Content</div>
+                    <div className="tabPanel">Content</div>
+                    <div className="tabPanel">Content</div>
+                    <div className="tabPanel">Content</div>
                 </div>                                                
             </footer>
-            <script src="PollBox_tabs.js"></script>            
         </div>
     )
 }

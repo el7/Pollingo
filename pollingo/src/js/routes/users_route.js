@@ -4,16 +4,10 @@ const Mongoose = require('mongoose');
 
 const User = require('../models/users');
 
-// Handle incoming GET requests to /orders
-/*
-router.get('/', (req, res, next) => {
-    res.status(200).json({
-        message: 'Orders were fetched'
-    });
-});
-*/
+
 router.post('/', (req, res, next) => {
 
+    // new instance of model
     const user = new User({
         _id: new Mongoose.Types.ObjectId(),
         name: req.body.name,
@@ -22,33 +16,16 @@ router.post('/', (req, res, next) => {
         sex: req.body.sex
     });
 
-    user
-        .save()
-        .then(result => {
+    // turn into promise, log result to console/catch error
+    user.save().then(result => {
             console.log(result);
-        })
-        .catch(err => console.log(err));
+    }).catch(err => console.log(err));
 
-    res
-        .status(201).json({
+    res.status(201).json({
             message: 'handling POST reqs to /users',
             createdUser: user
-        });
+    });
 
 });
-/*
-router.get('/:orderId', (req, res, next) => {
-    res.status(200).json({
-        message: 'Order details',
-        orderId: req.params.orderId
-    });
-});
 
-router.delete('/:orderId', (req, res, next) => {
-    res.status(200).json({
-        message: 'Order deleted',
-        orderId: req.params.orderId
-    });
-});
-*/
 module.exports = router;

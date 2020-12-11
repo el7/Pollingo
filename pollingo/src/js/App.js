@@ -1,23 +1,23 @@
 import React from "react";
-import '../css/main.css';
+//import '../css/main.css';
 import Header from './Header';
 import PollBox from './PollBox';
 import Console from './Console';
 //import mongoose from 'mongoose';
 
-
-//const express = require("express");
-//const app = express();
+// const express = require("express");
+// const app = express();
+//-- going to pivot for tut. 
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-
+/*
 mongoose.connect(
   `mongodb+srv://dbBergmank:${process.env.MONGO_ATLAS_PW}@cluster0.ssk8u.mongodb.net/<dbname>?retryWrites=true&w=majority`, 
 {
   useMongoClient: true
 });
-
+*/
 function App() {
   return (
     <div className="App">

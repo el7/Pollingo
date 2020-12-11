@@ -2,12 +2,13 @@ var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer butto
 var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 
 function showPanel(panelIndex, colorCode) {
+
+    alert("pressed");
+
     tabButtons.forEach(function(node){
         node.style.backgroundColor = "";
         node.style.color = "";
     });
-
-    alert("pressed");
 
     tabButtons[panelIndex].style.backgroundColor=colorCode;
     tabButtons[panelIndex].style.color="blue";

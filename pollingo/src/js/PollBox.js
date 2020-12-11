@@ -5,7 +5,11 @@ function PollBox() {
     console.warn("help");
 
 
-    const [tabSelected, setTabSelected] = useState(1);
+    const [tabSelected, setTabSelected] = useState(() => {
+
+        return 1;
+        
+    })
 
     const selectTab = () => {
         return tabSelected ? {} : { marginLeft: 19999 }
@@ -22,6 +26,9 @@ function PollBox() {
 
     //    function showPanel() {    
     function showPanel(panelIndex, colorCode) {
+
+        setTabSelected(prevTab => ((prevTab+1)%4));
+        
 
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
@@ -51,7 +58,7 @@ function PollBox() {
     return (
         <div className="pollbox-1">
             <main>
-                MAIN. Going to show the polling items and their results. 
+                MAIN. Going to show the polling items and their results. {tabSelected}
             </main>
             <aside>
                 ASIDE. Polling types go here. 

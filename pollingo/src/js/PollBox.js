@@ -4,31 +4,12 @@ import "../css/main.css";
 function PollBox() {
     console.warn("help");
 
-
-    const [tabSelected, setTabSelected] = useState(() => {
-
-        return 1;
-        
-    })
-
-    const selectTab = () => {
-        return tabSelected ? {} : { marginLeft: 19999 }
-    }
-
-    const tabClicked = () => {
-        setTabSelected(!tabSelected)
-    }
-
-    useEffect(() => {
-
-    })
-
+    const [tabSelected, setTabSelected] = useState(1);
 
     //    function showPanel() {    
-    function showPanel(panelIndex, colorCode) {
-
-        setTabSelected(prevTab => ((prevTab+1)%4));
-        
+    function showPanel() {
+      
+        setTabSelected(1);
 
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
@@ -37,22 +18,19 @@ function PollBox() {
         console.warn("pressed");
     
         tabButtons.forEach(function(node){
-            node.style.backgroundColor = "red";
-            node.style.color = "white";
-        });
-    
-/*        
-        tabButtons[panelIndex].style.backgroundColor=colorCode;
-        tabButtons[panelIndex].style.color="blue";
- 
-        tabPanels.forEach(function(node){
-            node.style.display = "none";
-        });
-   
-        tabButtons[panelIndex].style.display = "block";
-        tabButtons[panelIndex].style.backgroundColor = colorCode;
-*/
-
+            switch (tabSelected) {
+                case 1: 
+                    node.style.backgroundColor = "red";
+                    node.style.color = "white";                    
+                    break;
+                case 2: 
+                    node.style.backgroundColor = "white";
+                    node.style.color = "green";                    
+                    break;               
+                default:
+                    break;
+            }
+        })
     }
 
     return (

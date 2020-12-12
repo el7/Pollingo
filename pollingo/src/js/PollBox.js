@@ -2,35 +2,50 @@ import React, {useState, useEffect} from 'react';
 import "../css/main.css";
 
 function PollBox() {
-    console.warn("help");
 
-    const [tabSelected, setTabSelected] = useState(1);
+    function log(message) {
+        console.log("-----------> " + message);
+    }
 
-    //    function showPanel() {    
+    log("begin");
+
+    const number_of_tabs = 4;
+
+    const [tabSelected, setTabSelected] = useState(() => {
+        // gets random number mod num of tabs
+        var tab = (Math.floor((Math.random()*10000))%number_of_tabs);
+        return tab;
+    });
+
+    //// use tabSelected number to set tab panel
+    // var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+    // var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+
+
+//    tabButtons.item(tabSelected).style.backgroundColor = "blue";
+//    tabButtons.item(tabSelected).style.color = "black";
+
+    //    function showPanel() {     
+
     function showPanel() {
-      
         setTabSelected(1);
-
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+        log(tabButtons.length);    
+        log("pressed");
 
-        console.warn(tabButtons.length);    
-        console.warn("pressed");
-    
-        tabButtons.forEach(function(node){
-            switch (tabSelected) {
-                case 1: 
-                    node.style.backgroundColor = "red";
-                    node.style.color = "white";                    
-                    break;
-                case 2: 
-                    node.style.backgroundColor = "white";
-                    node.style.color = "green";                    
-                    break;               
-                default:
-                    break;
+        var tab = (Math.floor((Math.random()*10000))%number_of_tabs);
+        log("tab: " + tab);
+        tabButtons.forEach(function(node, index){
+            if (index == tab) {
+                node.style.color = "blue";
+                node.style.backgroundColor = "blue";                
+            } else {
+                node.style.color = "red";                
+                node.style.backgroundColor = "red";
             }
         })
+
     }
 
     return (
@@ -39,7 +54,7 @@ function PollBox() {
                 MAIN. Going to show the polling items and their results. {tabSelected}
             </main>
             <aside>
-                ASIDE. Polling types go here. 
+                ASIDE.
             </aside>
             <footer>
                 <div className="tabContainer"> 
@@ -49,10 +64,10 @@ function PollBox() {
                         <button onClick={showPanel}>RC</button>
                         <button onClick={showPanel}>STAR</button>                                                
                     </div>
-                    <div className="tabPanel">Content</div>
-                    <div className="tabPanel">Content</div>
-                    <div className="tabPanel">Content</div>
-                    <div className="tabPanel">Content</div>
+                    <div className="tabPanel">Content1</div>
+                    <div className="tabPanel">Content2</div>
+                    <div className="tabPanel">Content3</div>
+                    <div className="tabPanel">Content4</div>
                 </div>                                                
             </footer>
         </div>

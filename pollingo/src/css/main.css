@@ -90,11 +90,11 @@ body {
 }
 
 .pollbox-1 {
-  margin: 55px 5px 25px 5px;
+  margin: 5px 5px 5px 5px;
   padding: 5px;
   width: 95%;
   display: grid;
-  grid-gap: .20em;
+  grid-gap: 0.2em;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 18fr 1fr 1fr;
   grid-template-areas: "main main aside" "main main aside" "footer footer footer";

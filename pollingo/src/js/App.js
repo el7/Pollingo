@@ -24,8 +24,7 @@ mongoose.connect(
 function App() {
 
   const [headerColor, setColor] = useState("444444");
-  const [screenWidth, setScreenWidth] = useState(200);
-
+  const [screenWidth, setScreenWidth] = useState("200");
 
   // function setColor() {
   //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -37,13 +36,9 @@ function App() {
 //}
 
 
-
-
-
-
   return (
     <div className="App">
-      <Header color={headerColor}/>
+      <Header color={headerColor} width={screenWidth}/>
       <PollBox />
       <Console />
     </div>

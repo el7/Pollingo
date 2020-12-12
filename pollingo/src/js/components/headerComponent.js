@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import "../../css/main.css";
 
-function Header({color}) {
+function Header({color}, {width}) {
 
 //    const [color, setColor] = useState("");
     console.log("here: " + color);
+    console.log("here: " + width);
 
     return (
         <div className="header" style={{backgroundColor: "#5efc46"}}>
@@ -13,7 +14,7 @@ function Header({color}) {
                 <h5>tell me something</h5>      
             </header>
             <span>cc: {color}</span>
-            
+            <span>sw: {width}</span>
             <aside>
                 User
             </aside>

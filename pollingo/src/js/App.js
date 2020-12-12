@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 // import '../css/main.css';
 import Header from './components/headerComponent';
 import PollBox from './components/pollboxComponent';
@@ -18,10 +18,32 @@ mongoose.connect(
 });
 */
 
+
+
+
 function App() {
+
+  const [headerColor, setColor] = useState("444444");
+  const [screenWidth, setScreenWidth] = useState(200);
+
+
+  // function setColor() {
+  //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  //   console.log("color: " + randomColor);
+  // }
+
+// function setScreenWidth() {
+//   const mediaMatch = window.matchMedia('(min-width: 500)');
+//}
+
+
+
+
+
+
   return (
     <div className="App">
-      <Header />
+      <Header color={headerColor}/>
       <PollBox />
       <Console />
     </div>

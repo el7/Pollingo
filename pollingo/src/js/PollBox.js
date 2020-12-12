@@ -31,21 +31,22 @@ function PollBox() {
         setTabSelected(1);
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
-        log(tabButtons.length);    
+        log(tabButtons.length);
         log("pressed");
 
         var tab = (Math.floor((Math.random()*10000))%number_of_tabs);
+
         log("tab: " + tab);
+        
         tabButtons.forEach(function(node, index){
             if (index == tab) {
                 node.style.color = "blue";
-                node.style.backgroundColor = "blue";                
+                node.style.backgroundColor = "blue";
             } else {
-                node.style.color = "red";                
+                node.style.color = "red";
                 node.style.backgroundColor = "red";
             }
         })
-
     }
 
     return (

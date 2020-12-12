@@ -1,3 +1,17 @@
+@media screen and (min-width: 39.9375em) {
+  background-color: #d000ff;
+  width: 100%;
+}
+
+@media screen and (min-width: 90.1875em) {
+  background-color: #ff004c;
+  width: 500px;
+}
+
+body {
+  margin: 0;
+}
+
 .header {
   background-color: #f38d65;
   padding: 5px;

@@ -1,31 +1,29 @@
-
 // 1-HELPERS
-@import '1-helpers/_util_functions.scss';
-@import '1-helpers/_util_mixins.scss';
-@import '1-helpers/_util_variables.scss';
+@import "1-helpers/_util_functions.scss";
+@import "1-helpers/_util_mixins.scss";
+@import "1-helpers/_util_variables.scss";
 
 // 2-TOOLS
-@import '2-tools/_normalize.scss';
+@import "2-tools/_normalize.scss";
 
 // 3-BASICS
-@import '3-basics/_base.scss';
-@import '3-basics/_buttons.scss';
-@import '3-basics/_links.scss';
-@import '3-basics/_reset.scss';
-@import '3-basics/_selection-colors.scss';
-@import '3-basics/_typography.scss';
+@import "3-basics/_base.scss";
+@import "3-basics/_buttons.scss";
+@import "3-basics/_links.scss";
+@import "3-basics/_reset.scss";
+@import "3-basics/_selection-colors.scss";
+@import "3-basics/_typography.scss";
 
 // 4-LAYOUT
-@import '4-layout/_floatingShapes.scss';
-@import '4-layout/_footer.scss';
-@import '4-layout/_navigation.scss';
-@import '4-layout/_siteHeader.scss';
-@import '4-layout/_siteMainContent.scss';
+@import "4-layout/_floatingShapes.scss";
+@import "4-layout/_footer.scss";
+@import "4-layout/_navigation.scss";
+@import "4-layout/_siteHeader.scss";
+@import "4-layout/_siteMainContent.scss";
 
 // 5-MODULES
-@import '5-modules/_Console.scss';
-@import '5-modules/_PollBox.scss';
-@import '5-modules/_ToggleRankedVoting.scss';
+@import "5-modules/_Console.scss";
+@import "5-modules/_PollBox.scss";
+@import "5-modules/_ToggleRankedVoting.scss";
 
 // 6-PAGES
-

@@ -1,6 +1,6 @@
 import React from 'react';
-import ToggleRankedVoting from './ToggleRankedVoting';
-import "../css/main.css";
+import ToggleRankedVoting from './toggleRVButtonComponent';
+import "../../css/main.css";
 
 function Console() {
     return (

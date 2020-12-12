@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import "../css/main.css";
+import ReactDOM from 'react-dom';
+import "../../css/main.css";
 
 function PollBox() {
 
@@ -38,6 +39,8 @@ function PollBox() {
 
         log("tab: " + tab);
         
+        // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
+
         tabButtons.forEach(function(node, index){
             if (index == tab) {
                 node.style.color = "blue";
@@ -50,7 +53,7 @@ function PollBox() {
     }
 
     return (
-        <div className="pollbox-1">
+        <div className="pollbox-1 testC">
             <main>
                 MAIN. Going to show the polling items and their results. {tabSelected}
             </main>

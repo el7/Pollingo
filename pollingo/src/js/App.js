@@ -1,13 +1,12 @@
 import React from "react";
 // import '../css/main.css';
-import Header from './Header';
-import PollBox from './PollBox';
-import Console from './Console';
+import Header from './components/headerComponent';
+import PollBox from './components/pollboxComponent';
+import Console from './components/consoleComponent';
 //import mongoose from 'mongoose';
 
 // const express = require("express");
 // const app = express();
-//-- going to pivot for tut. 
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -18,6 +17,7 @@ mongoose.connect(
   useMongoClient: true
 });
 */
+
 function App() {
   return (
     <div className="App">

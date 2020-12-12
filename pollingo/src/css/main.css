@@ -148,11 +148,11 @@ body {
 
 .pollbox-1 .tabContainer {
   width: 100%;
-  height: 150px;
+  height: 75px;
 }
 
 .pollbox-1 .tabContainer .buttonContainer {
-  height: 20%;
+  height: 50%;
 }
 
 .pollbox-1 .tabContainer .buttonContainer button {

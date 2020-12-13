@@ -7,8 +7,12 @@ function Header({color, width}) {
     console.log("here: " + color);
     console.log("here: " + width);
 
+    // temp test
+    color = "444444";
+    color = "#" + color;
+
     return (
-        <div className="header" style={{backgroundColor: "#5efc46"}}>
+        <div className="header" style={{backgroundColor: {color}}}>
             <header>
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      

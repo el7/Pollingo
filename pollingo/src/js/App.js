@@ -56,7 +56,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header width={screenWidth} color={headerColor}/>
+      <Header width={screenWidth} mycolor={headerColor}/>
       <PollBox />
       <Console />
     </div>

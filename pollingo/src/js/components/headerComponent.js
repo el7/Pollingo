@@ -1,23 +1,24 @@
 import React, {useState} from 'react';
 import "../../css/main.css";
 
-function Header({color, width}) {
+function Header({mycolor, width}) {
 
 //    const [color, setColor] = useState("");
-    console.log("here: " + color);
+    console.log("here: " + mycolor);
     console.log("here: " + width);
 
     // temp test
-    color = "444444";
-    color = "#" + color;
+    mycolor = "444444";
+    mycolor = '"#' + mycolor + '"';
+//    mycolor = "backgroundColor: " + mycolor;
 
     return (
-        <div className="header" style={{backgroundColor: {color}}}>
+        <div className="header" style={{backgroundColor: "#444"}}>
             <header>
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      
             </header>
-            <span>cc: {color}</span>
+            <span>cc: {mycolor}</span>
             <span>sw: {width}</span>
             <aside>
                 User

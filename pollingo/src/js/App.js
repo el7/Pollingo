@@ -39,6 +39,7 @@ function App() {
     function handleResize() {
       var randomColor = Math.floor(Math.random()*16777215).toString(16);
       console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
+      setColor(randomColor);
 
 //      console.log("color: " + randomColor);
       

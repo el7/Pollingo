@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, setState, useEffect} from "react";
 // import '../css/main.css';
 import Header from './components/headerComponent';
 import PollBox from './components/pollboxComponent';
@@ -23,8 +23,8 @@ mongoose.connect(
 
 function App() {
 
+  const [screenWidth, setScreenWidth] = useState("200");  
   const [headerColor, setColor] = useState("444444");
-  const [screenWidth, setScreenWidth] = useState("200");
 
   // function setColor() {
   //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -33,12 +33,25 @@ function App() {
 
 // function setScreenWidth() {
 //   const mediaMatch = window.matchMedia('(min-width: 500)');
-//}
+// }
+
+  React.useEffect(() => {
+    function handleResize() {
+      var randomColor = Math.floor(Math.random()*16777215).toString(16);
+      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
+
+//      console.log("color: " + randomColor);
+      
+  }
+    window.addEventListener('resize', handleResize);
+  })
+
+
 
 
   return (
     <div className="App">
-      <Header color={headerColor} width={screenWidth}/>
+      <Header width={screenWidth} color={headerColor}/>
       <PollBox />
       <Console />
     </div>

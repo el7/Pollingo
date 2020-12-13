@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "../../css/main.css";
 
-function Header({color}, {width}) {
+function Header({color, width}) {
 
 //    const [color, setColor] = useState("");
     console.log("here: " + color);

@@ -35,7 +35,10 @@ function App() {
 //   const mediaMatch = window.matchMedia('(min-width: 500)');
 // }
 
+
   React.useEffect(() => {
+    // might need to use something besides useEffect
+
     function handleResize() {
 
       // makes random color hex value

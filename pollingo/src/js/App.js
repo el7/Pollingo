@@ -37,12 +37,16 @@ function App() {
 
   React.useEffect(() => {
     function handleResize() {
+
+      // makes random color hex value
       var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+      // gets current width
       var newWidth = window.innerWidth;
-      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
+//      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
   
       // works but heavy
-//      setColor(randomColor);
+      setColor(randomColor);
 //      setScreenWidth(newWidth);
 
 //      console.log("color: " + randomColor);

@@ -18,7 +18,7 @@ function Header(props) {
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      
             </header>
-
+            mycolor: {props.mycolor}
             <aside>
                 User
             </aside>

@@ -1,32 +1,29 @@
-
-$colors:(
-    primary-1: rgb(253, 249, 7),
-    primary-2: rgb(0, 0, 0),
-    secondary-1: rgb(106, 250, 10),
-    secondary-2: rgb(0, 0, 0),    
-    accent-1: rgb(4, 255, 234),
-    accent-2: rgb(0, 0, 0),
-    background-1: rgb(5, 42, 255),
-    background-2: rgb(0, 0, 0),
-    pb-header-bg-1: rgb(208, 0, 255),
-    pb-main-bg-1: rgb(255, 0, 76),
-    pb-aside-bg-1: rgb(251, 253, 255),
-    pb-nav-bg-1:  rgb(255, 255, 255),
-    pb-footer-bg-1: rgb(255, 255, 255),
-    pb-main-bg-xl-1: rgb(255, 198, 198),
-    con-desc-1: rgb(161, 72, 21),
-    con-name-1: rgb(206, 0, 120)    
-    );
-
-
-$sizes: (
-    pb-border-1: 1px solid rgb(0, 0, 0),
-    pb-border-2: 2px dashed rgb(255, 255, 255),
-    pb-border-3: 3px solid rgb(255, 255, 255)
+$colors: (
+  primary-1: rgb(253, 249, 7),
+  primary-2: rgb(0, 0, 0),
+  secondary-1: rgb(106, 250, 10),
+  secondary-2: rgb(0, 0, 0),
+  accent-1: rgb(4, 255, 234),
+  accent-2: rgb(0, 0, 0),
+  background-1: rgb(5, 42, 255),
+  background-2: rgb(0, 0, 0),
+  pb-header-bg-1: rgb(226, 129, 248),
+  pb-main-bg-1: rgb(255, 0, 76),
+  pb-aside-bg-1: rgb(251, 253, 255),
+  pb-nav-bg-1: rgb(255, 255, 255),
+  pb-footer-bg-1: rgb(255, 255, 255),
+  pb-main-bg-xl-1: rgb(255, 198, 198),
+  con-desc-1: rgb(51, 19, 0),
+  con-bg-1: rgb(226, 129, 248),
+  con-name-1: rgb(71, 0, 42),
 );
 
+$sizes: (
+  pb-border-1: 1px solid rgb(0, 0, 0),
+  pb-border-2: 2px dashed rgb(255, 255, 255),
+  pb-border-3: 3px solid rgb(255, 255, 255),
+);
 
 @function getColor($color-name) {
-    @return map-get($colors, $color-name)
+  @return map-get($colors, $color-name);
 }
-

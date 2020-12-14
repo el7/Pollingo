@@ -3,50 +3,49 @@
 @import "../1-helpers/_util_mixins";
 
 .console {
+  // VIEW SIZE [sm, 2/6]
+  @include screenSizeBp(min-small) {
+    //        background-color: getColor(pb-header-bg-1);
+    width: 50%;
+  }
 
-    // VIEW SIZE [sm, 2/6]    
-    @include screenSizeBp(min-small) {
-//        background-color: getColor(pb-header-bg-1);        
-        width: 50%;
-    }
+  // VIEW SIZE [md, 3/6]
+  @include screenSizeBp(min-medium) {
+    // not needed
+  }
 
-    // VIEW SIZE [md, 3/6]    
-    @include screenSizeBp(min-medium) {
-        // not needed
-    }
+  // VIEW SIZE [lg, 4/6]
+  @include screenSizeBp(min-large) {
+    // not needed
+  }
 
-    // VIEW SIZE [lg, 4/6]    
-    @include screenSizeBp(min-large) {
-        // not needed
-    }
+  // VIEW SIZE [xl, 5/6]
+  @include screenSizeBp(min-extralarge) {
+    background-color: getColor(pb-main-bg-1);
+    width: 500px;
+  }
 
-    // VIEW SIZE [xl, 5/6]    
-    @include screenSizeBp(min-extralarge) {
-        background-color: getColor(pb-main-bg-1);
-        width: 500px;
-    }
+  // VIEW SIZE [xxl, 6/6]
+  @include screenSizeBp(min-extraextralarge) {
+    // not needed
+  }
 
-    // VIEW SIZE [xxl, 6/6]   
-    @include screenSizeBp(min-extraextralarge) {
-        // not needed
-    }
+  // VIEW SIZE [xs, 1/6]
 
-    // VIEW SIZE [xs, 1/6]
+  h2,
+  p {
+    margin: 0px;
+  }
 
-    h2, p {
-        margin: 0px;
-    }
+  background-color: getColor(con-bg-1);
+  margin: 25px 0px 25px 0px;
+  padding: 5px;
 
-    background-color: rgb(216, 194, 253);
-    margin: 25px 0px 25px 0px;
-    padding: 5px;
+  .console-name {
+    color: getColor(con-name-1);
+  }
 
-    .console-name {
-        color: getColor(con-name-1);
-    }
-    
-    .console-desc {
-        color: getColor(con-desc-1);
-    }
-
+  .console-desc {
+    color: getColor(con-desc-1);
+  }
 }

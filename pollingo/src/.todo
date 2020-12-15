@@ -33,6 +33,11 @@ gulp
     work
 // ==============
 
+functions
+---------
+
 . get header to blink based on width. not sure if done through react or scss. 
 
-
+. figure out a mapping of hex color schemes that is replicatable. 
+. function that translates system state (like screen width/height, variables? props? state?)
+into colorscheme. 

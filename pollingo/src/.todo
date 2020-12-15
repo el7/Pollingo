@@ -33,6 +33,13 @@ gulp
     work
 // ==============
 
+
+design
+------
+
+. should rewrite to make the entire page a grid setup rather than only the header and pollbox. 
+
+
 functions
 ---------
 
@@ -41,3 +48,4 @@ functions
 . figure out a mapping of hex color schemes that is replicatable. 
 . function that translates system state (like screen width/height, variables? props? state?)
 into colorscheme. 
+

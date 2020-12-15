@@ -39,6 +39,7 @@ function App() {
   React.useEffect(() => {
     // might need to use something besides useEffect
 
+
     function handleResize() {
 
       // makes random color hex value
@@ -53,19 +54,20 @@ function App() {
       console.log(windowSize);
      
       if (windowSize <= 500)
-        setColor("red");
-      else if (windowSize > 500)
-        setColor("other");
-
-
-
+        setColor("smallcolor");
+      else if (windowSize <= 1000)
+        setColor("medcolor");
+      else if (windowSize <= 1500)
+        setColor("bigcolor");
+      else if (windowSize <= 2000)
+        setColor("largecolor");
 
 //      setScreenWidth(newWidth);
-
 //      console.log("color: " + randomColor);
       
   }
     window.addEventListener('resize', handleResize);
+    
   })
 
 
@@ -81,3 +83,8 @@ function App() {
 }
 
 export default App;
+
+
+  
+
+

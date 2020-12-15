@@ -45,11 +45,21 @@ function App() {
       var randomColor = Math.floor(Math.random()*16777215).toString(16);
 
       // gets current width
-      var newWidth = window.innerWidth;
-//      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
-  
-      // works but heavy
-      setColor(randomColor);
+//      var newWidth = window.innerWidth;
+      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
+
+      var windowSize = (window.innerWidth + window.innerHeight);
+      
+      console.log(windowSize);
+     
+      if (windowSize <= 500)
+        setColor("red");
+      else if (windowSize > 500)
+        setColor("other");
+
+
+
+
 //      setScreenWidth(newWidth);
 
 //      console.log("color: " + randomColor);

@@ -4,7 +4,7 @@ import "../../css/main.css";
 function Header(props) {
 
 //    const [color, setColor] = useState("");
-    console.log("here: " + props.mycolor);
+//    console.log("here: " + props.mycolor);
 //    console.log("here: " + width);
 
     // temp test
@@ -18,7 +18,7 @@ function Header(props) {
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      
             </header>
-            mycolor: {props.mycolor}
+            c: {props.mycolor}
             <aside>
                 User
             </aside>

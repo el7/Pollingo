@@ -2,69 +2,66 @@
 @import "../1-helpers/_util_functions";
 @import "../1-helpers/_util_mixins";
 
-
-
 .header {
+  // view size small 2/6
+  @include screenSizeBp(min-small) {
+    background-color: getColor(pb-header-bg-1);
+    width: 100%;
+  }
 
-    // view size small 2/6    
-    @include screenSizeBp(min-small) {
-        background-color: getColor(pb-header-bg-1);
-        width: 100%;
-    }
+  // view size med 3/6
+  @include screenSizeBp(min-medium) {
+  }
 
-    // view size med 3/6    
-    @include screenSizeBp(min-medium) {
+  // view size large 4/6
+  @include screenSizeBp(min-large) {
+  }
 
-    }
+  // view size xl 5/6
+  @include screenSizeBp(min-extralarge) {
+    background-color: getColor(pb-main-bg-1);
+    width: 500px;
+  }
 
-    // view size large 4/6    
-    @include screenSizeBp(min-large) {
+  // view size xxl 6/6
+  @include screenSizeBp(min-extraextralarge) {
+  }
 
-    }
+  // view size xs
 
-    // view size xl 5/6    
-    @include screenSizeBp(min-extralarge) {
-        background-color: getColor(pb-main-bg-1);
-        width: 500px;
-    }
+  h2,
+  h5 {
+    margin: 0px 0px 0px 0px;
+  }
 
-    // view size xxl 6/6   
-    @include screenSizeBp(min-extraextralarge) {
+  li {
+    color: darkslategray;
+  }
 
-    }
+  background-color: rgb(243, 141, 101);
+  padding: 5px;
 
-    // view size xs
+  display: grid;
+  grid-gap: 0.2em;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "header main aside";
 
-    h2, h5 {
-        margin: 0px 0px 0px 0px;
-    }        
+  header {
+    grid-area: header;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: 0px auto 0px 0px;
+  }
 
-    background-color: rgb(243, 141, 101);
-    padding: 5px;
+  main {
+    grid-area: main;
+  }
 
-    display: grid;
-    grid-gap: .20em;
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "header main aside";
-
-    header{
-        grid-area: header;
-        background-color: getColor(pb-header-bg-1);
-        border: getSize(pb-border-1);
-        margin: 0px auto 0px 0px;
-    }
-
-    main {
-        grid-area: main;        
-    }
-
-
-    aside{
-        grid-area: aside;
-        background-color: getColor(pb-header-bg-1);
-        border: getSize(pb-border-1);
-        margin: auto auto auto 0px;
-    }
-
+  aside {
+    grid-area: aside;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: auto auto auto 0px;
+  }
 }

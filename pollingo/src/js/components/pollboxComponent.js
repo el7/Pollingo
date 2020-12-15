@@ -42,7 +42,7 @@ function PollBox() {
         // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
 
         tabButtons.forEach(function(node, index){
-            if (index == tab) {
+            if (index === tab) {
                 node.style.color = "blue";
                 node.style.backgroundColor = "blue";
             } else {

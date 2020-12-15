@@ -20,7 +20,11 @@ function Header(props) {
             </header>
             c: {props.mycolor}
             <aside>
-                User
+                <ul>
+                    <li>User</li>
+                    <li>Contact</li>
+                    <li>Polls</li>                   
+                </ul>
             </aside>
         </div>
     )

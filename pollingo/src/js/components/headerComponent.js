@@ -10,22 +10,19 @@ function Header(props) {
 
       // makes random color hex value
       var randomColor = Math.floor(Math.random()*16777215).toString(16);
-
+      var windowCombinedSize = (window.innerWidth + window.innerHeight);
       // gets current width
 //      var newWidth = window.innerWidth;
-      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
 
-      var windowSize = (window.innerWidth + window.innerHeight);
-      
-      console.log(windowSize);
-     
-      if (windowSize <= 500)
+//      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor, 'combinedSize: ', windowCombinedSize);
+   
+      if (windowCombinedSize <= 500)
         setColor("smallcolor");
-      else if (windowSize <= 1000)
+      else if (windowCombinedSize <= 1000)
         setColor("medcolor");
-      else if (windowSize <= 1500)
+      else if (windowCombinedSize <= 1500)
         setColor("bigcolor");
-      else if (windowSize <= 2000)
+      else if (windowCombinedSize <= 2000)
         setColor("largecolor");
 
 //      setScreenWidth(newWidth);
@@ -43,18 +40,13 @@ function Header(props) {
 //    mycolor = '"#' + mycolor + '"';
 //    mycolor = "backgroundColor: " + mycolor;
 
-
-
-
-
-
     return (
         <div className="header" >
             <header>
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      
             </header>
-            c: {props.mycolor}
+            c: {headerColor}
             <aside>
                 <ul>
                     <li>User</li>

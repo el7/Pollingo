@@ -10,12 +10,12 @@ function Header(props) {
 
       // makes random color hex value
       var randomColor = Math.floor(Math.random()*16777215).toString(16);
-      var windowCombinedSize = (window.innerWidth + window.innerHeight);
       // gets current width
-//      var newWidth = window.innerWidth;
+      var windowCombinedSize = (window.innerWidth + window.innerHeight);
 
-//      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor, 'combinedSize: ', windowCombinedSize);
-   
+      setColor(randomColor);
+
+/*
       if (windowCombinedSize <= 500)
         setColor("smallcolor");
       else if (windowCombinedSize <= 1000)
@@ -24,6 +24,8 @@ function Header(props) {
         setColor("bigcolor");
       else if (windowCombinedSize <= 2000)
         setColor("largecolor");
+
+*/
 
 //      setScreenWidth(newWidth);
 //      console.log("color: " + randomColor);

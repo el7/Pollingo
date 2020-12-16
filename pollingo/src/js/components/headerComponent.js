@@ -1,11 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useRef } from 'react';
+import debounce from 'lodash';
 import "../../css/main.css";
+
+//const debouncer = require("lodash");
 
 function Header(props) {
 
     const [headerColor, setColor] = useState("444444");
     const [screenWidth, setScreenWidth] = useState("200"); 
 
+    
+    
     function handleResize() {
 
       // makes random color hex value

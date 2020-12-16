@@ -10,6 +10,7 @@ import Console from './components/consoleComponent';
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+
 /*
 mongoose.connect(
   `mongodb+srv://dbBergmank:${process.env.MONGO_ATLAS_PW}@cluster0.ssk8u.mongodb.net/<dbname>?retryWrites=true&w=majority`, 
@@ -23,7 +24,7 @@ mongoose.connect(
 
 function App() {
 
-  const [screenWidth, setScreenWidth] = useState("200");  
+
 
   // function setColor() {
   //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -47,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header width={screenWidth} />
+      <Header/>
       <PollBox />
       <Console />
     </div>

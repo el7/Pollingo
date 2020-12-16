@@ -24,7 +24,6 @@ mongoose.connect(
 function App() {
 
   const [screenWidth, setScreenWidth] = useState("200");  
-  const [headerColor, setColor] = useState("444444");
 
   // function setColor() {
   //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -40,33 +39,6 @@ function App() {
     // might need to use something besides useEffect
 
 
-    function handleResize() {
-
-      // makes random color hex value
-      var randomColor = Math.floor(Math.random()*16777215).toString(16);
-
-      // gets current width
-//      var newWidth = window.innerWidth;
-      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight, 'c: ', randomColor);
-
-      var windowSize = (window.innerWidth + window.innerHeight);
-      
-      console.log(windowSize);
-     
-      if (windowSize <= 500)
-        setColor("smallcolor");
-      else if (windowSize <= 1000)
-        setColor("medcolor");
-      else if (windowSize <= 1500)
-        setColor("bigcolor");
-      else if (windowSize <= 2000)
-        setColor("largecolor");
-
-//      setScreenWidth(newWidth);
-//      console.log("color: " + randomColor);
-      
-  }
-    window.addEventListener('resize', handleResize);
     
   })
 
@@ -75,7 +47,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header width={screenWidth} mycolor={headerColor}/>
+      <Header width={screenWidth} />
       <PollBox />
       <Console />
     </div>

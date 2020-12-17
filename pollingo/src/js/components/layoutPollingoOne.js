@@ -13,12 +13,11 @@ function LayoutOne() {
             </div>
 
             <div className="grid-item grid-main-item-main">
-            {/* <PollBox />
-            <Console /> */}
+            <PollBox />
             </div>
             <div className="grid-item grid-main-item-footer">
-            </div> 
-          
+            <Console />                
+            </div>           
         </div>
     )
 }

@@ -49,7 +49,7 @@ body {
 .grid-main-container {
   display: grid;
   grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
-  grid-template-rows: [row1] 100px [row2] 100px [row3] auto;
+  grid-template-rows: [row1] auto [row2] auto [row3] auto;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 

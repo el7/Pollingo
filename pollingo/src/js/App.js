@@ -10,6 +10,10 @@ const mongoose = require("mongoose");
 // const app = express();
 
 
+/***************************
+ *       DATA CONNECTION
+***************************/
+
 /*
 mongoose.connect(
   `mongodb+srv://dbBergmank:${process.env.MONGO_ATLAS_PW}@cluster0.ssk8u.mongodb.net/<dbname>?retryWrites=true&w=majority`, 
@@ -24,22 +28,8 @@ mongoose.connect(
  *********************/
 function App() {
 
-/********************************
- *     COMPONENT FUNCTIONS
- *******************************/
 
-  // function setColor() {
-  //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  //   console.log("color: " + randomColor);
-  // }
-
-// function setScreenWidth() {
-//   const mediaMatch = window.matchMedia('(min-width: 500)');
-// }
-
-
-
-/************************************
+ /************************************
  *     COMPONENT JSX RETURN
  **********************************/
   return (

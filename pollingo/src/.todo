@@ -9,6 +9,9 @@ react
 components
 hooks
 how much data can be safely kept in state?
+lifecycle events
+
+
 
 scss
 ----

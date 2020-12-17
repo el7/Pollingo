@@ -17,7 +17,7 @@ function Header(props) {
       // gets current width
       var windowCombinedSize = (window.innerWidth + window.innerHeight);
 
-      setColor(randomColor);
+//      setColor(randomColor);
 
 /*
       if (windowCombinedSize <= 500)

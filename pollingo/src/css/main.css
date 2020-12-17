@@ -12,20 +12,26 @@ body {
   margin: 0;
 }
 
-.grid-main-item-main {
-  grid-area: main;
+@media screen and (min-width: 39.9375em) {
+  background-color: #e281f8;
+  width: 600px;
 }
 
-.grid-main-item-aside {
-  grid-area: aside;
-}
-
-.grid-main-item-footer {
-  grid-area: footer;
+@media screen and (min-width: 90.1875em) {
+  background-color: #ffc6c6;
+  width: 600px;
 }
 
 .grid-main-item-header {
   grid-area: header;
+}
+
+.grid-main-item-main {
+  grid-area: main;
+}
+
+.grid-main-item-footer {
+  grid-area: footer;
 }
 
 .grid-main-container {

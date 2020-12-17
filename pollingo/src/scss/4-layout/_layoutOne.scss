@@ -1,17 +1,51 @@
+@import "../1-helpers/_util_variables";
+@import "../1-helpers/_util_functions";
+@import "../1-helpers/_util_mixins";
+
+@include screenSizeBp(min-small) {
+  // view size small 2/6
+  // -------------------
+  background-color: getColor(pb-header-bg-1);
+  width: 600px;
+}
+
+@include screenSizeBp(min-medium) {
+  // VIEW med 3/6
+  // -----------------
+  // not needed
+}
+
+@include screenSizeBp(min-large) {
+  // VIEW large 4/6
+  // -------------------
+  // not needed
+}
+
+@include screenSizeBp(min-extralarge) {
+  // VIEW xl 5/6
+  // ----------------
+  background-color: getColor(pb-main-bg-xl-1);
+  width: 600px;
+}
+
+@include screenSizeBp(min-extraextralarge) {
+  // VIEW xxl 6/6
+  // -----------------
+  // not needed
+}
+
+// VIEW small 1/6
+//---------------
+.grid-main-item-header {
+  grid-area: header;
+}
+
 .grid-main-item-main {
   grid-area: main;
 }
 
-.grid-main-item-aside {
-  grid-area: aside;
-}
-
 .grid-main-item-footer {
   grid-area: footer;
-}
-
-.grid-main-item-header {
-  grid-area: header;
 }
 
 .grid-main-container {

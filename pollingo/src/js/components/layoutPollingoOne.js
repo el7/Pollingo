@@ -11,9 +11,7 @@ function LayoutOne() {
             <div className="grid-item grid-main-item-header">
                 <Header/>
             </div>
-            <div className="grid-item grid-main-item-aside">
 
-            </div>
             <div className="grid-item grid-main-item-main">
             {/* <PollBox />
             <Console /> */}

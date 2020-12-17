@@ -12,18 +12,28 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 39.9375em) {
-  background-color: #e281f8;
-  width: 600px;
-}
-
-@media screen and (min-width: 90.1875em) {
-  background-color: #ffc6c6;
-  width: 600px;
+@media screen and (min-width: 63.9375em) {
+  .grid-main-item-header {
+    grid-area: header;
+    background-color: deepskyblue;
+  }
+  .grid-main-item-main {
+    grid-area: main;
+  }
+  .grid-main-item-footer {
+    grid-area: footer;
+  }
+  .grid-main-container {
+    display: grid;
+    grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
+    grid-template-rows: [row1] 100px [row2] 100px [row3] auto;
+    grid-template-areas: "header main main" "header main main" "footer footer footer";
+  }
 }
 
 .grid-main-item-header {
   grid-area: header;
+  background-color: deeppink;
 }
 
 .grid-main-item-main {

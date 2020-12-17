@@ -10,11 +10,14 @@ react
 -----
 components
 hooks
+how much data can be safely kept in state?
+
 
 
 scss
 ----
 functions
+ > can I achieve the color switching this way with better perf?
 mixins
 
 
@@ -22,11 +25,6 @@ mixins
 misc
 ----
 gulp
-
-
-
-
-
 
 
 // ==============
@@ -37,6 +35,9 @@ gulp
 design
 ------
 
+. use props and map to generate list of polls on the page. 
+. use state to keep counter values on different selections.
+. will need to figure out how to store/retrieve polling types and relevant data. seems like a lot of data to keep in state at once...? or maybe not.
 . should rewrite to make the entire page a grid setup rather than only the header and pollbox. 
 
 

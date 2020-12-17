@@ -1,8 +1,6 @@
 
-
-
-
-// ==============
+\
+/'/0/ ==============
     learn
 // ==============
 
@@ -11,8 +9,6 @@ react
 components
 hooks
 how much data can be safely kept in state?
-
-
 
 scss
 ----
@@ -25,6 +21,7 @@ mixins
 misc
 ----
 gulp
+markdown
 
 
 // ==============
@@ -44,6 +41,7 @@ design
 functions
 ---------
 
+. convert notes to markdown
 . get header to blink based on width. not sure if done through react or scss. 
 
 . figure out a mapping of hex color schemes that is replicatable. 

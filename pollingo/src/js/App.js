@@ -1,15 +1,14 @@
 import React, {useState, setState, useEffect} from "react";
 // import '../css/main.css';
-import Header from './components/headerComponent';
-import PollBox from './components/pollboxComponent';
-import Console from './components/consoleComponent';
-//import mongoose from 'mongoose';
-
-// const express = require("express");
-// const app = express();
+import LayoutOne from './components/layoutPollingoOne';
+// ---
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+//import mongoose from 'mongoose';
+// const express = require("express");
+// const app = express();
+
 
 /*
 mongoose.connect(
@@ -20,11 +19,14 @@ mongoose.connect(
 */
 
 
-
-
+/***********************
+ *     COMPONENT
+ *********************/
 function App() {
 
-
+/********************************
+ *     COMPONENT FUNCTIONS
+ *******************************/
 
   // function setColor() {
   //   var randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -36,21 +38,13 @@ function App() {
 // }
 
 
-  React.useEffect(() => {
-    // might need to use something besides useEffect
 
-
-    
-  })
-
-
-
-
+/************************************
+ *     COMPONENT JSX RETURN
+ **********************************/
   return (
     <div className="App">
-      <Header/>
-      <PollBox />
-      <Console />
+      <LayoutOne />
     </div>
   );
 }

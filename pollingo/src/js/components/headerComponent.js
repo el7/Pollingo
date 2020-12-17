@@ -8,7 +8,6 @@ function Header(props) {
 
     const [headerColor, setColor] = useState("444444");
     const [screenWidth, setScreenWidth] = useState("200"); 
-  
     
     function handleResize() {
 
@@ -47,12 +46,14 @@ function Header(props) {
 //    mycolor = "backgroundColor: " + mycolor;
 
     return (
-        <div className="header" >
+        <div className="header-container" >
             <header>
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      
             </header>
+            <main>
             c: {headerColor}
+            </main>
             <aside>
                 <ul>
                     <li>User</li>

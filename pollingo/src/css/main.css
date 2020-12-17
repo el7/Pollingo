@@ -15,13 +15,14 @@ body {
 @media screen and (min-width: 63.9375em) {
   .grid-main-item-header {
     grid-area: header;
-    background-color: deepskyblue;
   }
   .grid-main-item-main {
     grid-area: main;
+    background-color: #007ea8;
   }
   .grid-main-item-footer {
     grid-area: footer;
+    background-color: #c00066;
   }
   .grid-main-container {
     display: grid;
@@ -33,15 +34,16 @@ body {
 
 .grid-main-item-header {
   grid-area: header;
-  background-color: deeppink;
 }
 
 .grid-main-item-main {
+  background-color: #84dcfa;
   grid-area: main;
 }
 
 .grid-main-item-footer {
   grid-area: footer;
+  background-color: #ff71bd;
 }
 
 .grid-main-container {
@@ -51,51 +53,40 @@ body {
   grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
-.header {
-  background-color: #f38d65;
+.header-container {
+  background-color: #e281f8;
   padding: 5px;
   display: grid;
   grid-gap: 0.2em;
   grid-template-rows: 1fr;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "header main aside";
 }
 
-@media screen and (min-width: 39.9375em) {
-  .header {
-    background-color: #e281f8;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 90.1875em) {
-  .header {
-    background-color: #ff004c;
-    width: 500px;
-  }
-}
-
-.header h2,
-.header h5 {
+.header-container h2,
+.header-container h5 {
   margin: 0px 0px 0px 0px;
 }
 
-.header li {
+.header-container li {
   color: darkslategray;
 }
 
-.header header {
+.header-container header {
   grid-area: header;
   background-color: #e281f8;
   border: 1px solid black;
   margin: 0px auto 0px 0px;
 }
 
-.header main {
+.header-container main {
   grid-area: main;
+  background-color: #e281f8;
+  border: 1px solid black;
+  margin: auto auto auto 0px;
 }
 
-.header aside {
+.header-container aside {
   grid-area: aside;
   background-color: #e281f8;
   border: 1px solid black;

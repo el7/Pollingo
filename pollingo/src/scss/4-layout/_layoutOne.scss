@@ -19,15 +19,16 @@
 
   .grid-main-item-header {
     grid-area: header;
-    background-color: deepskyblue;
   }
 
   .grid-main-item-main {
     grid-area: main;
+    background-color: rgb(0, 126, 168);
   }
 
   .grid-main-item-footer {
     grid-area: footer;
+    background-color: rgb(192, 0, 102);
   }
 
   .grid-main-container {
@@ -56,15 +57,16 @@
 //---------------
 .grid-main-item-header {
   grid-area: header;
-  background-color: deeppink;
 }
 
 .grid-main-item-main {
+  background-color: rgb(132, 220, 250);
   grid-area: main;
 }
 
 .grid-main-item-footer {
   grid-area: footer;
+  background-color: rgb(255, 113, 189);
 }
 
 .grid-main-container {

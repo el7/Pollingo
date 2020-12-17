@@ -6,10 +6,21 @@ import "../../css/main.css";
 
 function LayoutOne() {
     return (
-        <div className="layoutOne">
-            <Header/>
-            <PollBox />
-            <Console />
+        <div className="layoutOne grid-main-container">
+
+            <div className="grid-item grid-main-item-header">
+                <Header/>
+            </div>
+            <div className="grid-item grid-main-item-aside">
+
+            </div>
+            <div className="grid-item grid-main-item-main">
+            {/* <PollBox />
+            <Console /> */}
+            </div>
+            <div className="grid-item grid-main-item-footer">
+            </div> 
+          
         </div>
     )
 }

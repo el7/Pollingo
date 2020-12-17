@@ -12,6 +12,29 @@ body {
   margin: 0;
 }
 
+.grid-main-item-main {
+  grid-area: main;
+}
+
+.grid-main-item-aside {
+  grid-area: aside;
+}
+
+.grid-main-item-footer {
+  grid-area: footer;
+}
+
+.grid-main-item-header {
+  grid-area: header;
+}
+
+.grid-main-container {
+  display: grid;
+  grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
+  grid-template-rows: [row1] 100px [row2] 100px [row3] auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
 .header {
   background-color: #f38d65;
   padding: 5px;

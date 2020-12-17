@@ -8,8 +8,7 @@ function Header(props) {
 
     const [headerColor, setColor] = useState("444444");
     const [screenWidth, setScreenWidth] = useState("200"); 
-
-    
+  
     
     function handleResize() {
 

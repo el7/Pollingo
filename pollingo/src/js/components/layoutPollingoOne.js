@@ -13,10 +13,10 @@ function LayoutOne() {
             </div>
 
             <div className="grid-item grid-main-item-main">
-            <PollBox />
+                <PollBox />
             </div>
             <div className="grid-item grid-main-item-footer">
-            <Console />                
+                <Console />                
             </div>           
         </div>
     )

@@ -2,79 +2,60 @@
 @import "../1-helpers/_util_functions";
 @import "../1-helpers/_util_mixins";
 
-@include screenSizeBp(min-small) {
-  // view size small 2/6
-  // -------------------
-}
+/*
+    Screen Sizes:
+    - min-small
+    - min-medium
+    - min-large
+    - min-extralarge
+    - min-extraextralarge
+*/
 
-@include screenSizeBp(min-medium) {
-  // VIEW med 3/6
-  // -----------------
-  // not needed
-}
+.layoutOne {
+  @include screenSizeBp(min-small) {
+    // view size small 2/6
+    // -------------------
+    .grid-main-item-footer {
+      grid-area: footer;
+      background-color: rgb(41, 9, 26);
+    }
+  }
 
-@include screenSizeBp(min-large) {
-  // VIEW large 4/6
-  // -------------------
+  @include screenSizeBp(min-medium) {
+    // VIEW med 3/6
+    // -----------------
+    // not needed
+  }
 
+  @include screenSizeBp(min-large) {
+    // VIEW large 4/6
+    // -------------------
+  }
+
+  // VIEW xs 1/6
+  //---------------
   .grid-main-item-header {
     grid-area: header;
+    background-color: rgb(226, 214, 39);
   }
 
   .grid-main-item-main {
+    background-color: rgb(132, 220, 250);
     grid-area: main;
-    background-color: rgb(0, 126, 168);
   }
 
   .grid-main-item-footer {
     grid-area: footer;
-    background-color: rgb(192, 0, 102);
+    background-color: rgb(255, 113, 189);
   }
 
   .grid-main-container {
     display: grid;
     grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
-    grid-template-rows: [row1] 100px [row2] 100px [row3] auto;
+    grid-template-rows: [row1] auto [row2] auto [row3] auto;
     grid-template-areas:
-      "header main main"
-      "header main main"
+      "header header header"
+      "main main main"
       "footer footer footer";
   }
-}
-
-@include screenSizeBp(min-extralarge) {
-  // VIEW xl 5/6
-  // ----------------
-}
-
-@include screenSizeBp(min-extraextralarge) {
-  // VIEW xxl 6/6
-  // -----------------
-  // not needed
-}
-
-// VIEW small 1/6
-//---------------
-.grid-main-item-header {
-  grid-area: header;
-}
-
-.grid-main-item-main {
-  background-color: rgb(132, 220, 250);
-  grid-area: main;
-}
-
-.grid-main-item-footer {
-  grid-area: footer;
-  background-color: rgb(255, 113, 189);
-}
-
-.grid-main-container {
-  display: grid;
-  grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
-  grid-template-rows: [row1] auto [row2] auto [row3] auto;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
 }

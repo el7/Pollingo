@@ -12,41 +12,37 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 63.9375em) {
-  .grid-main-item-header {
-    grid-area: header;
-  }
-  .grid-main-item-main {
-    grid-area: main;
-    background-color: #007ea8;
-  }
-  .grid-main-item-footer {
+/*
+    Screen Sizes:
+    - min-small
+    - min-medium
+    - min-large
+    - min-extralarge
+    - min-extraextralarge
+*/
+@media screen and (min-width: 39.9375em) {
+  .layoutOne .grid-main-item-footer {
     grid-area: footer;
-    background-color: #c00066;
-  }
-  .grid-main-container {
-    display: grid;
-    grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
-    grid-template-rows: [row1] 100px [row2] 100px [row3] auto;
-    grid-template-areas: "header main main" "header main main" "footer footer footer";
+    background-color: #29091a;
   }
 }
 
-.grid-main-item-header {
+.layoutOne .grid-main-item-header {
   grid-area: header;
+  background-color: #e2d627;
 }
 
-.grid-main-item-main {
+.layoutOne .grid-main-item-main {
   background-color: #84dcfa;
   grid-area: main;
 }
 
-.grid-main-item-footer {
+.layoutOne .grid-main-item-footer {
   grid-area: footer;
   background-color: #ff71bd;
 }
 
-.grid-main-container {
+.layoutOne .grid-main-container {
   display: grid;
   grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
   grid-template-rows: [row1] auto [row2] auto [row3] auto;
@@ -54,43 +50,47 @@ body {
 }
 
 .header-container {
-  background-color: #e281f8;
+  /*
+
+  li {
+    color: darkslategray;
+  }
+
+
   padding: 5px;
+
   display: grid;
   grid-gap: 0.2em;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "header main aside";
+
+  header {
+    grid-area: header;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: 0px auto 0px 0px;
+  }
+
+  main {
+    grid-area: main;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: auto auto auto 0px;
+  }
+
+  aside {
+    grid-area: aside;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: auto auto auto 0px;
+  }
+*/
 }
 
 .header-container h2,
 .header-container h5 {
   margin: 0px 0px 0px 0px;
-}
-
-.header-container li {
-  color: darkslategray;
-}
-
-.header-container header {
-  grid-area: header;
-  background-color: #e281f8;
-  border: 1px solid black;
-  margin: 0px auto 0px 0px;
-}
-
-.header-container main {
-  grid-area: main;
-  background-color: #e281f8;
-  border: 1px solid black;
-  margin: auto auto auto 0px;
-}
-
-.header-container aside {
-  grid-area: aside;
-  background-color: #e281f8;
-  border: 1px solid black;
-  margin: auto auto auto 0px;
 }
 
 .console {

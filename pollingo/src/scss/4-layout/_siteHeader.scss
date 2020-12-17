@@ -8,11 +8,19 @@
     margin: 0px 0px 0px 0px;
   }
 
+  @include screenSizeBp(min-small) {
+  }
+
+  @include screenSizeBp(min-medium) {
+  }
+
+  /*
+
   li {
     color: darkslategray;
   }
 
-  background-color: getColor(pb-header-bg-1);
+
   padding: 5px;
 
   display: grid;
@@ -41,4 +49,5 @@
     border: getSize(pb-border-1);
     margin: auto auto auto 0px;
   }
+*/
 }

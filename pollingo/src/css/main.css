@@ -1,5 +1,5 @@
 @media screen and (min-width: 39.9375em) {
-  background-color: #e281f8;
+  background-color: #f3bdff;
   width: 100%;
 }
 
@@ -29,7 +29,8 @@ body {
 
 .layoutOne .grid-main-item-header {
   grid-area: header;
-  background-color: #e2d627;
+  background-color: #ff2ca7;
+  color: #47002a;
 }
 
 .layoutOne .grid-main-item-main {
@@ -138,7 +139,7 @@ body {
 
 @media screen and (min-width: 39.9375em) {
   .pollbox-1 {
-    background-color: #e281f8;
+    background-color: #f3bdff;
     width: 600px;
   }
 }
@@ -152,7 +153,7 @@ body {
 
 .pollbox-1 header {
   grid-area: header;
-  background-color: #e281f8;
+  background-color: #f3bdff;
   border: 1px solid black;
   margin: auto;
 }
@@ -172,7 +173,7 @@ body {
 
 .pollbox-1 aside {
   grid-area: aside;
-  background-color: #e281f8;
+  background-color: #f3bdff;
   border: 1px solid black;
   margin: auto;
 }

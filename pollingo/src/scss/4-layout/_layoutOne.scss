@@ -36,7 +36,8 @@
   //---------------
   .grid-main-item-header {
     grid-area: header;
-    background-color: rgb(226, 214, 39);
+    background-color: getColor(header-bg-1);
+    color: getColor(header-text-1);
   }
 
   .grid-main-item-main {

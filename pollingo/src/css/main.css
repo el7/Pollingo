@@ -20,31 +20,6 @@ body {
     - min-extralarge
     - min-extraextralarge
 */
-@media screen and (min-width: 39.9375em) {
-  .layoutOne .grid-main-item-footer {
-    grid-area: footer;
-  }
-}
-
-.layoutOne .grid-main-item-header {
-  grid-area: header;
-}
-
-.layoutOne .grid-main-item-main {
-  grid-area: main;
-}
-
-.layoutOne .grid-main-item-footer {
-  grid-area: footer;
-}
-
-.layoutOne .grid-main-container {
-  display: grid;
-  grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
-  grid-template-rows: [row1] auto [row2] auto [row3] auto;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-}
-
 .header-container {
   background-color: #ff2ca7;
   color: #47002a;

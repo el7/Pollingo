@@ -12,48 +12,48 @@
 */
 
 .layoutOne {
-  @include screenSizeBp(min-small) {
-    // view size small 2/6
-    // -------------------
-    .grid-main-item-footer {
-      grid-area: footer;
-    }
-  }
+  //   @include screenSizeBp(min-small) {
+  //     // view size small 2/6
+  //     // -------------------
+  //     .grid-main-item-footer {
+  //       grid-area: footer;
+  //     }
+  //   }
 
-  @include screenSizeBp(min-medium) {
-    // VIEW med 3/6
-    // -----------------
-    // not needed
-  }
+  //   @include screenSizeBp(min-medium) {
+  //     // VIEW med 3/6
+  //     // -----------------
+  //     // not needed
+  //   }
 
-  @include screenSizeBp(min-large) {
-    // VIEW large 4/6
-    // -------------------
-  }
+  //   @include screenSizeBp(min-large) {
+  //     // VIEW large 4/6
+  //     // -------------------
+  //   }
 
-  // VIEW xs 1/6
-  //---------------
-  .grid-main-item-header {
-    grid-area: header;
-  }
+  //   // VIEW xs 1/6
+  //   //---------------
+  //   .grid-main-item-header {
+  //     grid-area: header;
+  //   }
 
-  .grid-main-item-main {
-    //    background-color: rgb(132, 220, 250);
-    grid-area: main;
-  }
+  //   .grid-main-item-main {
+  //     //    background-color: rgb(132, 220, 250);
+  //     grid-area: main;
+  //   }
 
-  .grid-main-item-footer {
-    grid-area: footer;
-    //    background-color: rgb(255, 113, 189);
-  }
+  //   .grid-main-item-footer {
+  //     grid-area: footer;
+  //     //    background-color: rgb(255, 113, 189);
+  //   }
 
-  .grid-main-container {
-    display: grid;
-    grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
-    grid-template-rows: [row1] auto [row2] auto [row3] auto;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
-  }
+  //   .grid-main-container {
+  //     display: grid;
+  //     grid-template-columns: [col1] 50px [col2] auto [col3] 50px;
+  //     grid-template-rows: [row1] auto [row2] auto [row3] auto;
+  //     grid-template-areas:
+  //       "header header header"
+  //       "main main main"
+  //       "footer footer footer";
+  //   }
 }

@@ -34,7 +34,6 @@
   margin: 5px 5px 5px 5px;
   padding: 5px;
   width: 95%;
-
   display: grid;
   grid-gap: 0.2em;
   grid-template-rows: 1fr 1fr;
@@ -93,11 +92,13 @@
         padding: 0px;
         font-family: sans-serif;
         font-size: 18px;
-        background-color: rgb(228, 120, 120);
+        background-color: getColor(pb-main-tab-bg-1);
+        color: getColor(pb-main-tab-text-1);
       }
 
       button:hover {
-        background-color: rgb(255, 58, 58);
+        background-color: getColor(pb-main-tab-bg-2);
+        color: getColor(pb-main-tab-text-2);
       }
     }
     .tabPanel {

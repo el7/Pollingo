@@ -14,6 +14,9 @@
   @include screenSizeBp(min-medium) {
   }
 
+  background-color: getColor(header-bg-1);
+  color: getColor(header-text-1);
+
   /*
 
   li {

@@ -23,24 +23,19 @@ body {
 @media screen and (min-width: 39.9375em) {
   .layoutOne .grid-main-item-footer {
     grid-area: footer;
-    background-color: #29091a;
   }
 }
 
 .layoutOne .grid-main-item-header {
   grid-area: header;
-  background-color: #ff2ca7;
-  color: #47002a;
 }
 
 .layoutOne .grid-main-item-main {
-  background-color: #84dcfa;
   grid-area: main;
 }
 
 .layoutOne .grid-main-item-footer {
   grid-area: footer;
-  background-color: #ff71bd;
 }
 
 .layoutOne .grid-main-container {
@@ -51,6 +46,8 @@ body {
 }
 
 .header-container {
+  background-color: #ff2ca7;
+  color: #47002a;
   /*
 
   li {

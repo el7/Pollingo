@@ -17,7 +17,6 @@
     // -------------------
     .grid-main-item-footer {
       grid-area: footer;
-      background-color: rgb(41, 9, 26);
     }
   }
 
@@ -36,18 +35,16 @@
   //---------------
   .grid-main-item-header {
     grid-area: header;
-    background-color: getColor(header-bg-1);
-    color: getColor(header-text-1);
   }
 
   .grid-main-item-main {
-    background-color: rgb(132, 220, 250);
+    //    background-color: rgb(132, 220, 250);
     grid-area: main;
   }
 
   .grid-main-item-footer {
     grid-area: footer;
-    background-color: rgb(255, 113, 189);
+    //    background-color: rgb(255, 113, 189);
   }
 
   .grid-main-container {

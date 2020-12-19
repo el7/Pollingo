@@ -17,18 +17,19 @@ function PollBox() {
         return tab;
     });
 
-    function showPanel() {
+    function showPanel(val) {
         setTabSelected(1);
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
         log(tabButtons.length);
         log("pressed");
+        log("val: " + val);
 
-        var tab = 0;
+        // tab that was clcked        
+        var tab = 0; 
         log("tab: " + tab);
         
         // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
-
         tabButtons.forEach(function(node, index){
             if (index === tab) {
                 node.style.color = "#ffffff";

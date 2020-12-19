@@ -8,25 +8,14 @@ function PollBox() {
         console.log("-----------> " + message);
     }
 
-    log("begin");
-
     const number_of_tabs = 4;
 
     const [tabSelected, setTabSelected] = useState(() => {
         // gets random number mod num of tabs
+
         var tab = (Math.floor((Math.random()*10000))%number_of_tabs);
         return tab;
     });
-
-    //// use tabSelected number to set tab panel
-    // var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
-    // var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
-
-
-//    tabButtons.item(tabSelected).style.backgroundColor = "blue";
-//    tabButtons.item(tabSelected).style.color = "black";
-
-    //    function showPanel() {     
 
     function showPanel() {
         setTabSelected(1);
@@ -35,19 +24,18 @@ function PollBox() {
         log(tabButtons.length);
         log("pressed");
 
-        var tab = (Math.floor((Math.random()*10000))%number_of_tabs);
-
+        var tab = 0;
         log("tab: " + tab);
         
         // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
 
         tabButtons.forEach(function(node, index){
             if (index === tab) {
-                node.style.color = "blue";
-                node.style.backgroundColor = "blue";
+                node.style.color = "#ffffff";
+                node.style.backgroundColor = "#5c0236";
             } else {
-                node.style.color = "red";
-                node.style.backgroundColor = "red";
+                // node.style.color = "red";
+                // node.style.backgroundColor = "red";
             }
         })
     }

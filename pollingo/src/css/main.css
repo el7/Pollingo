@@ -20,6 +20,10 @@ body {
     - min-extralarge
     - min-extraextralarge
 */
+.layoutOne {
+  width: min(90%, 300px);
+}
+
 .header-container {
   background-color: #ff2ca7;
   color: #47002a;

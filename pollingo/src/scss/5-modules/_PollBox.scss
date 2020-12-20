@@ -103,12 +103,13 @@
     }
     .tabPanel {
       height: 85%;
-      text-align: center;
-      padding-top: 105px;
+
+      padding-top: 5px;
       box-sizing: border-box;
       font-family: sans-serif;
       font-size: 22px;
       display: none;
+      background-color: blue;
     }
   }
 }

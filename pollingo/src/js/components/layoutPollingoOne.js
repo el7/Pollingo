@@ -11,9 +11,8 @@ function LayoutOne() {
             <div className="grid-item grid-main-item-header">
                 <Header/>
             </div>
-
             <div className="grid-item grid-main-item-main">
-                <PollBox />
+                <PollBox q="this is the question" a1="a1" a2="a2" a3="a3" a4="a4"/>
             </div>
             <div className="grid-item grid-main-item-footer">
                 <Console />                

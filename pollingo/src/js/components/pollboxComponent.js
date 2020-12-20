@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import "../../css/main.css";
 
-function PollBox() {
+function PollBox(props) {
 
     function log(message) {
         console.log("-----------> " + message);
@@ -37,11 +37,11 @@ function PollBox() {
     return (
         <div className="pollbox-1 testC">
             <main>
-                <span>This is one of the questions.</span>
-                <span>1. Answer one{"/n"}</span>
-                <span>2. Answer two{"/n"}</span>
-                <span>3. Answer three{"/n"}</span>
-                <span>4. Answer four{"/n"}</span>
+                <span>{props.q}</span>
+                <span>{props.a1}</span>
+                <span>{props.a2}</span>
+                <span>{props.a3}</span>
+                <span>{props.a4}</span>
                 (tab selected: {tabSelected})
             </main>
             <aside>

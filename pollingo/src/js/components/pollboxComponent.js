@@ -18,25 +18,18 @@ function PollBox() {
     });
 
     function showPanel(val) {
-        setTabSelected(1);
+//        setTabSelected(1);
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
-        log(tabButtons.length);
-        log("pressed");
-        log("val: " + val);
-
-        // tab that was clcked        
-        var tab = 0; 
-        log("tab: " + tab);
-        
+       
         // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
         tabButtons.forEach(function(node, index){
-            if (index === tab) {
+            if (index == val) {
                 node.style.color = "#ffffff";
                 node.style.backgroundColor = "#5c0236";
             } else {
-                // node.style.color = "red";
-                // node.style.backgroundColor = "red";
+                 node.style.color = "#ddc5d3";
+                 node.style.backgroundColor = "#30021c";
             }
         })
     }
@@ -44,7 +37,12 @@ function PollBox() {
     return (
         <div className="pollbox-1 testC">
             <main>
-                MAIN. Going to show the polling items and their results. {tabSelected}
+                <span>This is one of the questions.</span>
+                <span>1. Answer one{"/n"}</span>
+                <span>2. Answer two{"/n"}</span>
+                <span>3. Answer three{"/n"}</span>
+                <span>4. Answer four{"/n"}</span>
+                (tab selected: {tabSelected})
             </main>
             <aside>
                 ASIDE.
@@ -52,10 +50,10 @@ function PollBox() {
             <footer>
                 <div className="tabContainer"> 
                     <div className="buttonContainer"> 
-                        <button onClick={showPanel}>IRV</button>
-                        <button onClick={showPanel}>Approval</button>
-                        <button onClick={showPanel}>RC</button>
-                        <button onClick={showPanel}>STAR</button>                                                
+                        <button onClick={() => showPanel('0')}>IRV</button>
+                        <button onClick={() => showPanel('1')}>Approval</button>
+                        <button onClick={() => showPanel('2')}>RC</button>
+                        <button onClick={() => showPanel('3')}>STAR</button>                                                
                     </div>
                     <div className="tabPanel">Content1</div>
                     <div className="tabPanel">Content2</div>

@@ -18,11 +18,10 @@
   color: getColor(header-text-1);
 
   li {
-    color: rgb(5, 92, 92);
+    color: #47002a;
   }
 
   padding: 5px;
-
   display: grid;
   grid-gap: 0.2em;
   grid-template-rows: 1fr;
@@ -47,6 +46,6 @@
     grid-area: aside;
     background-color: getColor(pb-header-bg-1);
     border: getSize(pb-border-1);
-    margin: auto auto auto 0px;
+    margin: auto auto auto auto;
   }
 }

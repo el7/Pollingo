@@ -18,24 +18,11 @@ function Header(props) {
 
 //      setColor(randomColor);
 
-/*
-      if (windowCombinedSize <= 500)
-        setColor("smallcolor");
-      else if (windowCombinedSize <= 1000)
-        setColor("medcolor");
-      else if (windowCombinedSize <= 1500)
-        setColor("bigcolor");
-      else if (windowCombinedSize <= 2000)
-        setColor("largecolor");
-
-*/
-
 //      setScreenWidth(newWidth);
 //      console.log("color: " + randomColor);
       
   }
     window.addEventListener('resize', handleResize);
-
 
     //    console.log("here: " + props.mycolor);
 //    console.log("here: " + width);
@@ -52,7 +39,7 @@ function Header(props) {
                 <h5>tell me something</h5>      
             </header>
             <main>
-            c: {headerColor}
+              
             </main>
             <aside>
                 <ul>

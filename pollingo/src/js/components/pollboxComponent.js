@@ -8,14 +8,7 @@ function PollBox(props) {
         console.log("-----------> " + message);
     }
 
-    const number_of_tabs = 4;
-
-    const [tabSelected, setTabSelected] = useState(() => {
-        // gets random number mod num of tabs
-
-        var tab = (Math.floor((Math.random()*10000))%number_of_tabs);
-        return tab;
-    });
+    const [tabSelected, setTabSelected] = useState();
 
     function showPanel(val) {
 //        setTabSelected(1);

@@ -37,7 +37,7 @@ body {
 }
 
 .header-container li {
-  color: #055c5c;
+  color: #47002a;
 }
 
 .header-container header {
@@ -58,7 +58,7 @@ body {
   grid-area: aside;
   background-color: #f3bdff;
   border: 1px solid black;
-  margin: auto auto auto 0px;
+  margin: auto auto auto auto;
 }
 
 .console {

@@ -7,7 +7,6 @@ import "../../css/main.css";
 function LayoutOne() {
     return (
         <div className="layoutOne grid-main-container">
-
             <div className="grid-item grid-main-item-header">
                 <Header/>
             </div>

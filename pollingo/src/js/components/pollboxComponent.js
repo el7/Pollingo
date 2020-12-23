@@ -52,10 +52,16 @@ function PollBox(props) {
                         <button onClick={() => showPanel('2')}>RC</button>
                         <button onClick={() => showPanel('3')}>STAR</button>                                                
                     </div>
-                    <div className="tabPanel">Content1</div>
-                    <div className="tabPanel">Content2</div>
-                    <div className="tabPanel">Content3</div>
-                    <div className="tabPanel">Content4</div>
+                    <div className="tabPanel">
+                        Buttons IRV
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                    </div>
+                    <div className="tabPanel">Buttons Approval</div>
+                    <div className="tabPanel">Buttons RC</div>
+                    <div className="tabPanel">Buttons STAR</div>
                 </div>                                                
             </footer>
         </div>

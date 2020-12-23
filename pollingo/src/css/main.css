@@ -4,7 +4,7 @@
 }
 
 @media screen and (min-width: 90.1875em) {
-  background-color: #ff004c;
+  background-color: #c95d7c;
   width: 500px;
 }
 
@@ -47,21 +47,21 @@ body {
 .header-container header {
   grid-area: header;
   background-color: #f3bdff;
-  border: 1px solid black;
+  border: 1px solid #473333;
   margin: 0px 0px 0px 0px;
 }
 
 .header-container main {
   grid-area: main;
   background-color: #f3bdff;
-  border: 1px solid black;
+  border: 1px solid #473333;
   margin: auto auto auto 0px;
 }
 
 .header-container aside {
   grid-area: aside;
   background-color: #f3bdff;
-  border: 1px solid black;
+  border: 1px solid #473333;
   margin: auto auto auto auto;
 }
 
@@ -79,7 +79,7 @@ body {
 
 @media screen and (min-width: 90.1875em) {
   .console {
-    background-color: #ff004c;
+    background-color: #c95d7c;
     width: 500px;
   }
 }
@@ -138,26 +138,26 @@ body {
 .pollbox-1 header {
   grid-area: header;
   background-color: #f3bdff;
-  border: 1px solid black;
+  border: 1px solid #473333;
   margin: auto;
 }
 
 .pollbox-1 nav {
   grid-area: nav;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #473333;
   margin: auto;
 }
 
 .pollbox-1 main {
   grid-area: main;
-  background-color: #ff004c;
-  border: 1px solid black;
+  background-color: #c95d7c;
+  border: 1px solid #473333;
 }
 
 .pollbox-1 footer {
   grid-area: footer;
-  border: 1px solid black;
+  border: 1px solid #473333;
 }
 
 .pollbox-1 .tabContainer {

@@ -39,7 +39,7 @@ function PollBox(props) {
                 <span class="span-pollbox-answer">{props.a3} </span>
                 </li><li>
                 <span class="span-pollbox-answer">{props.a4} </span>
-                </li></ol>                
+                </li></ol>
             </main>
             {/* <aside>
                 ASIDE.

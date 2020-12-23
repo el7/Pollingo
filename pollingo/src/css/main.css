@@ -105,7 +105,15 @@ body {
   grid-gap: 0.2em;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 18fr 1fr 1fr;
-  grid-template-areas: "main main aside" "main main aside" "footer footer footer";
+  grid-template-areas: "main main main" "main main main" "footer footer footer";
+  /*  
+  aside {
+    grid-area: aside;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: auto;
+  }
+*/
 }
 
 @media screen and (min-width: 39.9375em) {
@@ -120,6 +128,11 @@ body {
     background-color: #ffc6c6;
     width: 600px;
   }
+}
+
+.pollbox-1 .span-pollbox-question {
+  text-align: center;
+  color: white;
 }
 
 .pollbox-1 header {
@@ -140,13 +153,6 @@ body {
   grid-area: main;
   background-color: #ff004c;
   border: 1px solid black;
-}
-
-.pollbox-1 aside {
-  grid-area: aside;
-  background-color: #f3bdff;
-  border: 1px solid black;
-  margin: auto;
 }
 
 .pollbox-1 footer {

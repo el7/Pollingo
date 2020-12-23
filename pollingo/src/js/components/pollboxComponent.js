@@ -26,25 +26,24 @@ function PollBox(props) {
         })
     }
 
-
     // JSX RETURN ------------------------
     return (
         <div className="pollbox-1 testC">
             <main>
-                <span>{props.q} </span>
-                <ul><li>
-                <span>{props.a1} </span>
+                <span class="span-pollbox-question">{props.q} </span>
+                <ol><li>
+                <span class="span-pollbox-answer">{props.a1} </span>
                 </li><li>
-                <span>{props.a2} </span>
+                <span class="span-pollbox-answer">{props.a2} </span>
                 </li><li>
-                <span>{props.a3} </span>
+                <span class="span-pollbox-answer">{props.a3} </span>
                 </li><li>
-                <span>{props.a4} </span>
-                </li></ul>                
+                <span class="span-pollbox-answer">{props.a4} </span>
+                </li></ol>                
             </main>
-            <aside>
+            {/* <aside>
                 ASIDE.
-            </aside>
+            </aside> */}
             <footer>
                 <div className="tabContainer"> 
                     <div className="buttonContainer"> 

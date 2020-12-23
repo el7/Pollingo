@@ -39,9 +39,14 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 18fr 1fr 1fr;
   grid-template-areas:
-    "main main aside"
-    "main main aside"
+    "main main main"
+    "main main main"
     "footer footer footer";
+
+  .span-pollbox-question {
+    text-align: center;
+    color: white;
+  }
 
   header {
     grid-area: header;
@@ -63,12 +68,14 @@
     border: getSize(pb-border-1);
   }
 
+  /*  
   aside {
     grid-area: aside;
     background-color: getColor(pb-header-bg-1);
     border: getSize(pb-border-1);
     margin: auto;
   }
+*/
 
   footer {
     grid-area: footer;

@@ -21,8 +21,7 @@ body {
     - min-extraextralarge
 */
 .layoutOne {
-  align: center;
-  width: max(90%, 320px);
+  width: max(100%, 320px);
 }
 
 .header-container {
@@ -68,7 +67,7 @@ body {
 
 .console {
   background-color: #e281f8;
-  margin: 25px 0px 25px 0px;
+  margin: 100px 0px 25px 0px;
   padding: 5px;
 }
 

@@ -12,8 +12,7 @@
 */
 
 .layoutOne {
-  align: center;
-  width: unquote("max(90%, 320px)");
+  width: unquote("max(100%, 320px)");
 
   //   @include screenSizeBp(min-small) {
   //     // view size small 2/6

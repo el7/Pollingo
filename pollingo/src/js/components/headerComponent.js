@@ -38,9 +38,7 @@ function Header(props) {
                 <h2>Pollingo.</h2>
                 <h5>tell me something</h5>      
             </header>
-            <main>
-              
-            </main>
+            <main></main>
             <aside>
                 <ul>
                     <li>User</li>

@@ -44,8 +44,15 @@
     "footer footer footer";
 
   .span-pollbox-question {
-    text-align: center;
     color: white;
+    font-family: "Cursive";
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .span-pollbox-answer {
+    color: black;
+    font-family: "Monospace";
   }
 
   header {

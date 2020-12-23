@@ -31,7 +31,7 @@ body {
   display: grid;
   grid-gap: 0.2em;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0fr 2fr;
   grid-template-areas: "header main aside";
 }
 
@@ -54,7 +54,6 @@ body {
 .header-container main {
   grid-area: main;
   background-color: #f3bdff;
-  border: 1px solid #473333;
   margin: auto auto auto 0px;
 }
 
@@ -62,7 +61,7 @@ body {
   grid-area: aside;
   background-color: #f3bdff;
   border: 1px solid #473333;
-  margin: auto auto auto auto;
+  margin: 0px 0px 0px 0px;
 }
 
 .console {
@@ -131,8 +130,15 @@ body {
 }
 
 .pollbox-1 .span-pollbox-question {
-  text-align: center;
   color: white;
+  font-family: "Cursive";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pollbox-1 .span-pollbox-answer {
+  color: black;
+  font-family: "Monospace";
 }
 
 .pollbox-1 header {

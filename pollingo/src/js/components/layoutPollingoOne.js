@@ -11,7 +11,10 @@ function LayoutOne() {
                 <Header/>
             </div>
             <div className="grid-item grid-main-item-main">
-                <PollBox q="this is the question" a1="a1" a2="a2" a3="a3" a4="a4"/>
+                <PollBox q="Which fast food would you east forever?" a1="Taco Bell" a2="Chic Fillet" a3="In-N-Out" a4="Panda Express"/>
+                <PollBox q="Which fast food would you east forever?" a1="Taco Bell" a2="Chic Fillet" a3="In-N-Out" a4="Panda Express"/>
+                <PollBox q="Which fast food would you east forever?" a1="Taco Bell" a2="Chic Fillet" a3="In-N-Out" a4="Panda Express"/>
+                <PollBox q="Which fast food would you east forever?" a1="Taco Bell" a2="Chic Fillet" a3="In-N-Out" a4="Panda Express"/>                
             </div>
             <div className="grid-item grid-main-item-footer">
                 <Console />                

@@ -4,12 +4,11 @@ import "../../css/main.css";
 
 function PollBox(props) {
 
-    function log(message) {
-        console.log("-----------> " + message);
-    }
-
+    // STATE DATA -----------------------------------
     const [tabSelected, setTabSelected] = useState();
 
+
+    // FUNCTIONS -------------
     function showPanel(val) {
 //        setTabSelected(1);
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
@@ -27,15 +26,21 @@ function PollBox(props) {
         })
     }
 
+
+    // JSX RETURN ------------------------
     return (
         <div className="pollbox-1 testC">
             <main>
-                <span>{props.q}</span>
-                <span>{props.a1}</span>
-                <span>{props.a2}</span>
-                <span>{props.a3}</span>
-                <span>{props.a4}</span>
-                (tab selected: {tabSelected})
+                <span>{props.q} </span>
+                <ul><li>
+                <span>{props.a1} </span>
+                </li><li>
+                <span>{props.a2} </span>
+                </li><li>
+                <span>{props.a3} </span>
+                </li><li>
+                <span>{props.a4} </span>
+                </li></ul>                
             </main>
             <aside>
                 ASIDE.

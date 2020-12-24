@@ -8,7 +8,14 @@
     margin: 0px 0px 0px 0px;
   }
 
+  h5 {
+    display: none;
+  }
+
   @include screenSizeBp(min-small) {
+    h5 {
+      display: initial;
+    }
   }
 
   @include screenSizeBp(min-medium) {
@@ -33,6 +40,7 @@
     background-color: getColor(pb-header-bg-1);
     border: getSize(pb-border-1);
     margin: 0px 0px 0px 0px;
+    padding: 0px;
   }
 
   main {

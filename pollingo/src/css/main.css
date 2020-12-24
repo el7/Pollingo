@@ -25,7 +25,7 @@ body {
 }
 
 .header-container {
-  background-color: #ff2ca7;
+  background-color: #ff94d3;
   color: #47002a;
   padding: 5px;
   display: grid;
@@ -40,6 +40,16 @@ body {
   margin: 0px 0px 0px 0px;
 }
 
+.header-container h5 {
+  display: none;
+}
+
+@media screen and (min-width: 39.9375em) {
+  .header-container h5 {
+    display: initial;
+  }
+}
+
 .header-container li {
   color: #47002a;
 }
@@ -49,6 +59,7 @@ body {
   background-color: #f3bdff;
   border: 1px solid #473333;
   margin: 0px 0px 0px 0px;
+  padding: 0px;
 }
 
 .header-container main {
@@ -191,7 +202,7 @@ body {
   font-family: sans-serif;
   font-size: 18px;
   background-color: #30021c;
-  color: #ddc5d3;
+  color: #ffe4f4;
 }
 
 .pollbox-1 .tabContainer .buttonContainer button:hover {

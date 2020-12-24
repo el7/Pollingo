@@ -30,8 +30,7 @@ function PollBox(props) {
     return (
         <div className="pollbox-1 testC">
             <main>
-                <span class="span-pollbox-question">{props.q} </span>
-
+                <span class="span-pollbox-question">{props.q}</span>
             </main>
             {/* <aside>
                 ASIDE.
@@ -48,13 +47,15 @@ function PollBox(props) {
                         Buttons IRV
                         <ol><li>
                         <span class="span-pollbox-answer">{props.a1} </span>
-                        </li><li>
+                        </li>
+                        <li>
                         <span class="span-pollbox-answer">{props.a2} </span>
                         </li><li>
                         <span class="span-pollbox-answer">{props.a3} </span>
                         </li><li>
                         <span class="span-pollbox-answer">{props.a4} </span>
-                        </li></ol>
+                        </li>
+                        </ol>
                     </div>
                     <div className="tabPanel tabPanel2">Buttons Approval</div>
                     <div className="tabPanel tabPanel3">Buttons RC</div>

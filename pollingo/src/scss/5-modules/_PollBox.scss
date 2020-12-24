@@ -87,6 +87,20 @@
   footer {
     grid-area: footer;
     border: getSize(pb-border-1);
+    overflow: initial;
+
+    .tabPanel,
+    .tabPanel > ol {
+      height: 100%;
+      padding-top: 5px;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      font-size: 22px;
+      //      display: none;
+      background-color: rgb(161, 161, 255);
+      font-family: sans-serif;
+      font-size: 10px;
+    }
   }
 
   .tabContainer {
@@ -114,22 +128,6 @@
         background-color: getColor(pb-main-tab-bg-2);
         color: getColor(pb-main-tab-text-2);
       }
-    }
-
-    .tabPanel {
-      height: 85%;
-      padding-top: 5px;
-      box-sizing: border-box;
-      font-family: sans-serif;
-      font-size: 22px;
-      display: none;
-      background-color: rgb(161, 161, 255);
-      font-family: sans-serif;
-      font-size: 10px;
-    }
-
-    .tabPanel1 {
-      display: inline;
     }
   }
 }

@@ -30,7 +30,7 @@ function PollBox(props) {
     return (
         <div className="pollbox-1 testC">
             <main>
-                <span class="span-pollbox-question">{props.q}</span>
+                <span className="span-pollbox-question">{props.q}</span>
             </main>
             {/* <aside>
                 ASIDE.
@@ -41,25 +41,25 @@ function PollBox(props) {
                         <button onClick={() => showPanel('0')}>IRV</button>
                         <button onClick={() => showPanel('1')}>Approval</button>
                         <button onClick={() => showPanel('2')}>RC</button>
-                        <button onClick={() => showPanel('3')}>STAR</button>                                                
+                        <button onClick={() => showPanel('3')}>STAR</button>
                     </div>
                     <div className="tabPanel tabPanel1">
                         Buttons IRV
                         <ol><li>
-                        <span class="span-pollbox-answer">{props.a1} </span>
+                        <span className="span-pollbox-answer">{props.a1} </span>
                         </li>
                         <li>
-                        <span class="span-pollbox-answer">{props.a2} </span>
+                        <span className="span-pollbox-answer">{props.a2} </span>
                         </li><li>
-                        <span class="span-pollbox-answer">{props.a3} </span>
+                        <span className="span-pollbox-answer">{props.a3} </span>
                         </li><li>
-                        <span class="span-pollbox-answer">{props.a4} </span>
+                        <span className="span-pollbox-answer">{props.a4} </span>
                         </li>
                         </ol>
                     </div>
-                    <div className="tabPanel tabPanel2">Buttons Approval</div>
+                    {/* <div className="tabPanel tabPanel2">Buttons Approval</div>
                     <div className="tabPanel tabPanel3">Buttons RC</div>
-                    <div className="tabPanel tabPanel4">Buttons STAR</div>
+                    <div className="tabPanel tabPanel4">Buttons STAR</div> */}
                 </div>                                                
             </footer>
         </div>

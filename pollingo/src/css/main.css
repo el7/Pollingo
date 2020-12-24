@@ -179,6 +179,19 @@ body {
 .pollbox-1 footer {
   grid-area: footer;
   border: 1px solid #473333;
+  overflow: initial;
+}
+
+.pollbox-1 footer .tabPanel,
+.pollbox-1 footer .tabPanel > ol {
+  height: 100%;
+  padding-top: 5px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+  background-color: #a1a1ff;
+  font-family: sans-serif;
+  font-size: 10px;
 }
 
 .pollbox-1 .tabContainer {
@@ -207,22 +220,6 @@ body {
 .pollbox-1 .tabContainer .buttonContainer button:hover {
   background-color: #5c0236;
   color: white;
-}
-
-.pollbox-1 .tabContainer .tabPanel {
-  height: 85%;
-  padding-top: 5px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-size: 22px;
-  display: none;
-  background-color: #a1a1ff;
-  font-family: sans-serif;
-  font-size: 10px;
-}
-
-.pollbox-1 .tabContainer .tabPanel1 {
-  display: inline;
 }
 
 .seperator-1-div {

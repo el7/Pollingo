@@ -88,7 +88,8 @@
     grid-area: footer;
     border: getSize(pb-border-1);
     overflow: hidden;
-    height: fit-content;
+    height: 200px;
+    display: initial;
 
     .tabPanel,
     .tabPanel > ol {
@@ -97,7 +98,6 @@
       box-sizing: border-box;
       font-family: sans-serif;
       font-size: 22px;
-      //      display: none;
       background-color: rgb(161, 161, 255);
       font-family: sans-serif;
       font-size: 10px;

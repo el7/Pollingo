@@ -180,7 +180,8 @@ body {
   grid-area: footer;
   border: 1px solid #473333;
   overflow: hidden;
-  height: fit-content;
+  height: 200px;
+  display: initial;
 }
 
 .pollbox-1 footer .tabPanel,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './headerComponent';
 import PollBox from './pollboxComponent';
 import Console from './consoleComponent';
@@ -7,8 +7,9 @@ import "../../css/main.css";
 
 function LayoutOne() {
 
-    // function that generates polling questions
-    
+    const [question1, setQuestion1setScreenWidth] = useState("200");
+
+    // function that generates polling questions    
     const q1 = "Which fast food would you eat forever?";
     const q1_a1 = "Taco Bell";
     const q1_a2 = "Chic Fillet";

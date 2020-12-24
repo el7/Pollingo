@@ -31,15 +31,7 @@ function PollBox(props) {
         <div className="pollbox-1 testC">
             <main>
                 <span class="span-pollbox-question">{props.q} </span>
-                <ol><li>
-                <span class="span-pollbox-answer">{props.a1} </span>
-                </li><li>
-                <span class="span-pollbox-answer">{props.a2} </span>
-                </li><li>
-                <span class="span-pollbox-answer">{props.a3} </span>
-                </li><li>
-                <span class="span-pollbox-answer">{props.a4} </span>
-                </li></ol>
+
             </main>
             {/* <aside>
                 ASIDE.
@@ -59,7 +51,17 @@ function PollBox(props) {
                         <button>3</button>
                         <button>4</button>
                     </div>
-                    <div className="tabPanel">Buttons Approval</div>
+                    <div className="tabPanel">
+                    <ol><li>
+                <span class="span-pollbox-answer">{props.a1} </span>
+                </li><li>
+                <span class="span-pollbox-answer">{props.a2} </span>
+                </li><li>
+                <span class="span-pollbox-answer">{props.a3} </span>
+                </li><li>
+                <span class="span-pollbox-answer">{props.a4} </span>
+                </li></ol>
+                    </div>
                     <div className="tabPanel">Buttons RC</div>
                     <div className="tabPanel">Buttons STAR</div>
                 </div>                                                

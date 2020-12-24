@@ -87,7 +87,8 @@
   footer {
     grid-area: footer;
     border: getSize(pb-border-1);
-    overflow: initial;
+    overflow: hidden;
+    height: fit-content;
 
     .tabPanel,
     .tabPanel > ol {

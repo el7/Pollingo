@@ -216,7 +216,13 @@ body {
   font-family: sans-serif;
   font-size: 22px;
   display: none;
-  background-color: blue;
+  background-color: #a1a1ff;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+.pollbox-1 .tabContainer .tabPanel1 {
+  display: inline;
 }
 
 .seperator-1-div {

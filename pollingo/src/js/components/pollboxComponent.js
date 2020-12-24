@@ -44,26 +44,21 @@ function PollBox(props) {
                         <button onClick={() => showPanel('2')}>RC</button>
                         <button onClick={() => showPanel('3')}>STAR</button>                                                
                     </div>
-                    <div className="tabPanel">
+                    <div className="tabPanel tabPanel1">
                         Buttons IRV
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
+                        <ol><li>
+                        <span class="span-pollbox-answer">{props.a1} </span>
+                        </li><li>
+                        <span class="span-pollbox-answer">{props.a2} </span>
+                        </li><li>
+                        <span class="span-pollbox-answer">{props.a3} </span>
+                        </li><li>
+                        <span class="span-pollbox-answer">{props.a4} </span>
+                        </li></ol>
                     </div>
-                    <div className="tabPanel">
-                    <ol><li>
-                <span class="span-pollbox-answer">{props.a1} </span>
-                </li><li>
-                <span class="span-pollbox-answer">{props.a2} </span>
-                </li><li>
-                <span class="span-pollbox-answer">{props.a3} </span>
-                </li><li>
-                <span class="span-pollbox-answer">{props.a4} </span>
-                </li></ol>
-                    </div>
-                    <div className="tabPanel">Buttons RC</div>
-                    <div className="tabPanel">Buttons STAR</div>
+                    <div className="tabPanel tabPanel2">Buttons Approval</div>
+                    <div className="tabPanel tabPanel3">Buttons RC</div>
+                    <div className="tabPanel tabPanel4">Buttons STAR</div>
                 </div>                                                
             </footer>
         </div>

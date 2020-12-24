@@ -115,15 +115,21 @@
         color: getColor(pb-main-tab-text-2);
       }
     }
+
     .tabPanel {
       height: 85%;
-
       padding-top: 5px;
       box-sizing: border-box;
       font-family: sans-serif;
       font-size: 22px;
       display: none;
-      background-color: blue;
+      background-color: rgb(161, 161, 255);
+      font-family: sans-serif;
+      font-size: 10px;
+    }
+
+    .tabPanel1 {
+      display: inline;
     }
   }
 }

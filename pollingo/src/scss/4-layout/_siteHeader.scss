@@ -29,11 +29,9 @@
   color: getColor(header-text-1);
   padding: 5px;
   display: flex;
-  flex-direction: row;
-  grid-gap: 0.2em;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 0fr 2fr;
-  grid-template-areas: "header main aside";
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 
   li {
     color: #47002a;

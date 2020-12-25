@@ -17,11 +17,15 @@ function LayoutOne() {
     const q1_a3 = "In-N-Out";
     const q1_a4 = "Panda Express";
 
+    const t1 = "sports";
+    const t2 = "politics";
+    const t3 = "food";
+
     return (
         <div className="layoutOne grid-main-container">
             <div className="grid-item grid-main-item-header">
                 <Header/>
-                <HeaderLower />
+                <HeaderLower tag1={t1} tag2={t2} tag3={t3}/>
             </div>
             <div className="grid-item grid-main-item-main">
                 <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>

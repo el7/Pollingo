@@ -10,9 +10,9 @@ function HeaderLower(props) {
 
     return (
         <div className="header-lower-container" >
-            <span>(sports)</span>
-            <span>(politics)</span>
-            <span>(food)</span>            
+            <span className="header-flex-item">{props.tag1}</span>
+            <span className="header-flex-item">{props.tag2}</span>
+            <span className="header-flex-item">{props.tag3}</span>            
         </div>
     )
 }

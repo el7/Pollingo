@@ -33,6 +33,8 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  border: li;
+  border-color: #47002a;
 }
 
 .header-container h3,
@@ -48,10 +50,6 @@ body {
   .header-container h5 {
     display: initial;
   }
-}
-
-.header-container li {
-  color: #47002a;
 }
 
 .header-container header {
@@ -82,6 +80,16 @@ body {
 .header-container aside ul li {
   margin: 3px;
   display: inline;
+}
+
+.header-lower-container {
+  background: #ffe7f5;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+
+.header-lower-container .header-flex-item {
+  color: red;
 }
 
 .console {

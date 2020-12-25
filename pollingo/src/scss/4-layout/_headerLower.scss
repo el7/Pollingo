@@ -1,5 +1,9 @@
 .header-lower-container {
   background: getColor(header-bg-1);
-  border-top: 1px solid var(--yt-spec-10-percent-layer);
-  border-bottom: 1px solid var(--yt-spec-10-percent-layer);
+  border-bottom: 1px solid grey;
+  padding: 5px;
+
+  .header-flex-item {
+    color: red;
+  }
 }

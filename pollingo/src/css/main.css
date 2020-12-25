@@ -74,6 +74,11 @@ body {
   margin: 0px 0px 0px 0px;
 }
 
+.header-container aside ul {
+  margin: 0px;
+  padding: 0px;
+}
+
 .header-container aside ul li {
   margin: 3px;
   display: inline;
@@ -116,7 +121,7 @@ body {
   padding: 5px;
   width: 95%;
   display: grid;
-  grid-gap: 0.2em;
+  grid-gap: 0.1em;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 18fr 1fr 1fr;
   grid-template-areas: "main main main" "main main main" "footer footer footer";
@@ -180,8 +185,10 @@ body {
   grid-area: footer;
   border: 1px solid #473333;
   overflow: hidden;
-  height: 200px;
+  height: 100%;
   display: initial;
+  background-color: #a1a1ff;
+  box-sizing: border-box;
 }
 
 .pollbox-1 footer .tabPanel,
@@ -191,7 +198,6 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 22px;
-  background-color: #a1a1ff;
   font-family: sans-serif;
   font-size: 10px;
 }

@@ -12,6 +12,8 @@
 */
 
 .layoutOne {
+  // apparently max()/min() is also a sass function so
+  // need to use unquote()
   width: unquote("max(100%, 320px)");
 
   //   @include screenSizeBp(min-small) {

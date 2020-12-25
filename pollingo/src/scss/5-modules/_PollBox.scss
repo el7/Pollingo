@@ -35,7 +35,7 @@
   padding: 5px;
   width: 95%;
   display: grid;
-  grid-gap: 0.2em;
+  grid-gap: 0.1em;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 18fr 1fr 1fr;
   grid-template-areas:
@@ -88,8 +88,10 @@
     grid-area: footer;
     border: getSize(pb-border-1);
     overflow: hidden;
-    height: 200px;
+    height: 100%;
     display: initial;
+    background-color: rgb(161, 161, 255);
+    box-sizing: border-box;
 
     .tabPanel,
     .tabPanel > ol {
@@ -98,7 +100,7 @@
       box-sizing: border-box;
       font-family: sans-serif;
       font-size: 22px;
-      background-color: rgb(161, 161, 255);
+
       font-family: sans-serif;
       font-size: 10px;
     }

@@ -28,7 +28,8 @@
   background-color: getColor(header-bg-1);
   color: getColor(header-text-1);
   padding: 5px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   grid-gap: 0.2em;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 0fr 2fr;

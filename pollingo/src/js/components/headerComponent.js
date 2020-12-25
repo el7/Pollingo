@@ -24,10 +24,9 @@ function Header(props) {
   }
     window.addEventListener('resize', handleResize);
 
-    //    console.log("here: " + props.mycolor);
+//    console.log("here: " + props.mycolor);
 //    console.log("here: " + width);
-
-    // temp test
+// temp test
 //    mycolor = "444444";
 //    mycolor = '"#' + mycolor + '"';
 //    mycolor = "backgroundColor: " + mycolor;
@@ -35,7 +34,7 @@ function Header(props) {
     return (
         <div className="header-container" >
             <header>
-                <h2>Pollingo.</h2>
+                <h3>Pollingo.</h3>
                 <h5>tell me something</h5>      
             </header>
             <main></main>

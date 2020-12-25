@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Header from './headerComponent';
+import HeaderLower from './headerLowerComponent';
 import PollBox from './pollboxComponent';
 import Console from './consoleComponent';
 import Seperator from './seperatorComponent';
@@ -20,6 +21,7 @@ function LayoutOne() {
         <div className="layoutOne grid-main-container">
             <div className="grid-item grid-main-item-header">
                 <Header/>
+                <HeaderLower />
             </div>
             <div className="grid-item grid-main-item-main">
                 <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>

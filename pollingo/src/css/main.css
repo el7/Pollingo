@@ -32,9 +32,10 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
-.header-container h2,
+.header-container h3,
 .header-container h5 {
   margin: 0px 0px 0px 0px;
 }

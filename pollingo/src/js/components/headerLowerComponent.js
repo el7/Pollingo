@@ -13,6 +13,8 @@ function HeaderLower(props) {
             <span className="header-flex-item">{props.tag1}</span>
             <span className="header-flex-item">{props.tag2}</span>
             <span className="header-flex-item">{props.tag3}</span>            
+            <button className="button-unselected">unselected</button>
+            <button className="button-selected">selected</button>            
         </div>
     )
 }

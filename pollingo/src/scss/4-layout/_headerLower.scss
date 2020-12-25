@@ -2,8 +2,27 @@
   background: getColor(header-bg-1);
   border-bottom: 1px solid grey;
   padding: 5px;
+  position: fixed;
+  width: 100%;
+  margin-top: 35px;
 
   .header-flex-item {
     color: red;
+    border: 1px solid black;
+    margin: 0px 5px;
+  }
+
+  .button-unselected {
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #8d8d8d;
+  }
+
+  .button-selected {
+    border-radius: 15px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    border: 1px solid #000000;
   }
 }

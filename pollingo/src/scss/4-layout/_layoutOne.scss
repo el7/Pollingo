@@ -16,6 +16,12 @@
   // need to use unquote()
   width: unquote("max(100%, 320px)");
 
+  .grid-main-item-main {
+    background-color: rgb(200, 241, 255);
+    //    grid-area: main;
+    margin-top: 0px;
+  }
+
   //   @include screenSizeBp(min-small) {
   //     // view size small 2/6
   //     // -------------------
@@ -39,11 +45,6 @@
   //   //---------------
   //   .grid-main-item-header {
   //     grid-area: header;
-  //   }
-
-  //   .grid-main-item-main {
-  //     //    background-color: rgb(132, 220, 250);
-  //     grid-area: main;
   //   }
 
   //   .grid-main-item-footer {

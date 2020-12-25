@@ -24,7 +24,14 @@ body {
   width: max(100%, 320px);
 }
 
+.layoutOne .grid-main-item-main {
+  background-color: #c8f1ff;
+  margin-top: 0px;
+}
+
 .header-container {
+  position: fixed;
+  width: 100%;
   background-color: #ffe7f5;
   color: #47002a;
   padding: 5px;
@@ -86,10 +93,29 @@ body {
   background: #ffe7f5;
   border-bottom: 1px solid grey;
   padding: 5px;
+  position: fixed;
+  width: 100%;
+  margin-top: 35px;
 }
 
 .header-lower-container .header-flex-item {
   color: red;
+  border: 1px solid black;
+  margin: 0px 5px;
+}
+
+.header-lower-container .button-unselected {
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  border: 1px solid #8d8d8d;
+}
+
+.header-lower-container .button-selected {
+  border-radius: 15px;
+  background-color: #474747;
+  color: white;
+  border: 1px solid #000000;
 }
 
 .console {

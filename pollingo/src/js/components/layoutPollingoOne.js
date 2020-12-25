@@ -27,16 +27,23 @@ function LayoutOne() {
                 <Header/>
                 <HeaderLower tag1={t1} tag2={t2} tag3={t3}/>
             </div>
-            <div className="grid-item grid-main-item-main">
+            <div className="grid-item grid-main-item-main grid-main">
                 <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>
                 <Seperator />
-                {/* <PollBox q="Which is your favorite vehicle brand?" a1="Tesla" a2="Subaru" a3="Ford" a4="Volkswagon"/>
+                <PollBox q="Which is your favorite vehicle brand?" a1="Tesla" a2="Subaru" a3="Ford" a4="Volkswagon"/>
                 <Seperator />                
-                <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                 */}
+                <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                
+                <Seperator />                
+                <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                
+                <Seperator />                
+                <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                
+                <Seperator />                
+                <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                
+
             </div>
             <div className="grid-item grid-main-item-footer">
-                <Console />                
-            </div>           
+                <Console />
+            </div>
         </div>
     )
 }

@@ -1,0 +1,73 @@
+@import "../1-helpers/util_variables";
+@import "../1-helpers/_util_functions";
+@import "../1-helpers/_util_mixins";
+
+.header-container {
+  position: fixed;
+
+  // ----- xsmall plus --------------------
+  width: 100%;
+  background-color: getColor(header-bg-1);
+  color: getColor(header-text-1);
+  padding: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: li {
+    color: #47002a;
+  }
+
+  h3,
+  h5 {
+    margin: 0px 0px 0px 0px;
+  }
+
+  h5 {
+    display: none;
+  }
+
+  @include screenSizeBp(min-small) {
+    // ----- small plus --------------------
+
+    h5 {
+      display: initial;
+    }
+  }
+
+  @include screenSizeBp(min-medium) {
+  }
+
+  // ----- GRID AREAS -------------------------
+
+  header {
+    grid-area: header;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: 0px 0px 0px 0px;
+  }
+
+  main {
+    grid-area: main;
+    background-color: getColor(pb-header-bg-1);
+    margin: auto auto auto 0px;
+  }
+
+  aside {
+    grid-area: aside;
+    background-color: getColor(pb-header-bg-1);
+    border: getSize(pb-border-1);
+    margin: 0px 0px 0px 0px;
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    ul li {
+      margin: 3px;
+      display: inline;
+    }
+  }
+}

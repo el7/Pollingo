@@ -5,25 +5,31 @@ import "../../css/main.css";
 function PollBox(props) {
 
     // STATE DATA -----------------------------------
-    const [tabSelected, setTabSelected] = useState();
+    const [tabSelected, setTabSelected] = useState(0);
+    const [pollType, setPollType] = useState("IRV");
 
     // FUNCTIONS -------------
     function showPanel(val) {
 //        setTabSelected(1);
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
-       
+
         // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
         tabButtons.forEach(function(node, index){
             if (index == val) {
+                // selected
                 node.style.color = "#ffffff";
                 node.style.backgroundColor = "#5c0236";
+                setTabSelected(val);
             } else {
+                // not selected
                  node.style.color = "#ddc5d3";
                  node.style.backgroundColor = "#30021c";
             }
         })
     }
+
+    var pollTypes = ["IRV", "Approval", "RC", "STAR"];
 
     // JSX RETURN ------------------------
     return (
@@ -44,7 +50,7 @@ function PollBox(props) {
                     </div>
                     <div className="tabPanel tabPanel1">
 
-                        Buttons IRV
+                        <span>Tab Selected: {pollTypes[tabSelected]}</span>
 
                         <ol><li>
                         <span className="span-pollbox-answer">{props.a1} </span>

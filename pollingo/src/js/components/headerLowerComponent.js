@@ -9,12 +9,14 @@ function HeaderLower(props) {
 
     return (
         <div className="header-lower-container" >
+            <button className="button button-selected">New</button>
+            <button className="button button-unselected">Hot</button>
+            <button className="button button-unselected">Top</button>
+            <span> | </span>
             <button className="button button-selected">All</button>
             <button className="button button-unselected">Sports</button>
             <button className="button button-unselected">Food</button>                        
-            <button className="button button-unselected">Politics</button>
-            <button className="button button-unselected">New</button>
-            <button className="button button-unselected">Hot</button>            
+            <button className="button button-unselected">Politics</button>            
         </div>
     )
 }

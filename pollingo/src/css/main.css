@@ -25,7 +25,7 @@ body {
 }
 
 .layoutOne .grid-main-item-main {
-  background-color: #c8f1ff;
+  background-color: #eefbff;
   margin-top: 0px;
 }
 
@@ -96,7 +96,7 @@ body {
   padding: 5px;
   position: fixed;
   width: 100%;
-  margin-top: 30px;
+  top: 30px;
 }
 
 .header-lower-container .header-flex-item {
@@ -265,7 +265,7 @@ body {
   color: white;
 }
 
-.seperator-1-div {
+.separator-1-div {
   margin: 15px;
   text-align: center;
   color: #6b2a2a;

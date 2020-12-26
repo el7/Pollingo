@@ -3,15 +3,14 @@
 @import "../1-helpers/_util_mixins";
 
 .header-container {
-  position: fixed;
-  //  overflow: hidden;
-
-  top: 0;
   // ----- xsmall plus --------------------
+
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: getColor(header-bg-1);
   color: getColor(header-text-1);
-  padding: 5px;
+  padding: 0px 0px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -19,6 +18,10 @@
   align-content: center;
   border: li {
     color: #47002a;
+  }
+
+  h3 {
+    font-size: 40px;
   }
 
   h3,

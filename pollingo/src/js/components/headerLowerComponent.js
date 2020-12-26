@@ -5,16 +5,16 @@ import "../../css/main.css";
 
 function HeaderLower(props) {
 
-    const [headerColor, setColor] = useState("444444");
-    const [screenWidth, setScreenWidth] = useState("200"); 
+    const [tagSelected, selectTag] = useState(0);
 
     return (
         <div className="header-lower-container" >
-            <span className="header-flex-item">{props.tag1}</span>
-            <span className="header-flex-item">{props.tag2}</span>
-            <span className="header-flex-item">{props.tag3}</span>            
-            <button className="button-unselected">unselected</button>
-            <button className="button-selected">selected</button>            
+            <button className="button button-selected">All</button>
+            <button className="button button-unselected">Sports</button>
+            <button className="button button-unselected">Food</button>                        
+            <button className="button button-unselected">Politics</button>
+            <button className="button button-unselected">New</button>
+            <button className="button button-unselected">Hot</button>            
         </div>
     )
 }

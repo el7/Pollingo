@@ -27,7 +27,7 @@ body {
 .layoutOne .grid-main-item-main {
   background-color: #eefbff;
   padding-top: 30px;
-  margin-top: 60px;
+  margin-top: 90px;
 }
 
 .header-container {
@@ -36,7 +36,7 @@ body {
   width: 100%;
   background-color: #ffe7f5;
   color: #47002a;
-  padding: 5px;
+  padding: 0px 0px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -44,6 +44,10 @@ body {
   align-content: center;
   border: li;
   border-color: #47002a;
+}
+
+.header-container h3 {
+  font-size: 40px;
 }
 
 .header-container h3,
@@ -97,7 +101,7 @@ body {
   padding: 5px;
   position: fixed;
   width: 100%;
-  top: 30px;
+  top: 50px;
 }
 
 .header-lower-container .header-flex-item {
@@ -106,23 +110,35 @@ body {
   margin: 0px 5px;
 }
 
-.header-lower-container .button-unselected {
+.header-lower-container .button {
   border-radius: 15px;
+  margin: 3px;
+  padding: 7px;
+}
+
+.header-lower-container .button-unselected {
   background-color: white;
   color: black;
   border: 1px solid #8d8d8d;
 }
 
+.header-lower-container .button-unselected:hover {
+  background-color: #ececec;
+}
+
 .header-lower-container .button-selected {
-  border-radius: 15px;
   background-color: #474747;
   color: white;
   border: 1px solid #000000;
 }
 
+.header-lower-container .button-selected:hover {
+  background-color: #727272;
+}
+
 .console {
   background-color: #e281f8;
-  margin: 100px 0px 25px 0px;
+  margin: 50px 0px 0px 0px;
   padding: 5px;
 }
 

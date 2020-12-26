@@ -30,7 +30,7 @@ function LayoutOne() {
             <div className="grid-item grid-main-item-main grid-main">
                 <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>
                 <Separator t="➽─────❥"/>
-                <PollBox q="Which is your favorite vehicle brand?" a1="Tesla" a2="Subaru" a3="Ford" a4="Volkswagon"/>
+                {/* <PollBox q="Which is your favorite vehicle brand?" a1="Tesla" a2="Subaru" a3="Ford" a4="Volkswagon"/>
                 <Separator t="➽─────❥"/>
                 <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                
                 <Separator t="➽─────❥"/>
@@ -38,7 +38,7 @@ function LayoutOne() {
                 <Separator t="➽─────❥"/>
                 <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                
                 <Separator t="➽─────❥"/>
-                <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                
+                <PollBox q="What is your favorite movie?" a1="Terminator 2: Judgement Day" a2="Star Wars: Episode V - The Empire Strikes Back" a3="Oh Brother, Where Art Thou" a4="The Big Lebowski"/>                 */}
             </div>
             <div className="grid-item grid-main-item-footer">
                 <Console />

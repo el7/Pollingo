@@ -7,7 +7,6 @@ function PollBox(props) {
     // STATE DATA -----------------------------------
     const [tabSelected, setTabSelected] = useState();
 
-
     // FUNCTIONS -------------
     function showPanel(val) {
 //        setTabSelected(1);
@@ -44,7 +43,9 @@ function PollBox(props) {
                         <button onClick={() => showPanel('3')}>STAR</button>
                     </div>
                     <div className="tabPanel tabPanel1">
+
                         Buttons IRV
+
                         <ol><li>
                         <span className="span-pollbox-answer">{props.a1} </span>
                         </li>

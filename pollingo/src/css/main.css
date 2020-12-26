@@ -27,6 +27,7 @@ body {
 .layoutOne .grid-main-item-main {
   background-color: #eefbff;
   padding-top: 30px;
+  padding-bottom: 30px;
   margin-top: 90px;
 }
 
@@ -136,7 +137,7 @@ body {
 
 .console {
   background-color: #e281f8;
-  margin: 50px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 5px;
 }
 
@@ -235,6 +236,7 @@ body {
   grid-area: footer;
   border: 1px solid #473333;
   overflow: hidden;
+  height: auto;
   background-color: #a1a1ff;
   box-sizing: border-box;
 }
@@ -248,10 +250,6 @@ body {
   font-size: 22px;
   font-family: sans-serif;
   font-size: 10px;
-}
-
-.pollbox-1 .tabContainer {
-  width: 100%;
 }
 
 .pollbox-1 .tabContainer .buttonContainer {

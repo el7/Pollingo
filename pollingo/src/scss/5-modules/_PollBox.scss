@@ -88,10 +88,9 @@
     grid-area: footer;
     border: getSize(pb-border-1);
     overflow: hidden;
-    //    height: auto;
+    height: auto;
     background-color: rgb(161, 161, 255);
     box-sizing: border-box;
-    //    clear: both;
 
     .tabPanel {
       //      height: 500px;
@@ -112,9 +111,6 @@
   }
 
   .tabContainer {
-    width: 100%;
-    //    height: 75px;
-
     .buttonContainer {
       height: 50%;
 

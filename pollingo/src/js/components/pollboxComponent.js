@@ -7,6 +7,8 @@ function PollBox(props) {
     // STATE DATA -----------------------------------
     const [tabSelected, setTabSelected] = useState(0);
     const [pollType, setPollType] = useState("IRV");
+    const [pollTypeClass, setPollTypeClass] = useState(".pollTypeIRV");
+
 
     // FUNCTIONS -------------
     function showPanel(val) {
@@ -21,6 +23,7 @@ function PollBox(props) {
                 node.style.color = "#ffffff";
                 node.style.backgroundColor = "#5c0236";
                 setTabSelected(val);
+                setPollTypeClass(".pollTypeApproval");
             } else {
                 // not selected
                  node.style.color = "#ddc5d3";
@@ -31,9 +34,11 @@ function PollBox(props) {
 
     var pollTypes = ["IRV", "Approval", "RC", "STAR"];
 
+
+
     // JSX RETURN ------------------------
     return (
-        <div className="pollbox-1 testC">
+        <div className="pollbox-1 testC"> 
             <main>
                 <span className="span-pollbox-question">{props.q}</span>
             </main>
@@ -50,17 +55,16 @@ function PollBox(props) {
                     </div>
                     <div className="tabPanel tabPanel1">
 
-                        <span>Tab Selected: {pollTypes[tabSelected]}</span>
+                        <span>{pollTypes[tabSelected]}</span>
 
                         <ol><li>
-                        <span className="span-pollbox-answer">{props.a1} </span>
-                        </li>
-                        <li>
-                        <span className="span-pollbox-answer">{props.a2} </span>
+                        <span className={pollTypeClass}>{props.a1} </span>
                         </li><li>
-                        <span className="span-pollbox-answer">{props.a3} </span>
+                        <span className="span-pollbox-answer {pollTypeClass}">{props.a2} </span>
                         </li><li>
-                        <span className="span-pollbox-answer">{props.a4} </span>
+                        <span className="span-pollbox-answer {pollTypeClass}">{props.a3} </span>
+                        </li><li>
+                        <span className="span-pollbox-answer {pollTypeClass}">{props.a4} </span>
                         </li>
                         </ol>
                     </div>

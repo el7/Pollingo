@@ -39,9 +39,7 @@ body {
   padding: 0px 0px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   align-items: center;
-  align-content: center;
   border: li;
   border-color: #47002a;
 }

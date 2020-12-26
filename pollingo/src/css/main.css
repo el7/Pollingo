@@ -26,7 +26,8 @@ body {
 
 .layoutOne .grid-main-item-main {
   background-color: #eefbff;
-  margin-top: 0px;
+  padding-top: 30px;
+  margin-top: 60px;
 }
 
 .header-container {

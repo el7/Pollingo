@@ -28,9 +28,6 @@ function LayoutOne() {
                 <HeaderLower tag1={t1} tag2={t2} tag3={t3}/>
             </div>
             <div className="grid-item grid-main-item-main grid-main">
-                <Separator t=" - "/>
-                <Separator t=" - "/>
-                <Separator t=" - "/>
                 <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>
                 <Separator t="➽───────────────❥"/>
                 <PollBox q="Which is your favorite vehicle brand?" a1="Tesla" a2="Subaru" a3="Ford" a4="Volkswagon"/>

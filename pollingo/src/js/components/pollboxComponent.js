@@ -16,6 +16,23 @@ function PollBox(props) {
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 
+        var newClass = "";
+
+        switch (val) {
+            case "0":
+                    newClass = "pollTypeIRV";
+                    break;
+            case "1":
+                    newClass = "pollTypeApproval";
+                    break;
+            case "2":
+                    newClass = "pollTypeRC";
+                    break;                                        
+            case "3":
+                    newClass = "pollTypeSTAR";
+                    break;
+        }
+
         // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
         tabButtons.forEach(function(node, index){
             if (index == val) {
@@ -23,7 +40,8 @@ function PollBox(props) {
                 node.style.color = "#ffffff";
                 node.style.backgroundColor = "#5c0236";
                 setTabSelected(val);
-                setPollTypeClass("pollTypeApproval");
+                setPollTypeClass(newClass);
+                console.log("newClass: " + newClass + " val: " + val);
             } else {
                  // not selected
                  node.style.color = "#ddc5d3";
@@ -40,9 +58,7 @@ function PollBox(props) {
             <main>
                 <span className="span-pollbox-question">{props.q}</span>
             </main>
-            {/* <aside>
-                ASIDE.
-            </aside> */}
+            {/* <aside>ASIDE.</aside> */}
             <footer>
                 <div className="tabContainer"> 
                     <div className="buttonContainer"> 

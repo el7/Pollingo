@@ -70,6 +70,10 @@ function PollBox(props) {
 
                         <span>{pollTypes[tabSelected]}</span>
 
+                        <br />
+                        <input type="checkbox" name="cb" value="tb"></input>
+                        <label for="cb">{props.a1}</label>
+
                         <ol><li>
                         <span className={pollTypeClass}>{props.a1}</span>
                         </li><li>

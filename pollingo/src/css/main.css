@@ -243,14 +243,17 @@ body {
 
 .pollbox-1 footer .pollTypeIRV {
   color: #700000;
+  list-style-type: georgian;
 }
 
 .pollbox-1 footer .pollTypeApproval {
   color: #000072;
+  list-style-type: katakana-iroha;
 }
 
 .pollbox-1 footer .pollTypeRC {
   color: #026807;
+  list-style-type: hiragana;
 }
 
 .pollbox-1 footer .pollTypeSTAR {

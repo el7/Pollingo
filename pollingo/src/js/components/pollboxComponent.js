@@ -41,7 +41,6 @@ function PollBox(props) {
                 node.style.backgroundColor = "#5c0236";
                 setTabSelected(val);
                 setPollTypeClass(newClass);
-                console.log("newClass: " + newClass + " val: " + val);
             } else {
                  // not selected
                  node.style.color = "#ddc5d3";

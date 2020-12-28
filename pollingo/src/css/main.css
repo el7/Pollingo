@@ -242,19 +242,19 @@ body {
 }
 
 .pollbox-1 footer .pollTypeIRV {
-  color: red;
+  color: #700000;
 }
 
 .pollbox-1 footer .pollTypeApproval {
-  color: blue;
+  color: #000072;
 }
 
 .pollbox-1 footer .pollTypeRC {
-  color: #02ff0f;
+  color: #026807;
 }
 
 .pollbox-1 footer .pollTypeSTAR {
-  color: #ffd900;
+  color: #695a05;
 }
 
 .pollbox-1 footer .tabPanel,

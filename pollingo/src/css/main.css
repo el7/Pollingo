@@ -25,7 +25,7 @@ body {
 }
 
 .layoutOne .grid-main-item-main {
-  background-color: #eefbff;
+  background-color: #c2f1ff;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 90px;
@@ -239,6 +239,22 @@ body {
   height: auto;
   background-color: #ccccfc;
   box-sizing: border-box;
+}
+
+.pollbox-1 footer .pollTypeIRV {
+  color: red;
+}
+
+.pollbox-1 footer .pollTypeApproval {
+  color: blue;
+}
+
+.pollbox-1 footer .pollTypeRC {
+  color: #02ff0f;
+}
+
+.pollbox-1 footer .pollTypeSTAR {
+  color: #ffd900;
 }
 
 .pollbox-1 footer .tabPanel,

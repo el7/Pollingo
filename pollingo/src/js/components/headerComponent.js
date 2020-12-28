@@ -34,6 +34,7 @@ function Header(props) {
     return (
         <div className="header-container" >
             <header>
+                {/* <img src="pollingo_logo_s.PNG"> */}              
                 <h3>Pollingo.</h3>
                 <h5>tell me something</h5>      
             </header>

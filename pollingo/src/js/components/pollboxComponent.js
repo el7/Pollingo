@@ -7,7 +7,7 @@ function PollBox(props) {
     // STATE DATA -----------------------------------
     const [tabSelected, setTabSelected] = useState(0);
     const [pollType, setPollType] = useState("IRV");
-    const [pollTypeClass, setPollTypeClass] = useState(".pollTypeIRV");
+    const [pollTypeClass, setPollTypeClass] = useState("pollTypeIRV");
 
 
     // FUNCTIONS -------------
@@ -23,9 +23,9 @@ function PollBox(props) {
                 node.style.color = "#ffffff";
                 node.style.backgroundColor = "#5c0236";
                 setTabSelected(val);
-                setPollTypeClass(".pollTypeApproval");
+                setPollTypeClass("pollTypeApproval");
             } else {
-                // not selected
+                 // not selected
                  node.style.color = "#ddc5d3";
                  node.style.backgroundColor = "#30021c";
             }
@@ -33,8 +33,6 @@ function PollBox(props) {
     }
 
     var pollTypes = ["IRV", "Approval", "RC", "STAR"];
-
-
 
     // JSX RETURN ------------------------
     return (
@@ -58,13 +56,13 @@ function PollBox(props) {
                         <span>{pollTypes[tabSelected]}</span>
 
                         <ol><li>
-                        <span className={pollTypeClass}>{props.a1} </span>
+                        <span className={pollTypeClass}>{props.a1}</span>
                         </li><li>
-                        <span className="span-pollbox-answer {pollTypeClass}">{props.a2} </span>
+                        <span className={pollTypeClass}>{props.a2} </span>
                         </li><li>
-                        <span className="span-pollbox-answer {pollTypeClass}">{props.a3} </span>
+                        <span className={pollTypeClass}>{props.a3} </span>
                         </li><li>
-                        <span className="span-pollbox-answer {pollTypeClass}">{props.a4} </span>
+                        <span className={pollTypeClass}>{props.a4} </span>
                         </li>
                         </ol>
                     </div>

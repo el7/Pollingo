@@ -51,8 +51,7 @@ function PollBox(props) {
 
     var pollTypes = ["IRV", "Approval", "RC", "STAR"];
 
-    var inputClassCB = "formCheckbox"
-    var inputClassR = "formRadio"
+    var inputClassToggle = "formOff";
 
     // JSX RETURN ------------------------
     return (
@@ -74,9 +73,9 @@ function PollBox(props) {
                         <span>{pollTypes[tabSelected]}</span>
 
                         <br />
-                        <form className="formCheckbox">
+                        <form className={inputClassToggle}>
                             <input type="checkbox" name="cb1" value="tb"></input>
-                            <label className={pollTypeClass, inputClassCB} for="cb1">{props.a1}</label><br />
+                            <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
                             <input type="checkbox" name="cb2" value="tb"></input>
                             <label className={pollTypeClass} for="cb2">{props.a2}</label><br />
                             <input type="checkbox" name="cb3" value="tb"></input>
@@ -84,7 +83,7 @@ function PollBox(props) {
                             <input type="checkbox" name="cb4" value="tb"></input>
                         <label className={pollTypeClass} for="cb4">{props.a4}</label><br />
                         </form>
-                        <form className="formRadio">
+                        <form className={inputClassToggle}>
                             <input type="radio" name="radio1" value="tb"></input>
                             <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
                             <input type="radio" name="radio1" value="tb"></input>

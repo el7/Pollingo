@@ -71,19 +71,16 @@ function PollBox(props) {
                         <span>{pollTypes[tabSelected]}</span>
 
                         <br />
-                        <input type="checkbox" name="cb" value="tb"></input>
-                        <label for="cb">{props.a1}</label>
 
-                        <ol><li>
-                        <span className={pollTypeClass}>{props.a1}</span>
-                        </li><li>
-                        <span className={pollTypeClass}>{props.a2} </span>
-                        </li><li>
-                        <span className={pollTypeClass}>{props.a3} </span>
-                        </li><li>
-                        <span className={pollTypeClass}>{props.a4} </span>
-                        </li>
-                        </ol>
+                        <input type="checkbox" name="cb1" value="tb"></input>
+                        <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
+                        <input type="checkbox" name="cb2" value="tb"></input>
+                        <label className={pollTypeClass} for="cb2">{props.a2}</label><br />
+                        <input type="checkbox" name="cb3" value="tb"></input>
+                        <label className={pollTypeClass} for="cb3">{props.a3}</label><br />
+                        <input type="checkbox" name="cb4" value="tb"></input>
+                        <label className={pollTypeClass} for="cb4">{props.a4}</label><br />
+
                     </div>
                     {/* <div className="tabPanel tabPanel2">Buttons Approval</div>
                     <div className="tabPanel tabPanel3">Buttons RC</div>

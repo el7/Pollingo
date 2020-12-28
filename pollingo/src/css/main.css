@@ -241,6 +241,14 @@ body {
   box-sizing: border-box;
 }
 
+.pollbox-1 footer .formCheckbox {
+  background-color: red;
+}
+
+.pollbox-1 footer .formRadio {
+  background-color: blue;
+}
+
 .pollbox-1 footer .pollTypeIRV {
   color: #700000;
   list-style-type: georgian;

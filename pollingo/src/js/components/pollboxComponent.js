@@ -51,6 +51,9 @@ function PollBox(props) {
 
     var pollTypes = ["IRV", "Approval", "RC", "STAR"];
 
+    var inputClassCB = "formCheckbox"
+    var inputClassR = "formRadio"
+
     // JSX RETURN ------------------------
     return (
         <div className="pollbox-1 testC"> 
@@ -71,15 +74,26 @@ function PollBox(props) {
                         <span>{pollTypes[tabSelected]}</span>
 
                         <br />
-
-                        <input type="checkbox" name="cb1" value="tb"></input>
-                        <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
-                        <input type="checkbox" name="cb2" value="tb"></input>
-                        <label className={pollTypeClass} for="cb2">{props.a2}</label><br />
-                        <input type="checkbox" name="cb3" value="tb"></input>
-                        <label className={pollTypeClass} for="cb3">{props.a3}</label><br />
-                        <input type="checkbox" name="cb4" value="tb"></input>
+                        <form className="formCheckbox">
+                            <input type="checkbox" name="cb1" value="tb"></input>
+                            <label className={pollTypeClass, inputClassCB} for="cb1">{props.a1}</label><br />
+                            <input type="checkbox" name="cb2" value="tb"></input>
+                            <label className={pollTypeClass} for="cb2">{props.a2}</label><br />
+                            <input type="checkbox" name="cb3" value="tb"></input>
+                            <label className={pollTypeClass} for="cb3">{props.a3}</label><br />
+                            <input type="checkbox" name="cb4" value="tb"></input>
                         <label className={pollTypeClass} for="cb4">{props.a4}</label><br />
+                        </form>
+                        <form className="formRadio">
+                            <input type="radio" name="radio1" value="tb"></input>
+                            <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
+                            <input type="radio" name="radio1" value="tb"></input>
+                            <label className={pollTypeClass} for="cb2">{props.a2}</label><br />
+                            <input type="radio" name="radio1" value="tb"></input>
+                            <label className={pollTypeClass} for="cb3">{props.a3}</label><br />
+                            <input type="radio" name="radio1" value="tb"></input>
+                            <label className={pollTypeClass} for="cb4">{props.a4}</label><br />
+                        </form>
 
                     </div>
                     {/* <div className="tabPanel tabPanel2">Buttons Approval</div>

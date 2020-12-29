@@ -10,19 +10,13 @@ function Header(props) {
     const [screenWidth, setScreenWidth] = useState("200"); 
     
     function handleResize() {
-
       // makes random color hex value
       var randomColor = Math.floor(Math.random()*16777215).toString(16);
       // gets current width
       var windowCombinedSize = (window.innerWidth + window.innerHeight);
-
-//      setColor(randomColor);
-
-//      setScreenWidth(newWidth);
-//      console.log("color: " + randomColor);
       
   }
-    window.addEventListener('resize', handleResize);
+  window.addEventListener('resize', handleResize);
 
 //    console.log("here: " + props.mycolor);
 //    console.log("here: " + width);
@@ -31,12 +25,16 @@ function Header(props) {
 //    mycolor = '"#' + mycolor + '"';
 //    mycolor = "backgroundColor: " + mycolor;
 
+  var loc = window.location.pathname;
+  var dir = loc.substring(0, loc.lastIndexOf('/'));
+  console.log("dir: " + loc + dir);
+
     return (
         <div className="header-container" >
             <header>
-                {/* <img src="pollingo_logo_s.PNG"> */}              
-                <h3>Pollingo.</h3>
-                <h5>tell me something</h5>      
+                {/* <img src="/Pollingo/pollingo/src/images/pollingo_logo_s.PNG" />               */}
+                <h3 className="pollingoLogoSmall">P.</h3>
+                <h3 className="pollingoLogoMed">Pollingo.</h3>
             </header>
             <main></main>
             <aside>

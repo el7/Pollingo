@@ -4,6 +4,7 @@
 
 .header-container {
   // ----- xsmall plus --------------------
+  // --------------------------------------
 
   position: fixed;
   top: 0;
@@ -29,15 +30,19 @@
     margin: 0px 0px 0px 0px;
   }
 
-  h5 {
+  .pollingoLogoMed {
     display: none;
   }
 
   @include screenSizeBp(min-small) {
     // ----- small plus --------------------
 
-    h5 {
+    .pollingoLogoMed {
       display: initial;
+    }
+
+    .pollingoLogoSmall {
+      display: none;
     }
   }
 

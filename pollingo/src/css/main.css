@@ -54,13 +54,16 @@ body {
   margin: 0px 0px 0px 0px;
 }
 
-.header-container h5 {
+.header-container .pollingoLogoMed {
   display: none;
 }
 
 @media screen and (min-width: 39.9375em) {
-  .header-container h5 {
+  .header-container .pollingoLogoMed {
     display: initial;
+  }
+  .header-container .pollingoLogoSmall {
+    display: none;
   }
 }
 
@@ -239,10 +242,6 @@ body {
   height: auto;
   background-color: #ccccfc;
   box-sizing: border-box;
-}
-
-.pollbox-1 footer .formOff {
-  display: none;
 }
 
 .pollbox-1 footer .pollTypeIRV {

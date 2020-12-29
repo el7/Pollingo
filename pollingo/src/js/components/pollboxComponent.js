@@ -34,13 +34,17 @@ function PollBox(props) {
 //        setTabSelected(1);
         var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
         var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+        var inputItems = document.querySelectorAll("." + pollInputType);
 
+        var tabNumber = 0;
         var newClass = "";
 
         switch (val) {
             case "irv":
+                    tabNumber = 0;
                     newClass = "pollTypeIRV";
                     console.log('it does work!');
+
                     setPollInputType("checkbox");
                     setPollInputName1("pbInputName1");             
                     setPollInputName2("pbInputName1");
@@ -48,14 +52,21 @@ function PollBox(props) {
                     setPollInputName4("pbInputName1");                                                            
                     break;
             case "app":
+
+                    // inputItems.forEach(function(node, index){
+                    //     node.checked = false;
+                    // });
+
+                    tabNumber = 1;                    
                     newClass = "pollTypeApproval";
-                    setPollInputType("radio");
+                    setPollInputType("radio");                   
                     setPollInputName1("pbInputName1");
                     setPollInputName2("pbInputName2");
                     setPollInputName3("pbInputName3");
                     setPollInputName4("pbInputName4");                    
                     break;
             case "rc":
+                    tabNumber = 2;
                     newClass = "pollTypeRC";
                     setPollInputType("radio");
                     setPollInputName1("pbInputName1");
@@ -64,6 +75,7 @@ function PollBox(props) {
                     setPollInputName4("pbInputName4");                    
                     break;                                        
             case "star":
+                    tabNumber = 3;                
                     newClass = "pollTypeSTAR";
                     setPollInputType("checkbox");                    
                     setPollInputName1("pbInputName1");             
@@ -75,14 +87,14 @@ function PollBox(props) {
 
         // ReactDOM.render("<h1>new</h1>", document.getElementsByClassName("console"));
         tabButtons.forEach(function(node, index){
-            if (index == val) {
+            if (index === tabNumber) {
                 // selected
                 node.style.color = "#ffffff";
                 node.style.backgroundColor = "#5c0236";
-                setTabSelected(val);
+                setTabSelected(tabNumber);
                 setPollTypeClass(newClass);
-            } else if (val) {
-                
+
+//            } else if (val) {              
             } else {
                  // not selected
                  node.style.color = "#ddc5d3";
@@ -116,14 +128,14 @@ function PollBox(props) {
 
                         <br />
                         <form className={pollTypeClass}>
-                            <input type={pollInputType} name="pollInputName1" value="tb"></input>
-                            <label className={pollTypeClass} for="pollInputName1">{props.a1}</label><br />
-                            <input type={pollInputType} name="pollInputName2" value="tb"></input>
-                            <label className={pollTypeClass} for="pollInputName2">{props.a2}</label><br />
-                            <input type={pollInputType} name="pollInputName3" value="tb"></input>
-                            <label className={pollTypeClass} for="pollInputName3">{props.a3}</label><br />
-                            <input type={pollInputType} name="pollInputName4" value="tb"></input>
-                        <label className={pollTypeClass} for="pollInputName4">{props.a4}</label><br />
+                            <input type={pollInputType} name={pollInputName1} value="tb"></input>
+                            <label className={pollTypeClass} for={pollInputName1}>{props.a1}</label><br />
+                            <input type={pollInputType} name={pollInputName2} value="tb"></input>
+                            <label className={pollTypeClass} for={pollInputName2}>{props.a2}</label><br />
+                            <input type={pollInputType} name={pollInputName3} value="tb"></input>
+                            <label className={pollTypeClass} for={pollInputName3}>{props.a3}</label><br />
+                            <input type={pollInputType} name={pollInputName4} value="tb"></input>
+                            <label className={pollTypeClass} for={pollInputName4}>{props.a4}</label><br />
                         </form>
 
                     </div>

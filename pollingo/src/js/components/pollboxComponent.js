@@ -14,12 +14,20 @@ function PollBox(props) {
     var initialPollType = "IRV";
     var initialPollTypeClass = "pollTypeIRV";
     var initialPollInputType = "checkbox";
-
+    var initialPollInputName1 = "pbInputName1";
+    var initialPollInputName2 = "pbInputName1";
+    var initialPollInputName3 = "pbInputName1";
+    var initialPollInputName4 = "pbInputName1";
+    
     // STATE DATA -----------------------------------
     const [tabSelected, setTabSelected] = useState(initialTabSelected);
     const [pollType, setPollType] = useState(initialPollType);
     const [pollTypeClass, setPollTypeClass] = useState(initialPollTypeClass);
     const [pollInputType, setPollInputType] = useState(initialPollInputType);
+    const [pollInputName1, setPollInputName1] = useState(initialPollInputName1);
+    const [pollInputName2, setPollInputName2] = useState(initialPollInputName2);
+    const [pollInputName3, setPollInputName3] = useState(initialPollInputName3);
+    const [pollInputName4, setPollInputName4] = useState(initialPollInputName4);
 
     // FUNCTIONS -------------
     function showPanel(val) {
@@ -34,18 +42,34 @@ function PollBox(props) {
                     newClass = "pollTypeIRV";
                     console.log('it does work!');
                     setPollInputType("checkbox");
+                    setPollInputName1("pbInputName1");             
+                    setPollInputName2("pbInputName1");
+                    setPollInputName3("pbInputName1");
+                    setPollInputName4("pbInputName1");                                                            
                     break;
             case "app":
                     newClass = "pollTypeApproval";
                     setPollInputType("radio");
+                    setPollInputName1("pbInputName1");
+                    setPollInputName2("pbInputName2");
+                    setPollInputName3("pbInputName3");
+                    setPollInputName4("pbInputName4");                    
                     break;
             case "rc":
                     newClass = "pollTypeRC";
-                    setPollInputType("radio");                    
+                    setPollInputType("radio");
+                    setPollInputName1("pbInputName1");
+                    setPollInputName2("pbInputName2");
+                    setPollInputName3("pbInputName3");
+                    setPollInputName4("pbInputName4");                    
                     break;                                        
             case "star":
                     newClass = "pollTypeSTAR";
                     setPollInputType("checkbox");                    
+                    setPollInputName1("pbInputName1");             
+                    setPollInputName2("pbInputName1");
+                    setPollInputName3("pbInputName1");
+                    setPollInputName4("pbInputName1");                    
                     break;
         }
 
@@ -92,25 +116,15 @@ function PollBox(props) {
 
                         <br />
                         <form className={pollTypeClass}>
-                            <input type={pollInputType} name="cb1" value="tb"></input>
-                            <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
-                            <input type={pollInputType} name="cb2" value="tb"></input>
-                            <label className={pollTypeClass} for="cb2">{props.a2}</label><br />
-                            <input type={pollInputType} name="cb3" value="tb"></input>
-                            <label className={pollTypeClass} for="cb3">{props.a3}</label><br />
-                            <input type={pollInputType} name="cb4" value="tb"></input>
-                        <label className={pollTypeClass} for="cb4">{props.a4}</label><br />
+                            <input type={pollInputType} name="pollInputName1" value="tb"></input>
+                            <label className={pollTypeClass} for="pollInputName1">{props.a1}</label><br />
+                            <input type={pollInputType} name="pollInputName2" value="tb"></input>
+                            <label className={pollTypeClass} for="pollInputName2">{props.a2}</label><br />
+                            <input type={pollInputType} name="pollInputName3" value="tb"></input>
+                            <label className={pollTypeClass} for="pollInputName3">{props.a3}</label><br />
+                            <input type={pollInputType} name="pollInputName4" value="tb"></input>
+                        <label className={pollTypeClass} for="pollInputName4">{props.a4}</label><br />
                         </form>
-                        {/* <form className={pollTypeClass}>
-                            <input type="radio" name="radio1" value="tb"></input>
-                            <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
-                            <input type="radio" name="radio1" value="tb"></input>
-                            <label className={pollTypeClass} for="cb2">{props.a2}</label><br />
-                            <input type="radio" name="radio1" value="tb"></input>
-                            <label className={pollTypeClass} for="cb3">{props.a3}</label><br />
-                            <input type="radio" name="radio1" value="tb"></input>
-                            <label className={pollTypeClass} for="cb4">{props.a4}</label><br />
-                        </form> */}
 
                     </div>
                     {/* <div className="tabPanel tabPanel2">Buttons Approval</div>

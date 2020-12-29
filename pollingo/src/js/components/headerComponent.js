@@ -6,6 +6,7 @@ import "../../css/main.css";
 
 function Header(props) {
 
+
     const [headerColor, setColor] = useState("444444");
     const [screenWidth, setScreenWidth] = useState("200"); 
     
@@ -20,7 +21,7 @@ function Header(props) {
 
 //    console.log("here: " + props.mycolor);
 //    console.log("here: " + width);
-// temp test
+//    temp test
 //    mycolor = "444444";
 //    mycolor = '"#' + mycolor + '"';
 //    mycolor = "backgroundColor: " + mycolor;
@@ -33,15 +34,15 @@ function Header(props) {
         <div className="header-container" >
             <header>
                 {/* <img src="/Pollingo/pollingo/src/images/pollingo_logo_s.PNG" />               */}
-                <h3 className="pollingoLogoSmall">P.</h3>
-                <h3 className="pollingoLogoMed">Pollingo.</h3>
+                <h3 className="pollingoLogo pollingoLogoSmall">P.</h3>
+                <h3 className="pollingoLogo pollingoLogoMed">Pollingo.</h3>
             </header>
             <main></main>
             <aside>
                 <ul>
                     <li>User</li>
                     <li>Contact</li>
-                    <li>Polls</li>                   
+                    <li>Polls</li>
                 </ul>
             </aside>
         </div>

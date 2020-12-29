@@ -4,6 +4,13 @@ import "../../css/main.css";
 
 function PollBox(props) {
 
+
+    let pollboxClassMap = new Map();
+    pollboxClassMap.set('irv', 'pollTypeIRV');
+    pollboxClassMap.set('app', 'pollTypeApp');
+    pollboxClassMap.set('rc', 'pollTypeRC');        
+    pollboxClassMap.set('star', 'pollTypeSTAR');
+
     // STATE DATA -----------------------------------
     const [tabSelected, setTabSelected] = useState(0);
     const [pollType, setPollType] = useState("IRV");
@@ -73,7 +80,7 @@ function PollBox(props) {
                         <span>{pollTypes[tabSelected]}</span>
 
                         <br />
-                        <form className={inputClassToggle}>
+                        <form className={pollTypeClass}>
                             <input type="checkbox" name="cb1" value="tb"></input>
                             <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
                             <input type="checkbox" name="cb2" value="tb"></input>
@@ -83,7 +90,7 @@ function PollBox(props) {
                             <input type="checkbox" name="cb4" value="tb"></input>
                         <label className={pollTypeClass} for="cb4">{props.a4}</label><br />
                         </form>
-                        <form className={inputClassToggle}>
+                        <form className={pollTypeClass}>
                             <input type="radio" name="radio1" value="tb"></input>
                             <label className={pollTypeClass} for="cb1">{props.a1}</label><br />
                             <input type="radio" name="radio1" value="tb"></input>

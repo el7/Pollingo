@@ -25,7 +25,7 @@ function LayoutOne() {
         <div className="layoutOne grid-main-container">
             <div className="grid-item grid-main-item-header">
                 <Header/>
-                <HeaderLower tag1={t1} tag2={t2} tag3={t3}/>
+                {/* <HeaderLower tag1={t1} tag2={t2} tag3={t3}/> */}
             </div>
             <div className="grid-item grid-main-item-main grid-main">
                 <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>

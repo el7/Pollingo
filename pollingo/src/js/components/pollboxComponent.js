@@ -29,6 +29,9 @@ function PollBox(props) {
     const [pollInputName3, setPollInputName3] = useState(initialPollInputName3);
     const [pollInputName4, setPollInputName4] = useState(initialPollInputName4);
 
+    var experiment1 = '<input type="checkbox" name="pbInputName1" value="tb"></input>';
+    var experiment2 = '<input type= name="pbInputName1" value="tb"></input>';
+
     // FUNCTIONS -------------
     function showPanel(val) {
 //        setTabSelected(1);
@@ -45,6 +48,11 @@ function PollBox(props) {
                     newClass = "pollTypeIRV";
                     console.log('it does work!');
 
+                    inputItems.forEach(function(node, index){
+                        console.log("node: ");
+                        node.checked = false;
+                    });
+
                     setPollInputType("checkbox");
                     setPollInputName1("pbInputName1");             
                     setPollInputName2("pbInputName1");
@@ -53,9 +61,10 @@ function PollBox(props) {
                     break;
             case "app":
 
-                    // inputItems.forEach(function(node, index){
-                    //     node.checked = false;
-                    // });
+                    inputItems.forEach(function(node, index){
+                        node.checked = false;
+                        console.log("node: ");                        
+                    });
 
                     tabNumber = 1;                    
                     newClass = "pollTypeApproval";
@@ -66,6 +75,12 @@ function PollBox(props) {
                     setPollInputName4("pbInputName4");                    
                     break;
             case "rc":
+
+                inputItems.forEach(function(node, index){
+                    node.checked = false;
+                    console.log("node: ");                    
+                });
+            
                     tabNumber = 2;
                     newClass = "pollTypeRC";
                     setPollInputType("radio");
@@ -75,6 +90,12 @@ function PollBox(props) {
                     setPollInputName4("pbInputName4");                    
                     break;                                        
             case "star":
+
+                inputItems.forEach(function(node, index){
+                    node.checked = false;
+                    console.log("node: ");                    
+                });
+
                     tabNumber = 3;                
                     newClass = "pollTypeSTAR";
                     setPollInputType("checkbox");                    

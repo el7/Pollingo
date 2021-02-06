@@ -8,11 +8,11 @@ api = Api(app)
 
 
 
-class UpdatePoll(Resouce):
+class UpdatePoll(Resource):
     # methods
     pass
 
-class Poll(Resouce):
+class Poll(Resource):
     # methods
     pass
 
@@ -23,7 +23,9 @@ api.add_resource(Poll, '/poll') # entry point
 
 
 
-
+if __name__ == '__main__':
+    print("here~") # doesn't work?
+    app.run() # run flask app
 
 
 

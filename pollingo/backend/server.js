@@ -17,6 +17,12 @@ mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedT
 const connection = mongoose.connection;
 connection.once('open', () => { console.log("MongoDB database connection established successfully")})
 
+const pollIRVRouter = require('./routes/poll_IRV.route');
+const pollRankedRouter = require('./routes/poll_Ranked.route');
+
+app.use('/pollIRV', pollIRVRouter);
+app.use('/pollRanked', pollRankedRouter);
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 

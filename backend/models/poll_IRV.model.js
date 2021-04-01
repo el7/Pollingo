@@ -10,6 +10,7 @@ const pollIRVSchema = new Schema({
         trim: true,
         minlength: 3
     },
+    /*
     answer1: {
         type: String,
         required: true,
@@ -38,11 +39,12 @@ const pollIRVSchema = new Schema({
         trim: true,
         minlength: 1
     },
+    /**/
 }, {
         timestamps: true,
 });
 
 
-const irvpolltest = mongoose.model('irvpolltest', pollIRVSchema)
+const IRVPolltest = mongoose.model('irvpolltest', pollIRVSchema)
 
-module.exports = irvpolltest;
+module.exports = IRVPolltest;

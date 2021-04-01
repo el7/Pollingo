@@ -10,6 +10,7 @@ const pollRankedSchema = new Schema({
         trim: true,
         minlength: 3
     },
+/*
     answer1: {
         type: String,
         required: true,
@@ -38,11 +39,12 @@ const pollRankedSchema = new Schema({
         trim: true,
         minlength: 1
     },
+    /**/
 }, {
         timestamps: true,
 });
 
 
-const rankedpolltest = mongoose.model('rankedpolltest', pollRankedSchema)
+const RankedPolltest = mongoose.model('rankedpolltest', pollRankedSchema)
 
-module.exports = rankedpolltest;
+module.exports = RankedPolltest;

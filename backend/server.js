@@ -4,10 +4,11 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 
+// create express server
 const app = express();
 const port = process.env.PORT || 5000;
 
-//
+// middleware, process json
 app.use(cors());
 app.use(express.json());
 
@@ -21,15 +22,14 @@ connection.once('open', () => { console.log("MongoDB database connection establi
 
 // 
 const pollIRVRouter = require('./routes/poll_IRV.route');
-const pollRankedRouter = require('./routes/poll_Ranked.route');
+// const pollRankedRouter = require('./routes/poll_Ranked.route');
 
 // 
 // note: I think this should be /poll_IRV.route
 app.use('/pollIRV', pollIRVRouter);
-app.use('/pollRanked', pollRankedRouter);
+// app.use('/pollRanked', pollRankedRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
-
 });
 

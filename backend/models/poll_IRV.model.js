@@ -1,3 +1,7 @@
+/* *****************************************
+IRV POLL DATA MODEL
+*******************************************/
+
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
@@ -10,7 +14,6 @@ const pollIRVSchema = new Schema({
         trim: true,
         minlength: 3
     },
-    /*
     answer1: {
         type: String,
         required: true,
@@ -18,6 +21,7 @@ const pollIRVSchema = new Schema({
         trim: true,
         minlength: 1
     },    
+    
     answer2: {
         type: String,
         required: false,
@@ -38,8 +42,7 @@ const pollIRVSchema = new Schema({
         unique: true,
         trim: true,
         minlength: 1
-    },
-    /**/
+    },    
 }, {
         timestamps: true,
 });

@@ -22,6 +22,15 @@ router.route('/add').post((req, res) => {
         .catch(err => res.status(400).json('Er' + err));
 });
 
+
+router.route('/:id').get((req, res) => {
+    Exercise.findById(req.params.id)
+      .then(pollIRV => res.json(pollIRV))
+      .catch(err => res.status(400).json('Error: ' + err));
+  });
+
+
+
 module.exports = router;
 
 

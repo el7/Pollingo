@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import "../../css/main.css";
 
 
-function Results() {
-
+function ResultBox() {
     return (
         <div className="">
-
+            <p>This is where the results go for the currenly selected poll. React will change graph based on current state data.</p>
         </div>
     )
 }
 
-export default Results;
+export default ResultBox;

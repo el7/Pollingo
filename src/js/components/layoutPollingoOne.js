@@ -1,10 +1,15 @@
+// React components
 import React, {useState} from 'react';
 import Header from './headerComponent';
 import HeaderLower from './headerLowerComponent';
 import PollBox from './pollboxComponent';
 import Console from './consoleComponent';
 import Separator from './separatorComponent';
+import ResultBox from './resultsComponent';
+
+// CSS
 import "../../css/main.css";
+
 
 function LayoutOne() {
 
@@ -28,9 +33,7 @@ function LayoutOne() {
                 {/* <HeaderLower tag1={t1} tag2={t2} tag3={t3}/> */}
             </div>
             <div className="grid-item grid-main-item-main grid-main">
-                <div classaName="">
-                    <p>This is where the results go for the currenly selected poll. React will change graph based on current state data.</p>
-                </div>
+                <ResultBox />
                 <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>
                 <Separator t="➽─────❥"/>
                 <PollBox q="Which is your favorite vehicle brand?" a1="Tesla" a2="Subaru" a3="Ford" a4="Volkswagon"/>

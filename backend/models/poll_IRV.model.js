@@ -21,7 +21,6 @@ const pollIRVSchema = new Schema({
         trim: true,
         minlength: 1
     },    
-    
     answer2: {
         type: String,
         required: false,

@@ -1,3 +1,6 @@
+
+// todo: pretty sure this can be deleted, see /backend/models
+
 const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({

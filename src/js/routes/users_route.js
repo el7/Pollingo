@@ -1,3 +1,6 @@
+
+// todo: pretty sure this can be deleted, see /backend/routes
+
 const express = require('express');
 const router = express.Router();
 const Mongoose = require('mongoose');

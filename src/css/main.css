@@ -1,13 +1,11 @@
 @media screen and (min-width: 39.9375em) {
   * {
-    background-color: #f3bdff;
     width: 100%;
   }
 }
 
 @media screen and (min-width: 90.1875em) {
   * {
-    background-color: #c95d7c;
     width: 500px;
   }
 }
@@ -156,7 +154,6 @@ body {
 
 @media screen and (min-width: 90.1875em) {
   .console * {
-    background-color: #c95d7c;
     width: 500px;
   }
 }
@@ -246,6 +243,16 @@ body {
   height: auto;
   background-color: #ccccfc;
   box-sizing: border-box;
+  /*
+    .tabPanel {
+      //      height: 500px;
+      //      display: inline-block;
+    }
+
+    .formOff {
+      //      display: none;
+    }
+    */
 }
 
 .pollbox-1 footer .pollTypeIRV {

@@ -21,7 +21,7 @@
 
   // VIEW SIZE [xl, 5/6]
   @include screenSizeBp(min-extralarge) {
-    background-color: getColor(pb-main-bg-1);
+    //    background-color: getColor(pb-main-bg-1);
     width: 500px;
   }
 

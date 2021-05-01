@@ -135,29 +135,19 @@ body {
 }
 
 .console {
-  /***** VIEW SIZE [sm, 2/6] *****/
   /***** VIEW SIZE [xs, 1/6] *****/
   background-color: #e281f8;
-  margin: 10px;
-  padding: 5px;
-  border: 1px solid;
+  /***** VIEW SIZE [sm, 2/6] *****/
+}
+
+.console .console-name {
+  color: #47002a;
 }
 
 @media screen and (min-width: 39.9375em) {
   .console * {
     width: 100%;
   }
-}
-
-.console h2,
-.console p {
-  border: 1px solid;
-  margin: 7px;
-  padding: 3px;
-}
-
-.console .console-name {
-  color: #47002a;
 }
 
 .pollbox-1 {

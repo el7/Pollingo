@@ -3,27 +3,16 @@
 @import "../1-helpers/_util_mixins";
 
 .console {
+  /***** VIEW SIZE [xs, 1/6] *****/
+  background-color: getColor(con-bg-1);
+
+  .console-name {
+    color: getColor(con-name-1);
+  }
+
   /***** VIEW SIZE [sm, 2/6] *****/
   @include screenSizeBp(min-small) {
     //        background-color: getColor(pb-header-bg-1);
     width: 100%;
-  }
-
-  /***** VIEW SIZE [xs, 1/6] *****/
-
-  h2,
-  p {
-    border: 1px solid;
-    margin: 7px;
-    padding: 3px;
-  }
-
-  background-color: getColor(con-bg-1);
-  margin: 10px;
-  padding: 5px;
-  border: 1px solid;
-
-  .console-name {
-    color: getColor(con-name-1);
   }
 }

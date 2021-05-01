@@ -1,10 +1,9 @@
-// view size small 2/6
-@include screenSizeBp(min-small) {
-  //  background-color: getColor(pb-header-bg-1);
-  width: 100%;
-}
-
 // view size xs
 body {
   margin: 0;
+}
+
+// view size small 2/6
+@include screenSizeBp(min-small) {
+  //  background-color: getColor(pb-header-bg-1);
 }

@@ -20,34 +20,11 @@
     font: getSize(pb-header-text-1);
   }
 
-  header {
-    grid-area: header;
-    background-color: getColor(pb-header-bg-1);
-    border: getSize(pb-border-1);
-    //    margin: auto;
-  }
-
-  nav {
-    grid-area: nav;
-    background-color: getColor(pb-nav-bg-1);
-    border: getSize(pb-border-1);
-    margin: auto;
-  }
-
   main {
     grid-area: main;
     background-color: getColor(pb-main-bg-1);
     border: getSize(pb-border-1);
   }
-
-  /*  
-  aside {
-    grid-area: aside;
-    background-color: getColor(pb-header-bg-1);
-    border: getSize(pb-border-1);
-    margin: auto;
-  }
-*/
 
   footer {
     grid-area: footer;
@@ -56,17 +33,6 @@
     height: auto;
     background-color: rgb(204, 204, 252);
     box-sizing: border-box;
-
-    /*
-    .tabPanel {
-      //      height: 500px;
-      //      display: inline-block;
-    }
-
-    .formOff {
-      //      display: none;
-    }
-    */
 
     .pollTypeIRV {
       color: rgb(112, 0, 0);

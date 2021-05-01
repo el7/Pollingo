@@ -128,32 +128,11 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 18fr 1fr 1fr;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
-  /*  
-  aside {
-    grid-area: aside;
-    background-color: getColor(pb-header-bg-1);
-    border: getSize(pb-border-1);
-    margin: auto;
-  }
-*/
 }
 
 .pollbox-1 .span-pollbox-question {
   color: #ffebf1;
   font: italic bold 20px Georgia;
-}
-
-.pollbox-1 header {
-  grid-area: header;
-  background-color: #f3bdff;
-  border: 1px solid #473333;
-}
-
-.pollbox-1 nav {
-  grid-area: nav;
-  background-color: white;
-  border: 1px solid #473333;
-  margin: auto;
 }
 
 .pollbox-1 main {
@@ -169,16 +148,6 @@ body {
   height: auto;
   background-color: #ccccfc;
   box-sizing: border-box;
-  /*
-    .tabPanel {
-      //      height: 500px;
-      //      display: inline-block;
-    }
-
-    .formOff {
-      //      display: none;
-    }
-    */
 }
 
 .pollbox-1 footer .pollTypeIRV {

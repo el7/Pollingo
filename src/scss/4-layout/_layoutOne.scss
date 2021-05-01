@@ -2,14 +2,14 @@
 @import "../1-helpers/_util_functions";
 @import "../1-helpers/_util_mixins";
 
-/*
+/****************************
     Screen Sizes: 
     - min-small 
     - min-medium 
     - min-large 
     - min-extralarge 
     - min-extraextralarge 
-*/
+*****************************/
 
 .layoutOne {
   // apparently max()/min() is also a sass function so

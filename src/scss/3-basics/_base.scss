@@ -4,26 +4,7 @@
   width: 100%;
 }
 
-// view size med 3/6
-@include screenSizeBp(min-medium) {
-}
-
-// view size large 4/6
-@include screenSizeBp(min-large) {
-}
-
-// view size xl 5/6
-@include screenSizeBp(min-extralarge) {
-  //  background-color: getColor(pb-main-bg-1);
-  width: 500px;
-}
-
-// view size xxl 6/6
-@include screenSizeBp(min-extraextralarge) {
-}
-
 // view size xs
-
 body {
   margin: 0;
 }

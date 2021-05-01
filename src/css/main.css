@@ -4,24 +4,18 @@
   }
 }
 
-@media screen and (min-width: 90.1875em) {
-  * {
-    width: 500px;
-  }
-}
-
 body {
   margin: 0;
 }
 
-/*
+/****************************
     Screen Sizes: 
     - min-small 
     - min-medium 
     - min-large 
     - min-extralarge 
     - min-extraextralarge 
-*/
+*****************************/
 .layoutOne {
   width: max(100%, 320px);
 }
@@ -154,7 +148,7 @@ body {
 
 @media screen and (min-width: 90.1875em) {
   .console * {
-    width: 500px;
+    width: 100%;
   }
 }
 

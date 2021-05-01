@@ -21,10 +21,8 @@ body {
 }
 
 .layoutOne .grid-main-item-main {
-  background-color: #c2f1ff;
-  padding-top: 80px;
-  padding-bottom: 30px;
-  margin-top: 0px;
+  background-color: #b5aadf;
+  padding-top: 50px;
 }
 
 .header-container {
@@ -33,7 +31,7 @@ body {
   width: 100%;
   background-color: #ffe7f5;
   color: #47002a;
-  padding: 0px 0px;
+  padding: 5px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

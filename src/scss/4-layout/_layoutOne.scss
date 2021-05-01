@@ -17,9 +17,7 @@
   width: unquote("max(100%, 320px)");
 
   .grid-main-item-main {
-    background-color: rgb(194, 241, 255);
-    padding-top: 80px;
-    padding-bottom: 30px;
-    margin-top: 0px;
+    background-color: getColor(layout-one-bg-1);
+    padding-top: 50px; // needed to clear header
   }
 }

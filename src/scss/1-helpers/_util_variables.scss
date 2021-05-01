@@ -13,6 +13,7 @@ $colors: (
   header-bg-1: rgb(255, 231, 245),
   header-text-1: rgb(71, 0, 42),
   pb-header-bg-1: rgb(243, 189, 255),
+  pb-header-text-1: rgb(255, 235, 241),
   pb-main-bg-1: rgb(201, 93, 124),
   pb-aside-bg-1: rgb(251, 253, 255),
   pb-nav-bg-1: rgb(255, 255, 255),
@@ -31,6 +32,7 @@ $sizes: (
   pb-border-1: 1px solid rgb(71, 51, 51),
   pb-border-2: 2px dashed rgb(255, 255, 255),
   pb-border-3: 3px solid rgb(255, 255, 255),
+  pb-header-text-1: italic bold 20px Georgia,
 );
 
 @function getColor($color-name) {

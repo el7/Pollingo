@@ -135,18 +135,15 @@ body {
 }
 
 .console {
+  /***** VIEW SIZE [sm, 2/6] *****/
+  /***** VIEW SIZE [xs, 1/6] *****/
   background-color: #e281f8;
-  margin: 0px 0px 0px 0px;
+  margin: 10px;
   padding: 5px;
+  border: 1px solid;
 }
 
 @media screen and (min-width: 39.9375em) {
-  .console * {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 90.1875em) {
   .console * {
     width: 100%;
   }
@@ -154,15 +151,13 @@ body {
 
 .console h2,
 .console p {
-  margin: 0px;
+  border: 1px solid;
+  margin: 7px;
+  padding: 3px;
 }
 
 .console .console-name {
   color: #47002a;
-}
-
-.console .console-desc {
-  color: #331300;
 }
 
 .pollbox-1 {

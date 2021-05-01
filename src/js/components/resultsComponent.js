@@ -7,8 +7,9 @@ function ResultBox() {
         <div className="resultbox-container">
         <div className="resultbox-graph-container">
             <p>This is where the results go for the currenly selected poll. </p>
-            <p>React will change graph based on current state data.</p>
-        </div></div>
+        </div>
+            <p>This is the outer-area, not sure what will go here.</p>
+        </div>
     )
 }
 

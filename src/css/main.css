@@ -198,7 +198,15 @@ body {
   color: #6b2a2a;
 }
 
-.resultbox-graph p {
+.resultbox-container {
+  border: 1px solid #ac2c2c;
   color: #34189b;
+  padding: 5px;
+}
+
+.resultbox-container .resultbox-graph-container {
+  border: 1px solid #ac2c2c;
+  color: #34189b;
+  padding: 5px;
 }
 /*# sourceMappingURL=main.css.map */

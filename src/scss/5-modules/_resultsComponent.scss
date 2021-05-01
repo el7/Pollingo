@@ -1,3 +1,11 @@
-.resultbox-graph p {
+.resultbox-container {
+  border: getSize(resultbox-border-1);
   color: getColor(res-box-text-1);
+  padding: getSize(padding-5px);
+
+  .resultbox-graph-container {
+    border: getSize(resultbox-border-1);
+    color: getColor(res-box-text-1);
+    padding: getSize(padding-5px);
+  }
 }

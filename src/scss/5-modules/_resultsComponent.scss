@@ -1,7 +1,3 @@
-* {
-  color: blue;
-}
-
-p {
-  color: red;
+.resultbox-graph p {
+  color: getColor(res-box-text-1);
 }

@@ -5,7 +5,7 @@ import "../../css/main.css";
 
 function ResultBox() {
     return (
-        <div className="">
+        <div className="resultbox-graph">
             <p>This is where the results go for the currenly selected poll. </p>
             <p>React will change graph based on current state data.</p>
         </div>

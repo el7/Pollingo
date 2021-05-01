@@ -8,9 +8,10 @@ function ResultBox() {
         - question
         - selection text 1, 2, 3, 4
         - selection values 1, 2, 3, 4
+
+        Honestly this might be better to come from the parent and data passed
+        as parameters. 
     */
-
-
 
     return (
         <div className="resultbox-container">

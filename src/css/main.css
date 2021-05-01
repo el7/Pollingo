@@ -141,22 +141,22 @@ body {
 }
 
 .pollbox-1 footer .pollTypeIRV {
-  color: #700000;
+  color: #e93118;
   list-style-type: georgian;
 }
 
 .pollbox-1 footer .pollTypeApproval {
-  color: #000072;
+  color: #3b10e7;
   list-style-type: katakana-iroha;
 }
 
 .pollbox-1 footer .pollTypeRC {
-  color: #026807;
+  color: #187935;
   list-style-type: hiragana;
 }
 
 .pollbox-1 footer .pollTypeSTAR {
-  color: #695a05;
+  color: #61662f;
 }
 
 .pollbox-1 footer .tabPanel,
@@ -169,20 +169,11 @@ body {
   font-family: sans-serif;
 }
 
-.pollbox-1 .tabContainer .buttonContainer {
-  height: 50%;
-}
-
 .pollbox-1 .tabContainer .buttonContainer button {
   width: 25%;
-  height: 100%;
-  float: left;
   border: none;
-  outline: none;
   cursor: pointer;
-  padding: 0px;
-  font-family: sans-serif;
-  font-size: 18px;
+  padding: 10px;
   background-color: #30021c;
   color: #ffe4f4;
 }

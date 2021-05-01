@@ -35,22 +35,22 @@
     box-sizing: border-box;
 
     .pollTypeIRV {
-      color: rgb(112, 0, 0);
+      color: getColor(pb-main-body-text-1);
       list-style-type: georgian;
     }
 
     .pollTypeApproval {
-      color: rgb(0, 0, 114);
+      color: getColor(pb-main-body-text-2);
       list-style-type: katakana-iroha;
     }
 
     .pollTypeRC {
-      color: rgb(2, 104, 7);
+      color: getColor(pb-main-body-text-3);
       list-style-type: hiragana;
     }
 
     .pollTypeSTAR {
-      color: rgb(105, 90, 5);
+      color: getColor(pb-main-body-text-4);
     }
 
     .tabPanel,
@@ -66,18 +66,11 @@
 
   .tabContainer {
     .buttonContainer {
-      height: 50%;
-
       button {
         width: 25%;
-        height: 100%;
-        float: left;
         border: none;
-        outline: none;
         cursor: pointer;
-        padding: 0px;
-        font-family: sans-serif;
-        font-size: 18px;
+        padding: 10px;
         background-color: getColor(pb-main-tab-bg-1);
         color: getColor(pb-main-tab-text-1);
       }

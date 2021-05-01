@@ -7,74 +7,59 @@
   // --------------------------------------
 
   position: fixed;
-  top: 0;
   width: 100%;
   background-color: getColor(header-bg-1);
   color: getColor(header-text-1);
-  padding: getSize(padding-5);
-  display: flex;
-  flex-flow: row nowrap;
-  //  justify-content: center;
-  align-items: center;
-  //  align-content: center;
-  border: li {
-    color: getColor(header-text-1);
-  }
+  padding: getSize(padding-5px);
 
   h3 {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   h3,
   h5 {
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
   }
 
   .pollingoLogoMed {
     display: none;
   }
 
+  display: flex;
+  flex-flow: row nowrap;
+
   @include screenSizeBp(min-small) {
     // ----- small plus --------------------
+    // --------------------------------------
 
+    // switch the logos
     .pollingoLogoMed {
       display: initial;
     }
 
+    // switch the logos
     .pollingoLogoSmall {
       display: none;
     }
   }
 
-  // ----- GRID AREAS -------------------------
+  // ----- FLEX AREAS -------------------------
+
+  // this might be coded wrong... header / main / aside might not be the correct selector in this section
 
   header {
-    grid-area: header;
+    //    grid-area: header;
     background-color: getColor(pb-header-bg-1);
     border: getSize(pb-border-1);
-    margin: 0px 0px 0px 0px;
+    padding: getSize(padding-5px);
+    width: auto;
   }
 
   main {
-    grid-area: main;
-    background-color: getColor(pb-header-bg-1);
-    margin: auto auto auto 0px;
+    //    grid-area: main;
   }
 
   aside {
-    grid-area: aside;
-    background-color: getColor(pb-header-bg-1);
-    border: getSize(pb-border-1);
-    margin: 0px 0px 0px 0px;
-
-    ul {
-      margin: 0px;
-      padding: 0px;
-    }
-
-    ul li {
-      margin: 3px;
-      display: inline;
-    }
+    //    grid-area: aside;
   }
 }

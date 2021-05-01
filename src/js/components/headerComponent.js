@@ -33,18 +33,12 @@ function Header(props) {
     return (
         <div className="header-container" >
             <header>
-                {/* <img src="/Pollingo/pollingo/src/images/pollingo_logo_s.PNG" />               */}
+                {/* <img src="/Pollingo/pollingo/src/images/pollingo_logo_s.PNG" /> */}
                 <h3 className="pollingoLogo pollingoLogoSmall">P.</h3>
                 <h3 className="pollingoLogo pollingoLogoMed">Pollingo.</h3>
             </header>
             <main></main>
-            <aside>
-                <ul>
-                    <li>User</li>
-                    <li>Contact</li>
-                    <li>Polls</li>
-                </ul>
-            </aside>
+            <aside></aside>
         </div>
     )
 }

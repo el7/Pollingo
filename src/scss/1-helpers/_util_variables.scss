@@ -25,6 +25,7 @@ $colors: (
   pb-main-tab-text-2: rgb(255, 255, 255),
   res-box-text-1: rgb(52, 24, 155),
   layout-one-bg-1: rgb(181, 170, 223),
+  body-bg-1: rgb(181, 170, 223),
 );
 
 $sizes: (
@@ -33,6 +34,7 @@ $sizes: (
   pb-border-2: 2px dashed rgb(255, 255, 255),
   pb-border-3: 3px solid rgb(255, 255, 255),
   pb-header-text-1: italic bold 20px Georgia,
+  console-border-1: 1px solid rgb(172, 44, 44),
 );
 
 @function getColor($color-name) {

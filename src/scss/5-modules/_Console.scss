@@ -5,6 +5,7 @@
 .console {
   /***** VIEW SIZE [xs, 1/6] *****/
   background-color: getColor(con-bg-1);
+  border: getSize(console-border-1);
 
   .console-name {
     color: getColor(con-name-1);

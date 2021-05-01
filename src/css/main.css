@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #b5aadf;
 }
 
 /****************************
@@ -102,6 +103,7 @@ body {
 .console {
   /***** VIEW SIZE [xs, 1/6] *****/
   background-color: #e281f8;
+  border: 1px solid #ac2c2c;
   /***** VIEW SIZE [sm, 2/6] *****/
 }
 

@@ -83,7 +83,9 @@
   }
 
   // view size xl 5/6
-  @include screenSizeBp(min-extralarge) {
-    //    width: 600px;
+  @include screenSizeBp(min-small) {
+    //    max-width: 630px;
+    //    min-width: 630px;
+    //    margin: 0 auto;
   }
 }

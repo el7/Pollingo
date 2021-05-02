@@ -132,7 +132,7 @@ function PollBox(props) {
     return (
         <div className="pollbox-1 testC"> 
             <main>
-                <span className="span-pollbox-question">{props.q}</span>
+                <span className="span-pollbox-question">{props.pd.question}</span>
             </main>
             {/* <aside>ASIDE.</aside> */}
             <footer>
@@ -150,13 +150,13 @@ function PollBox(props) {
                         <br />
                         <form className={pollTypeClass}>
                             <input type={pollInputType} name={pollInputName1} value="tb"></input>
-                            <label className={pollTypeClass} for={pollInputName1}>{props.a1}</label><br />
+                            <label className={pollTypeClass} for={pollInputName1}>{props.pd.answer1}</label><br />
                             <input type={pollInputType} name={pollInputName2} value="tb"></input>
-                            <label className={pollTypeClass} for={pollInputName2}>{props.a2}</label><br />
+                            <label className={pollTypeClass} for={pollInputName2}>{props.pd.answer2}</label><br />
                             <input type={pollInputType} name={pollInputName3} value="tb"></input>
-                            <label className={pollTypeClass} for={pollInputName3}>{props.a3}</label><br />
+                            <label className={pollTypeClass} for={pollInputName3}>{props.pd.answer3}</label><br />
                             <input type={pollInputType} name={pollInputName4} value="tb"></input>
-                            <label className={pollTypeClass} for={pollInputName4}>{props.a4}</label><br />
+                            <label className={pollTypeClass} for={pollInputName4}>{props.pd.answer4}</label><br />
                         </form>
 
                     </div>

@@ -12,11 +12,18 @@ import "../../css/main.css";
 function LayoutOne() {
 
     // function that generates polling questions    
-    const q1 = "What is the best movie ever?";
-    const q1_a1 = "The Matrix";
-    const q1_a2 = "V For Vendetta";
-    const q1_a3 = "The Big Lebowski";
-    const q1_a4 = "Tron";
+
+    const pollData = {
+        question: "What is the best movie ever?",
+        answer1: "The Matrix",
+        answer2: "V For Vendetta",
+        answer3: "The Big Lebowski",
+        answer4: "Tron",
+        value1: 123,
+        value2: 234,        
+        value3: 345,
+        value4: 456,
+    }
 
     const separator_text = "➽─────❥";
 
@@ -26,8 +33,8 @@ function LayoutOne() {
                 <Header/>
             </div>
             <div className="grid-item grid-main-item-main grid-main">
-                <ResultBox />
-                <PollBox q={q1} a1={q1_a1} a2={q1_a2} a3={q1_a3} a4={q1_a4}/>
+                <ResultBox pd={pollData} />
+                <PollBox pd={pollData} />
                 <Separator t={separator_text}/>
             </div>
             <div className="grid-item grid-main-item-footer">

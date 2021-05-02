@@ -84,7 +84,7 @@
 
   // view size xl 5/6
   @include screenSizeBp(min-small) {
-    //    max-width: 630px;
+    max-width: 630px;
     //    min-width: 630px;
     //    margin: 0 auto;
   }

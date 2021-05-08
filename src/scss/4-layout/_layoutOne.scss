@@ -12,12 +12,10 @@
 *****************************/
 
 .layoutOne {
-  // apparently max()/min() is also a sass function so
-  // need to use unquote()
   width: unquote("max(100%, 320px)");
 
   .grid-main-item-main {
     background-color: getColor(layout-one-bg-1);
-    padding-top: 50px; // needed to clear header
+    padding-top: 45px; // needed to clear header
   }
 }

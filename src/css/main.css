@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #ffe1e1;
+  background-color: #ffecec;
 }
 
 /****************************
@@ -16,22 +16,20 @@ body {
 }
 
 .layoutOne .grid-main-item-main {
-  background-color: #dda8a8;
-  padding-top: 50px;
+  background-color: #ffe6e6;
+  padding-top: 45px;
 }
 
 .header-container {
-  position: fixed;
-  width: 100%;
-  background-color: #ffe7f5;
-  color: #47002a;
-  padding: 5px;
   display: flex;
   flex-flow: row nowrap;
-}
-
-.header-container h3 {
-  font-size: 20px;
+  position: fixed;
+  height: 35px;
+  width: 100%;
+  background-color: #ff2ce3;
+  color: #47002a;
+  padding: 5px;
+  border-bottom: header-border-1;
 }
 
 .header-container h3,
@@ -56,7 +54,8 @@ body {
   background-color: #f3bdff;
   border: 1px solid #473333;
   padding: 5px;
-  width: auto;
+  width: fit-content;
+  height: fit-content;
 }
 
 .header-lower-container {
@@ -102,7 +101,7 @@ body {
 
 .console {
   /***** VIEW SIZE [xs, 1/6] *****/
-  background-color: #e281f8;
+  background-color: #f5caff;
   border: 1px solid #ac2c2c;
   /***** VIEW SIZE [sm, 2/6] *****/
 }
@@ -127,7 +126,7 @@ body {
 
 .pollbox-1 main {
   grid-area: main;
-  background-color: #c95d7c;
+  background-color: #fff1f5;
   border: 1px solid #473333;
 }
 

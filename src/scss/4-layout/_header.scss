@@ -4,17 +4,18 @@
 
 .header-container {
   // ----- xsmall plus --------------------
-  // --------------------------------------
+
+  display: flex;
+  flex-flow: row nowrap;
 
   position: fixed;
+  height: 35px;
   width: 100%;
-  background-color: getColor(header-bg-1);
+
+  background-color: getColor(test-wild-1);
   color: getColor(header-text-1);
   padding: getSize(padding-5px);
-
-  h3 {
-    font-size: 20px;
-  }
+  border-bottom: header-border-1;
 
   h3,
   h5 {
@@ -25,12 +26,8 @@
     display: none;
   }
 
-  display: flex;
-  flex-flow: row nowrap;
-
   @include screenSizeBp(min-small) {
     // ----- small plus --------------------
-    // --------------------------------------
 
     // switch the logos
     .pollingoLogoMed {
@@ -44,13 +41,12 @@
   }
 
   // ----- FLEX AREAS -------------------------
-  // this might be coded wrong... header / main / aside might not be the correct selector in this section
   header {
-    //    grid-area: header;
     background-color: getColor(pb-header-bg-1);
     border: getSize(pb-border-1);
     padding: getSize(padding-5px);
-    width: auto;
+    width: fit-content;
+    height: fit-content;
   }
 
   main {

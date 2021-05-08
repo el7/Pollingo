@@ -13,6 +13,8 @@ function LayoutOne() {
 
     // function that generates polling questions    
 
+
+    // todo:collect this from db
     const pollData = {
         question: "What is the best movie ever?",
         answer1: "The Matrix",

@@ -40,7 +40,7 @@ function LayoutOne() {
                 <Separator t={separator_text}/>
             </div>
             <div className="grid-item grid-main-item-footer">
-                <Console />
+                {/*<Console />*/}
             </div>
         </div>
     )

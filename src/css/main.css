@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #ffecec;
+  background-color: #ffffff;
 }
 
 /****************************
@@ -16,7 +16,7 @@ body {
 }
 
 .layoutOne .grid-main-item-main {
-  background-color: #ffe6e6;
+  background-color: #ffffff;
   padding-top: 45px;
 }
 
@@ -26,8 +26,8 @@ body {
   position: fixed;
   height: 35px;
   width: 100%;
-  background-color: #ff2ce3;
-  color: #47002a;
+  background-color: #ff00dd;
+  color: #d000ff;
   padding: 5px;
   border-bottom: header-border-1;
 }
@@ -51,15 +51,15 @@ body {
 }
 
 .header-container header {
-  background-color: #f3bdff;
-  border: 1px solid #473333;
+  background-color: #ffffff;
+  border: 1px solid #d000ff;
   padding: 5px;
   width: fit-content;
   height: fit-content;
 }
 
 .header-lower-container {
-  background: #ffe7f5;
+  background: #ffffff;
   border-bottom: 1px solid grey;
   padding: 5px;
   position: fixed;
@@ -101,13 +101,13 @@ body {
 
 .console {
   /***** VIEW SIZE [xs, 1/6] *****/
-  background-color: #f5caff;
-  border: 1px solid #ac2c2c;
+  background-color: #ffffff;
+  border: 1px solid #d000ff;
   /***** VIEW SIZE [sm, 2/6] *****/
 }
 
 .console .console-name {
-  color: #47002a;
+  color: #d000ff;
 }
 
 .pollbox-1 {
@@ -120,19 +120,19 @@ body {
 }
 
 .pollbox-1 .span-pollbox-question {
-  color: #ffebf1;
+  color: #d000ff;
   font: italic bold 20px Georgia;
 }
 
 .pollbox-1 main {
   grid-area: main;
-  background-color: #fff1f5;
-  border: 1px solid #473333;
+  background-color: #ffffff;
+  border: 1px solid #d000ff;
 }
 
 .pollbox-1 footer {
   grid-area: footer;
-  border: 1px solid #473333;
+  border: 1px solid #d000ff;
   overflow: hidden;
   height: auto;
   background-color: #ccccfc;
@@ -140,22 +140,22 @@ body {
 }
 
 .pollbox-1 footer .pollTypeIRV {
-  color: #e93118;
+  color: secondaryColor2;
   list-style-type: georgian;
 }
 
 .pollbox-1 footer .pollTypeApproval {
-  color: #3b10e7;
+  color: secondaryColor2;
   list-style-type: katakana-iroha;
 }
 
 .pollbox-1 footer .pollTypeRC {
-  color: #187935;
+  color: secondaryColor2;
   list-style-type: hiragana;
 }
 
 .pollbox-1 footer .pollTypeSTAR {
-  color: #61662f;
+  color: secondaryColor2;
 }
 
 .pollbox-1 footer .tabPanel,
@@ -173,13 +173,13 @@ body {
   border: none;
   cursor: pointer;
   padding: 10px;
-  background-color: #30021c;
-  color: #ffe4f4;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .pollbox-1 .tabContainer .buttonContainer button:hover {
-  background-color: #5c0236;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 39.9375em) {
@@ -195,14 +195,14 @@ body {
 }
 
 .resultbox-container {
-  border: 1px solid #ac2c2c;
-  color: #34189b;
+  border: 1px solid #d000ff;
+  color: #d000ff;
   padding: 15px;
 }
 
 .resultbox-container .resultbox-graph-container {
-  border: 1px solid #ac2c2c;
-  color: #34189b;
+  border: 1px solid #d000ff;
+  color: #d000ff;
   padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */

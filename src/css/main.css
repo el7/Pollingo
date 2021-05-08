@@ -197,12 +197,12 @@ body {
 .resultbox-container {
   border: 1px solid #ac2c2c;
   color: #34189b;
-  padding: 5px;
+  padding: 15px;
 }
 
 .resultbox-container .resultbox-graph-container {
   border: 1px solid #ac2c2c;
   color: #34189b;
-  padding: 5px;
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */

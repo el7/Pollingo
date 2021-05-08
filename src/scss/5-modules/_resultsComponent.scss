@@ -1,11 +1,11 @@
 .resultbox-container {
   border: getSize(resultbox-border-1);
   color: getColor(res-box-text-1);
-  padding: getSize(padding-5px);
+  padding: getSize(padding-15px);
 
   .resultbox-graph-container {
     border: getSize(resultbox-border-1);
     color: getColor(res-box-text-1);
-    padding: getSize(padding-5px);
+    padding: getSize(padding-10px);
   }
 }

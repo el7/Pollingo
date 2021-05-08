@@ -26,8 +26,8 @@ body {
   position: fixed;
   height: 35px;
   width: 100%;
-  background-color: #ff00dd;
-  color: #d000ff;
+  background-color: #f0b0ff;
+  color: #000000;
   padding: 5px;
   border-bottom: header-border-1;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .header-lower-container {
-  background: #ffffff;
+  background: #f0b0ff;
   border-bottom: 1px solid grey;
   padding: 5px;
   position: fixed;
@@ -196,13 +196,13 @@ body {
 
 .resultbox-container {
   border: 1px solid #d000ff;
-  color: #d000ff;
+  color: #000000;
   padding: 15px;
 }
 
 .resultbox-container .resultbox-graph-container {
   border: 1px solid #d000ff;
-  color: #d000ff;
+  color: #000000;
   padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */

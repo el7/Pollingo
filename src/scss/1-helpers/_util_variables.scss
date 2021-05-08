@@ -29,21 +29,17 @@ $colors: (
   pb-main-body-text-2: secondaryColor2,
   pb-main-body-text-3: secondaryColor2,
   pb-main-body-text-4: secondaryColor2,
-  // ???
-  /*
-  pb-nav-bg-1: rgb(212, 203, 66),
-  pb-footer-bg-1: rgb(122, 243, 9),
-  pb-main-bg-xl-1: rgb(255, 49, 49),
-  */
-    // console
+  // console
   con-desc-1: $primaryColor1,
   con-bg-1: $secondaryColor1,
   con-name-1: $primaryColor1,
   // header
-  header-bg-1: $secondaryColor1,
-  header-text-1: $primaryColor1,
+  header-bg-1: $primaryColor1light,
+  hedaer-bg-2: $secondaryColor1,
+  header-text-1: $secondaryColor2,
   // results box
-  res-box-text-1: $primaryColor1,
+  res-box-text-1: $secondaryColor2,
+  res-box-text-2: $secondaryColor2,
   // test colors
   test-wild-1: rgb(255, 0, 221),
   test-wild-2: rgb(0, 255, 34),
@@ -57,7 +53,7 @@ $sizes: (
   padding-10px: 10px,
   padding-15px: 15px,
   padding-20px: 25px,
-  header-border-1: 20px bottom solid $primaryColor1,
+  header-border-1: 20px bottom solid $secondaryColor2,
   pb-border-1: 1px solid $primaryColor1,
   pb-border-2: 2px dashed $primaryColor1,
   pb-border-3: 3px solid $primaryColor1,

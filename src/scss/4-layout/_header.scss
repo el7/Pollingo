@@ -12,7 +12,7 @@
   height: 35px;
   width: 100%;
 
-  background-color: getColor(test-wild-1);
+  background-color: getColor(header-bg-1);
   color: getColor(header-text-1);
   padding: getSize(padding-5px);
   border-bottom: header-border-1;
@@ -42,7 +42,7 @@
 
   // ----- FLEX AREAS -------------------------
   header {
-    background-color: getColor(header-bg-1);
+    background-color: getColor(hedaer-bg-2);
     border: getSize(pb-border-1);
     padding: getSize(padding-5px);
     width: fit-content;

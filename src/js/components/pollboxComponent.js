@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import "../../css/main.css";
+import "../../scss/1-helpers/_util_variables.scss";
 
 function PollBox(props) {
 
@@ -111,15 +112,15 @@ function PollBox(props) {
             if (index === tabNumber) {
                 // selected
                 node.style.color = "#ffffff";
-                node.style.backgroundColor = "#5c0236";
+                node.style.backgroundColor = "red";
                 setTabSelected(tabNumber);
                 setPollTypeClass(newClass);
 
 //            } else if (val) {              
             } else {
                  // not selected
-                 node.style.color = "#ddc5d3";
-                 node.style.backgroundColor = "#30021c";
+                 node.style.color = "white";
+                 node.style.backgroundColor = "black";
             }
         })
     }

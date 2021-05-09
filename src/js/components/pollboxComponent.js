@@ -132,11 +132,11 @@ function PollBox(props) {
     // JSX RETURN ------------------------
     return (
         <div className="pollbox-1 testC"> 
-            <main>
+            <header>
                 <span className="span-pollbox-question">{props.pd.question}</span>
-            </main>
+            </header>
             {/* <aside>ASIDE.</aside> */}
-            <footer>
+            <main>
                 <div className="tabContainer"> 
                     <div className="buttonContainer"> 
                         <button onClick={() => showPanel('irv')}>IRV</button>
@@ -165,7 +165,7 @@ function PollBox(props) {
                     <div className="tabPanel tabPanel3">Buttons RC</div>
                     <div className="tabPanel tabPanel4">Buttons STAR</div> */}
                 </div>                                                
-            </footer>
+            </main>
         </div>
     )
 }

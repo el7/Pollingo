@@ -124,13 +124,13 @@ body {
   font: italic bold 20px Georgia;
 }
 
-.pollbox-1 main {
+.pollbox-1 header {
   grid-area: main;
   background-color: #ffffff;
   border: 1px solid #d000ff;
 }
 
-.pollbox-1 footer {
+.pollbox-1 main {
   grid-area: footer;
   border: 1px solid #d000ff;
   overflow: hidden;
@@ -139,27 +139,27 @@ body {
   box-sizing: border-box;
 }
 
-.pollbox-1 footer .pollTypeIRV {
+.pollbox-1 main .pollTypeIRV {
   color: secondaryColor2;
   list-style-type: georgian;
 }
 
-.pollbox-1 footer .pollTypeApproval {
+.pollbox-1 main .pollTypeApproval {
   color: secondaryColor2;
   list-style-type: katakana-iroha;
 }
 
-.pollbox-1 footer .pollTypeRC {
+.pollbox-1 main .pollTypeRC {
   color: secondaryColor2;
   list-style-type: hiragana;
 }
 
-.pollbox-1 footer .pollTypeSTAR {
+.pollbox-1 main .pollTypeSTAR {
   color: secondaryColor2;
 }
 
-.pollbox-1 footer .tabPanel,
-.pollbox-1 footer .tabPanel > ol {
+.pollbox-1 main .tabPanel,
+.pollbox-1 main .tabPanel > ol {
   height: 100%;
   padding-top: 0px;
   box-sizing: border-box;

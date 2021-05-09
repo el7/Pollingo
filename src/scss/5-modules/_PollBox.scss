@@ -20,13 +20,13 @@
     font: getSize(pb-header-text-1);
   }
 
-  main {
+  header {
     grid-area: main;
     background-color: getColor(pb-main-bg-1);
     border: getSize(pb-border-1);
   }
 
-  footer {
+  main {
     grid-area: footer;
     border: getSize(pb-border-1);
     overflow: hidden;

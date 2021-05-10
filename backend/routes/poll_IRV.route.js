@@ -6,7 +6,6 @@ let PollIRV = require('../models/poll_IRV.model');
 // accepts GET req on /
 router.route('/').get((req, res) => {
     PollIRV.find()
-        // pollIRV might be wrong here
         .then(pollIRV => res.json(pollIRV))
         .catch(err => res.status(400).json('Error: ' + err));
 });

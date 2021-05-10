@@ -18,12 +18,6 @@ const mongoose = require("mongoose");
 // const express = require("express");
 // const app = express();
 
-
-
-
-
-
-
 /***************************
  *       DATA CONNECTION
 ***************************/
@@ -50,9 +44,11 @@ function App() {
  }
 */
 <Router>
+  <div className="container">
   <Navbar />
   <br/>
  <Route path="/" exact component={PollList} />
+ </div>
 </Router>
   );
 }

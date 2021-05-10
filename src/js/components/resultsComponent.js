@@ -5,7 +5,6 @@ import "../../css/main.css";
 function ResultBox(props) {
 
     // trade current poll data here
-    
 
     return (
         <div className="resultbox-container">

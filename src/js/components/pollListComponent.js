@@ -12,7 +12,7 @@ function PollList(props) {
             <div key={key}>
               {data.question +
                 " , " +
-                data.a}
+                data.choices[2].label}
             </div>
           );
         })}

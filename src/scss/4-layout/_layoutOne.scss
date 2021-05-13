@@ -15,7 +15,7 @@
   width: unquote("max(100%, 320px)");
 
   .grid-main-item-main {
-    background-color: getColor(layout-one-bg-1);
+    background-color: getColor(secondary-1);
     padding-top: 45px; // needed to clear header
   }
 }

@@ -22,7 +22,7 @@
 
   header {
     grid-area: main;
-    background-color: getColor(pb-main-bg-1);
+    background-color: getColor(secondary-1);
     border: getSize(pb-border-1);
   }
 
@@ -35,22 +35,22 @@
     box-sizing: border-box;
 
     .pollTypeIRV {
-      color: getColor(pb-main-body-text-1);
+      color: getColor(secondary-2);
       list-style-type: georgian;
     }
 
     .pollTypeApproval {
-      color: getColor(pb-main-body-text-2);
+      color: getColor(secondary-2);
       list-style-type: katakana-iroha;
     }
 
     .pollTypeRC {
-      color: getColor(pb-main-body-text-3);
+      color: getColor(secondary-2);
       list-style-type: hiragana;
     }
 
     .pollTypeSTAR {
-      color: getColor(pb-main-body-text-4);
+      color: getColor(secondary-2);
     }
 
     .tabPanel,
@@ -71,13 +71,13 @@
         border: none;
         cursor: pointer;
         padding: 10px;
-        background-color: getColor(pb-main-tab-bg-1);
-        color: getColor(pb-main-tab-text-1);
+        background-color: getColor(secondary-2);
+        color: getColor(secondary-1);
       }
 
       button:hover {
-        background-color: getColor(pb-main-tab-bg-2);
-        color: getColor(pb-main-tab-text-2);
+        background-color: getColor(secondary-2);
+        color: getColor(secondary-1);
       }
     }
   }

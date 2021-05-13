@@ -4,11 +4,11 @@
 
 .console {
   /***** VIEW SIZE [xs, 1/6] *****/
-  background-color: getColor(con-bg-1);
+  background-color: getColor(secondary-1);
   border: getSize(console-border-1);
 
   .console-name {
-    color: getColor(con-name-1);
+    color: getColor(primary-1);
   }
 
   /***** VIEW SIZE [sm, 2/6] *****/

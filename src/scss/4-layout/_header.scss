@@ -7,14 +7,13 @@
 
   display: flex;
   flex-flow: row nowrap;
-
   position: fixed;
-  height: 35px;
+  height: fit-content;
   width: 100%;
 
-  background-color: getColor(header-bg-1);
-  color: getColor(header-text-1);
-  padding: getSize(padding-5px);
+  background-color: getColor(primary-1-light);
+  color: getColor(secondary-2);
+  padding: 3px;
   border-bottom: header-border-1;
 
   h3,
@@ -24,6 +23,15 @@
 
   .pollingoLogoMed {
     display: none;
+  }
+
+  // ----- FLEX AREAS -------------------------
+  .header-fb-item {
+    background-color: getColor(secondary-1);
+    border: getSize(pb-border-1);
+    width: fit-content;
+    margin: 1px;
+    padding: 1px;
   }
 
   @include screenSizeBp(min-small) {
@@ -38,22 +46,5 @@
     .pollingoLogoSmall {
       display: none;
     }
-  }
-
-  // ----- FLEX AREAS -------------------------
-  header {
-    background-color: getColor(hedaer-bg-2);
-    border: getSize(pb-border-1);
-    padding: getSize(padding-5px);
-    width: fit-content;
-    height: fit-content;
-  }
-
-  main {
-    //    grid-area: main;
-  }
-
-  aside {
-    //    grid-area: aside;
   }
 }

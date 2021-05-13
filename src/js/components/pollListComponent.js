@@ -6,16 +6,16 @@ import {polls} from "../../datastore/polls";
 function PollList(props) {
 
     return (
-        <div className="stock-container">
-        {polls.map((data, key) => {
-          return (
-            <div key={key}>
-              {data.question +
-                " , " +
-                data.choices[2].label}
-            </div>
-          );
-        })}
+        <div className="poll-data-container">
+          {polls.map((data, key) => {
+            return (
+                <div key={key}>
+                {data.question +
+                    " , " +
+                    data.choices[2].label}
+                </div>
+            );
+          })}
       </div>
     )
 }

@@ -24,11 +24,11 @@ body {
   display: flex;
   flex-flow: row nowrap;
   position: fixed;
-  height: 35px;
+  height: fit-content;
   width: 100%;
   background-color: #f0b0ff;
   color: #000000;
-  padding: 5px;
+  padding: 3px;
   border-bottom: header-border-1;
 }
 
@@ -41,6 +41,14 @@ body {
   display: none;
 }
 
+.header-container .header-fb-item {
+  background-color: #ffffff;
+  border: 1px solid #d000ff;
+  width: fit-content;
+  margin: 1px;
+  padding: 1px;
+}
+
 @media screen and (min-width: 39.9375em) {
   .header-container * .pollingoLogoMed {
     display: initial;
@@ -48,14 +56,6 @@ body {
   .header-container * .pollingoLogoSmall {
     display: none;
   }
-}
-
-.header-container header {
-  background-color: #ffffff;
-  border: 1px solid #d000ff;
-  padding: 5px;
-  width: fit-content;
-  height: fit-content;
 }
 
 .header-lower-container {
@@ -140,22 +140,22 @@ body {
 }
 
 .pollbox-1 main .pollTypeIRV {
-  color: secondaryColor2;
+  color: #000000;
   list-style-type: georgian;
 }
 
 .pollbox-1 main .pollTypeApproval {
-  color: secondaryColor2;
+  color: #000000;
   list-style-type: katakana-iroha;
 }
 
 .pollbox-1 main .pollTypeRC {
-  color: secondaryColor2;
+  color: #000000;
   list-style-type: hiragana;
 }
 
 .pollbox-1 main .pollTypeSTAR {
-  color: secondaryColor2;
+  color: #000000;
 }
 
 .pollbox-1 main .tabPanel,

@@ -1,6 +1,7 @@
 import React, {useState, useRef } from 'react';
 import debounce from 'lodash';
 import "../../css/main.css";
+import {BrowserRouter as Router, Route } from "react-router-dom";
 
 //const debouncer = require("lodash");
 
@@ -30,16 +31,21 @@ function Header(props) {
   var dir = loc.substring(0, loc.lastIndexOf('/'));
   console.log("dir: " + loc + dir);
 
-    return (
-        <div className="header-container" >
-            <header>
-                {/* <img src="/Pollingo/pollingo/src/images/pollingo_logo_s.PNG" /> */}
-                <h3 className="pollingoLogo pollingoLogoSmall">P.</h3>
-                <h3 className="pollingoLogo pollingoLogoMed">Pollingo.</h3>
-            </header>
-            <main></main>
-            <aside></aside>
+  return (
+      <Router>
+        <div className="header-container">
+            <div className="header-fb-item header-home">
+                <h3 className="pollingoLogo pollingoLogoSmall">P</h3>
+                <h3 className="pollingoLogo pollingoLogoMed">Pollingo</h3>
+            </div>
+            <div className="header-fb-item header-new">
+            <h3>Create New</h3>                
+            </div>            
+            <div className="header-fb-item header-all">
+                <h3>View All</h3>                
+            </div>
         </div>
+        </Router>
     )
 }
 

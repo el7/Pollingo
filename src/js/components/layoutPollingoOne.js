@@ -5,6 +5,7 @@ import PollBox from './pollboxComponent';
 import Console from './consoleComponent';
 import Separator from './separatorComponent';
 import ResultBox from './resultsComponent';
+import {polls} from "../../datastore/polls";
 
 // CSS
 import "../../css/main.css";
@@ -12,7 +13,12 @@ import "../../css/main.css";
 function LayoutOne() {
 
     // function that generates polling questions    
-
+ 
+    let question1 = polls.map((data, key) => {
+        return (
+            data.question
+        );
+    })
 
     // todo:collect this from db
     const pollData = {
@@ -35,6 +41,7 @@ function LayoutOne() {
                 <Header/>
             </div>
             <div className="grid-item grid-main-item-main grid-main">
+                {question1}
                 <ResultBox pd={pollData} />
                 <PollBox pd={pollData} />
                 <Separator t={separator_text}/>

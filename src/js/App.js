@@ -36,19 +36,11 @@ mongoose.connect(
  *********************/
 function App() {
   return (
-/*
-    <div className="App">
-      <LayoutOne />
-    </div>
-  );
- }
-*/
 <Router>
-  <div className="container">
-  <Navbar />
-  <br/>
- <Route path="/" exact component={PollList} />
- </div>
+ <div className="App">
+      <LayoutOne />
+      <Route path="/" exact component={PollList} />
+    </div>
 </Router>
   );
 }

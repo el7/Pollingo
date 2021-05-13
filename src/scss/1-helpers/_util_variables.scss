@@ -15,6 +15,20 @@ $secondaryColor5: #dfdfdf;
 
 // COLOR SELECTIONS
 $colors: (
+  primary-1: #d000ff,
+  primary-2: #ffd000,
+  primary-3: #00ffd0,
+  primary-1-light: #f0b0ff,
+  primary-2-light: #fff0b0,
+  primary-3-light: #b0fff0,
+  primary-1-dark: #600076,
+  primary-2-dark: #766000,
+  primary-3-dark: #007660,
+  secondary-1: #ffffff,
+  secondary-2: #000000,
+  secondary-3: #3f3f3f,
+  secondary-4: #808080,
+  secondary-5: #dfdfdf,
   // layout
   layout-one-bg-1: $secondaryColor1,
   // pollbox
@@ -46,7 +60,7 @@ $colors: (
   test-wild-2: rgb(0, 255, 34),
   test-transparent-1: #00ff2210,
   // other
-  base-body-bg-1: $secondaryColor1
+  base-body-bg-1: $secondaryColor1,
 );
 
 $sizes: (

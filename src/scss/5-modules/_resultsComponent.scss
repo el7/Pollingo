@@ -1,6 +1,6 @@
 .resultbox-container {
   border: getSize(resultbox-border-1);
-  color: getColor(res-box-text-2);
+  color: getColor(secondary-2);
   padding: getSize(padding-15px);
 
   /*
@@ -13,8 +13,8 @@
 
   .resultbox-graph-container {
     border: getSize(resultbox-border-1);
-    color: getColor(res-box-text-1);
+    color: getColor(secondary-2);
     padding: getSize(padding-10px);
-    background-color: getColor(res-box-bg-1);
+    background-color: getColor(primary-1-light);
   }
 }

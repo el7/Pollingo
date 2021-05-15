@@ -1,0 +1,16 @@
+
+get tweet:
+----------
+curl -X GET -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAOeePgEAAAAA%2FTeNdnJaslkyDz5hFG53wjmhAc0%3DcxPtMbp7zILNvG9X6pISJkgZWPeyIsODDO8EMeKwIfbmynElFV" "https://api.twitter.com/2/tweets/20"
+
+get poll:
+---------
+curl -X GET -H "Authorization: Bearer <BEARER TOKEN>" "https://api.twitter.com/2/tweets/1028039268030210048"
+
+
+get poll+data:
+--------------
+curl -X GET -H "Authorization: Bearer <BEARER TOKEN>" "https://api.twitter.com/2/tweets/1028039268030210048?expansions=attachments.poll_ids"
+
+
+

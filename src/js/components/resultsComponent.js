@@ -3,8 +3,20 @@ import ReactDOM from 'react-dom';
 import "../../css/main.css";
 
 function ResultBox(props) {
-
     // trade current poll data here
+
+    this.state = {
+        question: "This is the state question",
+        answer1: "state answer 1",
+        answer1_score: 123,
+        answer2: "state answer 2",
+        answer2_score: 234,
+        answer3: "state answer 3",
+        answer3_score: 345,
+        answer4: "state answer 4",
+        answer5_score: 456
+    }
+
 
     return (
         <div className="resultbox-container">
